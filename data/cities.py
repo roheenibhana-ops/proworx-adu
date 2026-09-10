@@ -233,4 +233,10 @@ FAQS = [
      "ADUs are one of the highest-return additions available to Utah homeowners, both through added square footage and rental income potential. Many owners recoup their investment through rent within a few years."),
     ("Do you handle permits and inspections with the {city} building department?",
      "Yes — permitting, plan review and inspection scheduling are included in every ADU plan tier. You won't need to deal with the city directly at any point in the process."),
+    ("Can I rent out my ADU in {city}?",
+     "In most cases, yes — most cities in {county} County allow long-term rental of a permitted ADU, though a handful of cities and HOAs restrict short-term/nightly rentals. We'll confirm exactly how {city} treats rentals as part of your free estimate."),
+    ("Does an ADU in {city} need its own egress window?",
+     "Yes — any bedroom needs a code-compliant egress window or door for safety, standard on every basement conversion and detached build we do in {city}. It's factored into your quote from day one."),
+    ("Is financing available for an ADU project in {city}?",
+     "Many {city} homeowners finance an ADU through a home equity loan, HELOC, cash-out refinance, or a renovation/construction loan. We're not a lender, but we can help you scope the project so you can have that conversation with real numbers."),
 ]
