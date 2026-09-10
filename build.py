@@ -40,11 +40,16 @@ def header_nav(active_areas=False):
     <nav class="desktop-nav">
       <a href="/index.html#what-is-adu">What's an ADU?</a>
       <a href="/index.html#plans">Plans &amp; Pricing</a>
-      <a href="/index.html#process">Our Process</a>
-      <a href="/index.html#portfolio">Portfolio</a>
-      <a href="/index.html#areas">Service Areas</a>
-      <a href="/blog/index.html">Blog</a>
-      <a href="/adu-rules-2026.html">2026 ADU Law</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger" type="button" aria-haspopup="true">Resources {CHEVRON_SVG}</button>
+        <div class="nav-dropdown-menu">
+          <a href="/index.html#process">Our Process</a>
+          <a href="/index.html#portfolio">Portfolio</a>
+          <a href="/index.html#areas">Service Areas</a>
+          <a href="/blog/index.html">Blog</a>
+          <a href="/adu-rules-2026.html">2026 ADU Law</a>
+        </div>
+      </div>
       <a href="/index.html#faq">FAQ</a>
     </nav>
     <div style="display:flex; align-items:center; gap:12px;">

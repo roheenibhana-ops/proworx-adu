@@ -48,6 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
     statsObserver.observe(statsBar);
   }
 
+  // Nav dropdown ("Resources") — click/tap toggle in addition to hover
+  document.querySelectorAll('.nav-dropdown').forEach(dd => {
+    const trigger = dd.querySelector('.nav-dropdown-trigger');
+    if (!trigger) return;
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = dd.classList.contains('open');
+      document.querySelectorAll('.nav-dropdown.open').forEach(o => o.classList.remove('open'));
+      if (!isOpen) dd.classList.add('open');
+    });
+  });
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.nav-dropdown.open').forEach(o => o.classList.remove('open'));
+  });
+
   // Mobile menu toggle
   const menuBtn = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');

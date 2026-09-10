@@ -126,14 +126,49 @@
     letter-spacing:0.25em;
     color:var(--primary);
   }
-  nav.desktop-nav{display:none; gap:24px; align-items:center; flex-wrap:nowrap;}
-  nav.desktop-nav a{font-size:14px; font-weight:500; color:var(--muted-foreground); transition:color 0.2s ease; white-space:nowrap;}
-  nav.desktop-nav a:hover{color:var(--foreground);}
+  nav.desktop-nav{display:none; gap:28px; align-items:center; flex-wrap:nowrap;}
+  nav.desktop-nav > a{font-size:14px; font-weight:500; color:var(--muted-foreground); transition:color 0.2s ease; white-space:nowrap;}
+  nav.desktop-nav > a:hover{color:var(--foreground);}
   .nav-cta{display:none;}
   @media (min-width:1180px){
     nav.desktop-nav{display:flex;}
     .nav-cta{display:inline-flex;}
   }
+
+  /* Nav dropdown ("Resources") */
+  .nav-dropdown{position:relative;}
+  .nav-dropdown-trigger{
+    display:inline-flex; align-items:center; gap:4px;
+    font-size:14px; font-weight:500; color:var(--muted-foreground);
+    background:none; border:none; cursor:pointer; padding:0;
+    font-family:'Inter', sans-serif; white-space:nowrap;
+    transition:color 0.2s ease;
+  }
+  .nav-dropdown-trigger svg{width:14px; height:14px; stroke:currentColor; transition:transform 0.2s ease;}
+  .nav-dropdown:hover .nav-dropdown-trigger,
+  .nav-dropdown-trigger:focus-visible{color:var(--foreground);}
+  .nav-dropdown:hover .nav-dropdown-trigger svg,
+  .nav-dropdown.open .nav-dropdown-trigger svg{transform:rotate(180deg);}
+  .nav-dropdown-menu{
+    position:absolute; top:100%; left:50%; transform:translateX(-50%);
+    margin-top:14px; min-width:220px;
+    background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-card);
+    padding:8px; display:none; flex-direction:column; gap:2px;
+    z-index:110;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown.open .nav-dropdown-menu{display:flex;}
+  .nav-dropdown-menu::before{
+    content:''; position:absolute; bottom:100%; left:50%; transform:translateX(-50%);
+    height:14px; width:100%;
+  }
+  .nav-dropdown-menu a{
+    display:block; padding:9px 12px; border-radius:calc(var(--radius) - 4px);
+    font-size:14px; font-weight:500; color:var(--foreground); white-space:nowrap;
+    transition:background 0.15s ease;
+  }
+  .nav-dropdown-menu a:hover{background:var(--secondary);}
   .menu-btn{
     display:inline-flex;
     background:none; border:none; cursor:pointer;
