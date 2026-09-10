@@ -943,6 +943,110 @@ def deep_content_lindon():
 """
 
 
+def deep_content_provo():
+    """Bespoke, research-backed deep-content section for Provo. Real
+    Title 14.30 accessory-apartment code, real 5-district neighborhood
+    program, real named neighborhoods (Homes.com-verified), honest note
+    on Provo's still-pending SB284 ordinance as of Sept 2026. Built by
+    hand rather than the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: PROVO (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE PROVO DETAILS</p>
+      <h2>Provo's ADU Code Was Built to Stop Student Rentals &mdash; Not to Enable Them</h2>
+      <p class="lede">Provo's accessory apartment ordinance predates SB284 by years, and it reads that way: owner-occupancy is required, occupancy is capped, and a rental license is mandatory. If your goal is extended family or rental income from an owner-occupied home, this works in your favor &mdash; but the rules are built to prevent a pure student-rental play.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in Provo, Utah with mountains in the background">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">114,527</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">1850</div><div class="spec-label">Incorporated (settled 1849)</div></div>
+      <div class="spec-card"><div class="spec-value">5</div><div class="spec-label">Official Neighborhood Districts</div></div>
+      <div class="spec-card"><div class="spec-value">Provo City School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#provo-neighborhoods">Neighborhoods</a>
+        <a href="#provo-zoning">Zoning &amp; Permits</a>
+        <a href="#provo-sb284">SB284 Status</a>
+        <a href="#provo-cost">Cost</a>
+        <a href="#provo-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="provo-neighborhoods">
+          <h3>{PIN_SVG} Provo Runs on Five Official Districts &mdash; And a Different Feel Block to Block</h3>
+          <p>As Utah County's largest city and home to BYU, Provo is organized into five official Neighborhood Districts (North, East, West, Northwest and Central) under the city's Neighborhood District Program &mdash; a formal structure most Utah County cities this size don't have. Inside those districts, several long-established named areas shape how an ADU project actually looks:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Joaquin</h4><p>A named neighborhood with its own city-adopted Joaquin Neighborhood Plan, closer to downtown and BYU.</p></div>
+            <div class="neighborhood-card"><h4>Franklin</h4><p>An established residential area within Provo's district system.</p></div>
+            <div class="neighborhood-card"><h4>Rock Canyon</h4><p>East-bench homes near the Rock Canyon trailhead and foothills, part of Provo's east side.</p></div>
+            <div class="neighborhood-card"><h4>Grandview</h4><p>Split into North and South areas, a long-established residential part of the city.</p></div>
+            <div class="neighborhood-card"><h4>Foothill</h4><p>Higher-elevation homes on Provo's eastern edge, with the terrain considerations that come with bench and foothill lots.</p></div>
+          </div>
+          <p style="margin-top:8px;">Because Provo has such a mix of century-old in-fill lots, BYU-adjacent rental-heavy blocks and newer bench subdivisions, we confirm your zone and district before pricing anything &mdash; a Joaquin in-fill lot and a Foothill bench lot can call for genuinely different ADU approaches.</p>
+        </div>
+
+        <div class="content-block" id="provo-zoning">
+          <h3>{CLIPBOARD_SVG} Provo's Accessory Apartment Code Is Built Around Owner-Occupancy</h3>
+          <p>Provo City Code Title 14.30 governs accessory apartments, and it's noticeably stricter on occupancy than a lot of Utah County ordinances, which makes sense in a city with a huge student rental market to manage:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Provo Standard</th></tr>
+              <tr><td>Owner-occupancy</td><td>Required for the primary one-family dwelling</td></tr>
+              <tr><td>Occupancy cap</td><td>Maximum 3 unrelated adults</td></tr>
+              <tr><td>Minimum detached ADU size</td><td>200 sq ft</td></tr>
+              <tr><td>Detached ADU height/footprint</td><td>Must stay below the primary dwelling</td></tr>
+              <tr><td>Parking</td><td>4 spaces required (up to 2 may be tandem)</td></tr>
+              <tr><td>Utilities</td><td>Separate meter required for a detached unit</td></tr>
+            </table>
+          </div>
+          <p>A rental dwelling license is also required, and ADUs are prohibited outright in several of Provo's higher-density zones (including PRO, R2PD, RM and the R16&ndash;R19 and R110 zones) &mdash; the zones where BYU-area student housing is concentrated. They're generally allowed in residential zones west of I-15, with some SDP-5/R2PD exceptions. We confirm your specific zone, and the exact permit fee from the city's current fee schedule, before pricing your project.</p>
+        </div>
+
+        <div class="content-block" id="provo-sb284">
+          <h3>{HAMMER_SVG} Provo Hasn't Finalized Its SB284 Ordinance Yet</h3>
+          <p>Unlike some Utah County cities that already had a detached-ADU rule in place, Provo was still working through its response to Utah's statewide SB284 mandate as of early September 2026. City staff proposed a 40%-of-parcel accessory-structure limit for detached ADUs, but as of the most recent reporting, that proposal hadn't yet gone through Planning Commission or a council vote &mdash; with the state's October 1, 2026 compliance deadline just weeks away. Because this is actively moving, we check the current status with Provo's Community Development Department at the time we scope your project rather than quoting a rule that may have changed.</p>
+        </div>
+
+        <div class="content-block" id="provo-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Provo?</h3>
+          <p>Provo's occupancy caps and rental-license requirement mean most projects here are sized for a genuine second household rather than maximum rentable bedrooms, which keeps scope more in line with national averages rather than a maxed-out student-rental build-out. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> puts comparable home-investment categories in perspective:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Provo quote reflects your zone, district and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Provo typically lands at $95K&ndash;$180K for an internal or basement conversion, and $190K&ndash;$290K for a detached, ground-up build once the city's final SB284 standards are in place.</p>
+        </div>
+
+        <div class="content-block" id="provo-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://provo.municipal.codes/Code/14.30.020" target="_blank" rel="noopener">Provo City Code Title 14.30</a>: accessory apartment standards</li>
+            <li><a href="https://www.provo.gov/180/Contact-Us" target="_blank" rel="noopener">City of Provo</a>: Provo City Hall, 445 W Center Street, Provo, UT 84601</li>
+            <li><a href="https://www.provo.gov/282/Neighborhood-District-Program" target="_blank" rel="noopener">Provo Neighborhood District Program</a>: the city's 5 official districts</li>
+            <li><a href="https://provo.com/news/detached-adu-sb284-october-1-provo/" target="_blank" rel="noopener">Provo.com</a>: Provo's pending SB284 ordinance status, September 2026</li>
+            <li><a href="https://www.census.gov/quickfacts/provocityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: Provo city population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -1157,7 +1261,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <section class="bg-secondary">
   <div class="container">
     <div class="section-head reveal">
