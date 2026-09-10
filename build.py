@@ -1238,6 +1238,105 @@ def deep_content_bluffdale():
 """
 
 
+def deep_content_draper():
+    """Bespoke, research-backed deep-content section for Draper. Real
+    Sec. 9-5-210 ordinance, real 50%-of-home cap, real The Point mega-
+    project context, honest hedge on hillside-specific ADU review (not
+    verified to exist). Built by hand rather than the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: DRAPER (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE DRAPER DETAILS</p>
+      <h2>Draper's ADU Rule Is the Same From Suncrest to The Point &mdash; The Terrain Isn't</h2>
+      <p class="lede">Draper's accessory dwelling ordinance doesn't carve out separate rules for its hillside neighborhoods, but a lot on Suncrest's slopes and a lot near a flat new-build in South Draper are two very different construction jobs even under the same code.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?q=80&w=1800&auto=format&fit=crop" alt="Hillside homes in Draper, Utah near Corner Canyon">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">50,652</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">1978</div><div class="spec-label">Incorporated (settled 1849 as "Draperville")</div></div>
+      <div class="spec-card"><div class="spec-value">12,000 sq ft</div><div class="spec-label">Minimum lot size for a detached ADU</div></div>
+      <div class="spec-card"><div class="spec-value">Canyons School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#draper-neighborhoods">Neighborhoods</a>
+        <a href="#draper-zoning">Zoning &amp; Permits</a>
+        <a href="#draper-terrain">Hillside Terrain</a>
+        <a href="#draper-cost">Cost</a>
+        <a href="#draper-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="draper-neighborhoods">
+          <h3>{PIN_SVG} From Suncrest's Slopes to The Point's Mega-Development</h3>
+          <p>Draper spans both Salt Lake and Utah counties and covers some of the most varied terrain of any city we build in:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Suncrest</h4><p>A hillside master-planned community that actually straddles the Draper/Highland line, with steep-slope lots and mountain views.</p></div>
+            <div class="neighborhood-card"><h4>Corner Canyon</h4><p>The area around Corner Canyon High School, part of Draper's east-bench foothill terrain.</p></div>
+            <div class="neighborhood-card"><h4>The Point</h4><p>The former Utah State Prison site, now a massive mixed-use redevelopment reported in the billions of dollars &mdash; a distinctly Draper-specific landmark project reshaping the city's north end.</p></div>
+          </div>
+          <p style="margin-top:8px;">Because Draper genuinely runs from flat valley-floor lots to steep hillside parcels within the same city limits, we never quote an ADU here without walking the specific property first.</p>
+        </div>
+
+        <div class="content-block" id="draper-zoning">
+          <h3>{CLIPBOARD_SVG} What Draper's Ordinance Actually Requires</h3>
+          <p>Draper City Code &sect;9-5-210 covers two ADU types &mdash; detached (D-ADU) and internal (I-ADU) &mdash; each with its own standards:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Draper Standard</th></tr>
+              <tr><td>Minimum lot size, detached ADU</td><td>12,000 sq ft</td></tr>
+              <tr><td>Minimum lot size, internal ADU</td><td>6,000 sq ft, fronting a public street</td></tr>
+              <tr><td>Max ADU size</td><td>50% of the primary home's square footage</td></tr>
+              <tr><td>Height limit, detached ADU</td><td>35 ft, matching the primary home's materials and color</td></tr>
+              <tr><td>Parking</td><td>1 additional on-site space, no tandem or blocked spaces</td></tr>
+              <tr><td>Lease term</td><td>Minimum 30 days &mdash; no short-term rentals</td></tr>
+            </table>
+          </div>
+          <p>Owner-occupancy is required and re-verified annually at renewal, only one ADU is allowed per lot, and both ADU types share utility meters with the main house rather than getting a separate connection. We confirm the exact permit fee and your specific zone with Draper's Planning and Development Department before pricing your project, since that figure isn't published in the general code.</p>
+        </div>
+
+        <div class="content-block" id="draper-terrain">
+          <h3>{HAMMER_SVG} Draper's Code Doesn't Single Out Hillside Lots &mdash; But Your Site Work Will</h3>
+          <p>Unlike Alpine, Draper's ordinance doesn't carry a distinct hillside or sensitive-lands review specifically for ADUs. That doesn't mean the terrain stops mattering: a Suncrest or Corner Canyon lot on real slope still needs the same grading, drainage and foundation engineering any steep-lot build requires, it just isn't triggered by an ADU-specific code section. We scope that engineering the same way we would for any hillside project in Draper, separate from the standard permit review.</p>
+        </div>
+
+        <div class="content-block" id="draper-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Draper?</h3>
+          <p>Because Draper's terrain varies so much from lot to lot, project cost here swings more than in a flatter, single-character city. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Draper quote reflects your lot's terrain, your home's size under the 50% cap, and your finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Draper typically lands at $100K&ndash;$190K for an internal conversion on a flatter lot, and $210K&ndash;$320K for a detached, ground-up build on hillside terrain once grading and drainage are factored in.</p>
+        </div>
+
+        <div class="content-block" id="draper-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://codelibrary.amlegal.com/codes/draperut/latest/draper_ut/0-0-0-43100" target="_blank" rel="noopener">Draper City Code &sect;9-5-210</a>: accessory dwelling unit standards</li>
+            <li><a href="https://www.draperutah.gov/business-development/planning-and-development/accessory-dwelling-units-permits/" target="_blank" rel="noopener">City of Draper</a>: ADU permitting overview; City Hall, 1020 E Pioneer Rd, Draper, UT</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/drapercityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: Draper population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -1306,6 +1405,7 @@ CITY_HERO_H1 = {
     "provo": "Can You Build an ADU in Provo, Utah?",
     "vineyard": "Can You Build an ADU in Vineyard, or Does Your HOA Say No?",
     "bluffdale": "How Big of an ADU Can You Build in Bluffdale, Utah?",
+    "draper": "Can You Build an ADU on a Hillside Lot in Draper, Utah?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -1340,6 +1440,7 @@ CITY_CTA1 = {
     "provo": ("Not sure how Provo's rules apply to your rental plans?", "We'll walk your property and confirm your zone before you commit to anything."),
     "vineyard": ("Not sure if your Vineyard HOA allows an ADU?", "We'll check the city's rule and help you navigate your HOA's design standards."),
     "bluffdale": ("Not sure what size ADU your Bluffdale home qualifies for?", "We'll measure your home and confirm the 50% size cap before you spend a dollar on design."),
+    "draper": ("Not sure what your Draper lot's terrain adds to the budget?", "We'll walk your property, check the slope, and give you a real number before you commit to anything."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -1360,6 +1461,7 @@ CITY_CTA2 = {
     "provo": ("See ADU plans built around Provo's occupancy rules", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "vineyard": ("See ADU plans that work with Vineyard's HOA standards", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "bluffdale": ("See ADU plans sized to Bluffdale's 50% cap", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "draper": ("See ADU plans built for Draper's hillside and flat lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -1554,7 +1656,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
