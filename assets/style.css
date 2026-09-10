@@ -653,14 +653,20 @@
 /* Data tables (cost/ROI, geotechnical, permit-fee benchmarks) */
 .table-wrap{overflow-x:auto; margin:20px 0;}
 .data-table{width:100%; min-width:480px; border-collapse:collapse; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-card);}
-.data-table th, .data-table td{padding:13px 16px; text-align:left; font-size:14px; border-bottom:1px solid var(--border);}
+.data-table th, .data-table td{padding:14px 18px; text-align:left; font-size:15px; border-bottom:1px solid var(--border);}
 .data-table th{background:var(--secondary); font-weight:600; color:var(--foreground); font-size:12px; text-transform:uppercase; letter-spacing:0.04em;}
 .data-table td{color:var(--muted-foreground);}
 .data-table tr:last-child td{border-bottom:none;}
 .source-note{font-size:12px; color:var(--muted-foreground); font-style:italic; margin-top:-8px; margin-bottom:24px;}
-.content-block{margin-bottom:36px;}
-.content-block h3{font-size:20px; margin-bottom:10px;}
-.content-block p{color:var(--muted-foreground); margin-bottom:14px; line-height:1.7;}
+.content-block{margin-bottom:0; padding:36px 0; border-bottom:1px solid var(--border);}
+.content-block:first-child{padding-top:0;}
+.content-block:last-child{border-bottom:none; padding-bottom:0;}
+.content-block h3{font-size:21px; margin-bottom:14px; display:flex; align-items:center; gap:10px;}
+.content-block h3 svg{width:20px; height:20px; stroke:var(--primary); flex-shrink:0;}
+.content-block p{color:var(--muted-foreground); margin-bottom:16px; line-height:1.75; font-size:17px;}
+.content-block .source-note{font-size:13px;}
+.deep-image{width:100%; aspect-ratio:16/6; object-fit:cover; border-radius:var(--radius); margin:24px 0 40px; box-shadow:var(--shadow-card);}
+@media (max-width:640px){ .deep-image{aspect-ratio:4/3;} }
 .neighborhood-tags{display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 20px;}
 .neighborhood-tag{background:var(--secondary); border:1px solid var(--border); border-radius:999px; padding:6px 14px; font-size:13px; font-weight:500; color:var(--foreground);}
 
@@ -672,10 +678,12 @@
 .deep-jumpnav a:hover{color:var(--foreground); background:var(--secondary);}
 @media (max-width:900px){ .deep-jumpnav{position:static; flex-direction:row; flex-wrap:wrap; margin-bottom:8px;} }
 
-.neighborhood-cards{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:16px; margin:20px 0 28px;}
-.neighborhood-card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow-card);}
-.neighborhood-card h4{font-family:'Playfair Display', serif; font-size:17px; font-weight:700; margin-bottom:6px; color:var(--foreground);}
-.neighborhood-card p{font-size:13px; color:var(--muted-foreground); margin:0; line-height:1.6;}
+.neighborhood-cards{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin:20px 0 4px;}
+@media (max-width:760px){ .neighborhood-cards{grid-template-columns:repeat(2, 1fr);} }
+@media (max-width:480px){ .neighborhood-cards{grid-template-columns:1fr;} }
+.neighborhood-card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; box-shadow:var(--shadow-card);}
+.neighborhood-card h4{font-family:'Playfair Display', serif; font-size:18px; font-weight:700; margin-bottom:8px; color:var(--foreground);}
+.neighborhood-card p{font-size:14px; color:var(--muted-foreground); margin:0; line-height:1.65;}
 
 .spec-cards{display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:14px; margin:20px 0 28px;}
 .spec-card{background:var(--secondary); border-radius:var(--radius); padding:18px; text-align:center;}
@@ -690,7 +698,7 @@
 
 .office-callout{display:flex; gap:16px; align-items:flex-start; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; box-shadow:var(--shadow-card); margin:20px 0 28px;}
 .office-callout svg{width:22px; height:22px; stroke:var(--primary); flex-shrink:0; margin-top:2px;}
-.office-callout p{margin:0; font-size:14px; color:var(--muted-foreground); line-height:1.6;}
+.office-callout p{margin:0; font-size:15px; color:var(--muted-foreground); line-height:1.65;}
 .office-callout strong{color:var(--foreground);}
 
 /* Anchor offset so fixed header doesn't cover jump-nav targets */
