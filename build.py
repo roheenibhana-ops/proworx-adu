@@ -409,7 +409,7 @@ def deep_content_alpine():
 
         <div class="content-block" id="alpine-cost">
           <h3>{SHIELD_SVG} What Does an ADU Cost in Alpine?</h3>
-          <p>For context on how similar home-investment categories perform, <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> tracks return-on-investment for comparable projects nationally:</p>
+          <p>Alpine's larger lots and grading requirements push most quotes toward the higher end of the range, so it helps to see how comparable home-investment categories perform nationally, per <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a>:</p>
           <div class="table-wrap">
             <table class="data-table">
               <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
@@ -527,7 +527,7 @@ def deep_content_lehi():
 
         <div class="content-block" id="lehi-cost">
           <h3>{SHIELD_SVG} What Does an ADU Cost in Lehi?</h3>
-          <p>For context on how similar home-investment categories perform, <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> tracks return-on-investment for comparable projects nationally:</p>
+          <p>With Lehi's newer subdivisions largely on standard city utilities, most quotes here track closer to the national averages than in hillside cities. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> is a useful benchmark for how comparable projects perform:</p>
           <div class="table-wrap">
             <table class="data-table">
               <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
