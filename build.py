@@ -754,6 +754,102 @@ def deep_content_spanish_fork():
 """
 
 
+def deep_content_highland():
+    """Bespoke, research-backed deep-content section for Highland. Real
+    large-lot zoning character, real ADU ordinance provisions (owner-
+    occupancy, no detached ADUs, disguised-entrance rule), real neighborhoods
+    where verifiable. Built by hand rather than the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: HIGHLAND (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE HIGHLAND DETAILS</p>
+      <h2>In Highland, the ADU Question Is Really an Attached-Unit Question</h2>
+      <p class="lede">Highland's large lots make room for an ADU on paper, but the city's own ordinance is built around an internal, attached unit that doesn't read as a second home from the street &mdash; not a standalone building in the backyard.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1800&auto=format&fit=crop" alt="Large-lot home in Highland, Utah with a view toward Mount Timpanogos">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">21,571</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">1977</div><div class="spec-label">Incorporated</div></div>
+      <div class="spec-card"><div class="spec-value">6,000 sq ft</div><div class="spec-label">Minimum lot size for an ADU</div></div>
+      <div class="spec-card"><div class="spec-value">Alpine School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#highland-neighborhoods">Neighborhoods</a>
+        <a href="#highland-zoning">Zoning &amp; Permits</a>
+        <a href="#highland-design">Design Rule</a>
+        <a href="#highland-cost">Cost</a>
+        <a href="#highland-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="highland-neighborhoods">
+          <h3>{PIN_SVG} Highland's Reputation Is Large Lots &mdash; Not Named Master-Planned Communities</h3>
+          <p>Highland was settled by Scottish Mormon homesteaders in the 1870s and incorporated in 1977, and it's built its identity since then around larger residential lots than most of its Utah County neighbors, several zones running a half-acre or more. That means fewer branded subdivisions and more custom and semi-custom lots spread across the city:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Hidden Oaks</h4><p>An established single-family area on Highland's residential side, part of the city's broader large-lot character.</p></div>
+            <div class="neighborhood-card"><h4>Toscana</h4><p>A townhome community, one of the few attached-housing developments in a city otherwise dominated by single-family lots.</p></div>
+          </div>
+          <p style="margin-top:8px;">Outside those developments, most of Highland is larger, individually built lots rather than tract subdivisions, which is part of why an ADU project here is usually priced lot-by-lot rather than off a subdivision template.</p>
+        </div>
+
+        <div class="content-block" id="highland-zoning">
+          <h3>{CLIPBOARD_SVG} Highland's ADU Ordinance Predates SB284 &mdash; And It's Stricter Than the State Baseline</h3>
+          <p>Highland City's Development Code already addressed accessory dwelling units before Utah's SB284 changes take effect October 1, 2026, through its Supplementary Regulations, referenced in the R-1-20 and R-1-30 residential zones:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Highland Standard</th></tr>
+              <tr><td>Minimum lot size</td><td>6,000 sq ft</td></tr>
+              <tr><td>Owner-occupancy</td><td>Required &mdash; the primary home must be owner-occupied</td></tr>
+              <tr><td>Unit type allowed</td><td>Internal, attached unit only &mdash; not a detached backyard structure</td></tr>
+              <tr><td>Parking</td><td>1 additional off-street space; any garage space lost to the ADU must be replaced</td></tr>
+            </table>
+          </div>
+          <p>Because Highland's rule is written around an attached unit rather than a detached one, how SB284's detached-ADU mandate interacts with this existing ordinance is genuinely something we confirm with Highland's Community Development Department before pricing your project, not something we assume from the code alone.</p>
+        </div>
+
+        <div class="content-block" id="highland-design">
+          <h3>{HAMMER_SVG} The "Doesn't Look Like Two Homes" Rule</h3>
+          <p>Highland's ordinance is specific about street appearance: an ADU can't present as a separate unit when viewed from the street, and its entrance has to come from the rear of the home or a side entrance designed to blend in rather than read as a second front door. On a large Highland lot that's usually workable, but it does shape where in the house an ADU makes sense and how we frame the entrance and any exterior stairs.</p>
+        </div>
+
+        <div class="content-block" id="highland-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Highland?</h3>
+          <p>Because Highland's ordinance points toward an internal, attached conversion rather than a ground-up detached build, most Highland projects land in the conversion range rather than the full-build range. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> is a useful national benchmark for comparable scopes:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Highland quote reflects your home's layout and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Highland typically lands at $90K&ndash;$170K for an internal or basement conversion that meets the city's attached-unit and design rules, with a detached option priced separately once we've confirmed how SB284 applies to your specific lot.</p>
+        </div>
+
+        <div class="content-block" id="highland-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://www.highlandut.gov/" target="_blank" rel="noopener">City of Highland</a>: Highland City Hall, 5400 W Civic Center Drive, Highland, UT 84003</li>
+            <li>Highland City Development Code, Article 6 Supplementary Regulations (accessory dwelling unit provisions referenced from the R-1-20 and R-1-30 zones)</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/highlandcityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: Highland city population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -968,7 +1064,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <section class="bg-secondary">
   <div class="container">
     <div class="section-head reveal">
