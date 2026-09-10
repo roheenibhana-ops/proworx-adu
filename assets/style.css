@@ -649,3 +649,17 @@
 .blog-post-body p{margin-bottom:20px; font-size:16px; line-height:1.75; color:var(--foreground);}
 .blog-post-body h2{font-size:28px; margin:40px 0 16px;}
 .blog-post-body .post-meta{font-size:13px; color:var(--muted-foreground); margin-bottom:32px;}
+
+/* Data tables (cost/ROI, geotechnical, permit-fee benchmarks) */
+.table-wrap{overflow-x:auto; margin:20px 0;}
+.data-table{width:100%; min-width:480px; border-collapse:collapse; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-card);}
+.data-table th, .data-table td{padding:13px 16px; text-align:left; font-size:14px; border-bottom:1px solid var(--border);}
+.data-table th{background:var(--secondary); font-weight:600; color:var(--foreground); font-size:12px; text-transform:uppercase; letter-spacing:0.04em;}
+.data-table td{color:var(--muted-foreground);}
+.data-table tr:last-child td{border-bottom:none;}
+.source-note{font-size:12px; color:var(--muted-foreground); font-style:italic; margin-top:-8px; margin-bottom:24px;}
+.content-block{margin-bottom:36px;}
+.content-block h3{font-size:20px; margin-bottom:10px;}
+.content-block p{color:var(--muted-foreground); margin-bottom:14px; line-height:1.7;}
+.neighborhood-tags{display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 20px;}
+.neighborhood-tag{background:var(--secondary); border:1px solid var(--border); border-radius:999px; padding:6px 14px; font-size:13px; font-weight:500; color:var(--foreground);}

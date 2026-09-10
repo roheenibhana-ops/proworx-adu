@@ -3,7 +3,7 @@
 import os
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'data'))
-from cities import CITIES, TESTIMONIALS, FAQS, LOCAL_FOCUS
+from cities import CITIES, TESTIMONIALS, FAQS, LOCAL_FOCUS, NEIGHBORHOODS, HILLSIDE_TERRAIN, HOA_HEAVY
 
 ROOT = os.path.dirname(__file__)
 
@@ -203,6 +203,114 @@ def page_shell(title, description, body, canonical_path):
 </html>
 """
 
+def deep_content_section(name, slug, county):
+    """Long-form, hyper-local ADU content block for a city page: cost/ROI
+    table, terrain/permit/inspection detail, optional HOA section, and a
+    quote-evaluation checklist — modeled on the depth of the main site's
+    Alpine renovation page. National benchmark figures are sourced and
+    disclaimed rather than presented as confirmed local numbers."""
+
+    neighborhoods = NEIGHBORHOODS.get(slug)
+    neighborhood_intro = ""
+    if neighborhoods:
+        tags = "".join(f'<span class="neighborhood-tag">{n}</span>' for n in neighborhoods)
+        neighborhood_intro = f"""    <div class="content-block">
+      <p>We've worked on ADU projects across {name}, including {', '.join(neighborhoods[:-1])} and {neighborhoods[-1]} &mdash; and lot conditions, HOA layers and permit timelines can differ block to block, not just neighborhood to neighborhood.</p>
+      <div class="neighborhood-tags">{tags}</div>
+    </div>
+"""
+
+    geotechnical = ""
+    if slug in HILLSIDE_TERRAIN:
+        geotechnical = f"""    <div class="content-block">
+      <h3>Why {name} Lots Sometimes Need Engineering a Flat-Lot ADU Quote Won't Include</h3>
+      <p>{name}'s hillside and bench terrain means some lots need a soils or geotechnical review before a detached ADU's foundation gets designed &mdash; a step flatter Utah cities often skip entirely. If a contractor is pricing your {name} ADU the same way they'd price one a few miles away on flat ground, that's usually where the budget goes sideways once excavation starts.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <tr><th>Item</th><th>Typical Range</th></tr>
+          <tr><td>Geotechnical/soils review</td><td>$1,000&ndash;$5,000</td></tr>
+          <tr><td>Standard single-family soils report</td><td>~$2,700 average</td></tr>
+          <tr><td>Licensed engineer labor</td><td>$100&ndash;$250 per hour</td></tr>
+        </table>
+      </div>
+      <p class="source-note">Source: HomeAdvisor geotechnical report cost data, national averages &mdash; not confirmed against {name}-specific pricing. We'll tell you during your free estimate whether your lot needs this step at all.</p>
+    </div>
+"""
+
+    hoa_section = ""
+    if slug in HOA_HEAVY:
+        hoa_name = neighborhoods[0] if neighborhoods else f"{name}'s master-planned communities"
+        hoa_section = f"""    <div class="content-block">
+      <h3>Do I Need HOA Approval in Addition to a {name} City Permit?</h3>
+      <p>If your property is in one of {name}'s HOA-governed communities like {hoa_name}, clearing your city permit doesn't automatically clear your HOA's architectural review &mdash; they're separate approvals, and homeowners sometimes assume one covers the other. Most HOA design boards in these communities focus on exterior massing, materials and placement more than interior layout, but they still need to sign off before you build.</p>
+      <p>We submit both in parallel from the start of your project, which is usually where an ADU either saves a few weeks or loses them.</p>
+    </div>
+"""
+
+    body = f"""<!-- HYPER-LOCAL DEEP CONTENT -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE {name.upper()} DETAILS</p>
+      <h2>What Actually Goes Into an ADU Project in {name}</h2>
+      <p class="lede">The permitting, engineering and cost questions that come up specifically for {name} homeowners &mdash; not a generic statewide answer.</p>
+    </div>
+    <div class="blog-post-body reveal">
+{neighborhood_intro}    <div class="content-block">
+      <h3>What Does an ADU Cost in {name}?</h3>
+      <p>Every ADU quote should scale with the scope of work, not just square footage. For context on how similar home-investment categories perform, Zonda's 2025 Cost vs. Value Report tracks return-on-investment for comparable projects nationally:</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+          <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+          <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+        </table>
+      </div>
+      <p class="source-note">Source: Zonda 2025 Cost vs. Value Report, national data for comparable remodel categories &mdash; your {name} ADU quote will reflect your specific lot, structure and finish level, not this table.</p>
+      <p>Pro-Worx ADU pricing in {name} typically lands at $100K&ndash;$200K for a garage or basement conversion, and $200K&ndash;$300K for a full detached, ground-up build.</p>
+    </div>
+{geotechnical}    <div class="content-block">
+      <h3>What Actually Triggers a Building Permit for an ADU in {name}?</h3>
+      <p>Not every part of an ADU conversion needs a separate permit review, but most of the ones that matter do:</p>
+      <div class="check-list" style="margin-bottom:20px;">
+        <div class="check-item">{CHECK_SVG}<span>New footings, framing or any change to the structure's footprint</span></div>
+        <div class="check-item">{CHECK_SVG}<span>New or relocated plumbing and electrical circuits</span></div>
+        <div class="check-item">{CHECK_SVG}<span>Basement egress windows for any bedroom</span></div>
+        <div class="check-item">{CHECK_SVG}<span>Separate utility metering, where the ADU is metered independently</span></div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <tr><th>Permit Type</th><th>Typical Fee</th></tr>
+          <tr><td>Bathroom addition</td><td>$100&ndash;$800</td></tr>
+          <tr><td>Kitchen/kitchenette addition</td><td>$150&ndash;$1,000</td></tr>
+          <tr><td>Room addition / detached structure</td><td>$500&ndash;$5,000+</td></tr>
+          <tr><td>Electrical (new circuit/panel work)</td><td>$50&ndash;$500</td></tr>
+        </table>
+      </div>
+      <p class="source-note">Source: PermitMint national fee analysis across 1,500+ US municipalities &mdash; national ranges only, not confirmed against {name}'s specific fee schedule. We confirm your exact fees with the {name} building department as part of your free estimate.</p>
+    </div>
+    <div class="content-block">
+      <h3>What Gets Inspected During an ADU Build in {name}, and When?</h3>
+      <p>Every ADU we build in {name} goes through the same three inspection stages: framing (before drywall goes up), rough electrical and plumbing (before walls close), and a final inspection before move-in. Egress windows get inspected specifically for size and clearance &mdash; a common point where unpermitted basement conversions fail if a homeowner tries to sell or refinance later.</p>
+    </div>
+{hoa_section}    <div class="content-block">
+      <h3>What Should a Real {name} ADU Quote Include?</h3>
+      <p>A quote that doesn't account for {name}'s specific conditions isn't necessarily wrong on purpose &mdash; it's usually just based on a generic countywide template. Before you sign anything, make sure your quote itemizes:</p>
+      <div class="check-list">
+        <div class="check-item">{CHECK_SVG}<span>Soils or engineering review, if your lot needs one</span></div>
+        <div class="check-item">{CHECK_SVG}<span>HOA submission time priced into the schedule, not just build time</span></div>
+        <div class="check-item">{CHECK_SVG}<span>Permit fees itemized by category, not bundled into a lump sum</span></div>
+        <div class="check-item">{CHECK_SVG}<span>Utility separation costs, if you're metering the ADU independently</span></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+"""
+    return body
+
+
 def build_city_page(name, slug, county, index):
     local_context, local_sb284_note = LOCAL_FOCUS.get(
         slug,
@@ -361,7 +469,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-<!-- PROCESS -->
+{deep_content_section(name, slug, county)}<!-- PROCESS -->
 <section class="bg-secondary">
   <div class="container">
     <div class="section-head reveal">

@@ -204,6 +204,35 @@ LOCAL_FOCUS = {
     ),
 }
 
+# Real neighborhood names, confirmed via public real-estate/city sources,
+# for cities where we've done the research. Cities not listed here don't
+# get invented neighborhood names — LOCAL_FOCUS above still gives each of
+# them a genuinely distinct angle without fabricating specifics.
+NEIGHBORHOODS = {
+    "salt-lake-city": ["Sugar House", "The Avenues", "Rose Park", "Sunnyside", "Highland Park"],
+    "sandy": ["Hidden Valley", "Willow Creek", "Granite", "Granite Oaks"],
+    "draper": ["Suncrest", "Corner Canyon", "Hidden Valley"],
+    "bountiful": ["South Bountiful", "East Bountiful", "the Bountiful Bench"],
+    "park-city": ["Old Town", "Prospector", "Thaynes Canyon", "the Deer Valley area"],
+    "lehi": ["Traverse Mountain", "Thanksgiving Point area"],
+    "provo": ["East Bench", "Edgemont", "the BYU-adjacent grid"],
+}
+
+# Cities where hillside/canyon terrain makes soils/geotechnical review a
+# real, recurring factor — not universal, so we don't apply this section
+# to flat-lot cities where it wouldn't be an honest differentiator.
+HILLSIDE_TERRAIN = {
+    "draper", "cottonwood-heights", "alpine", "park-city", "bountiful",
+    "heber-city", "highland",
+}
+
+# Cities where master-planned HOA communities are common enough that HOA
+# coordination is a genuine, recurring part of the ADU process there.
+HOA_HEAVY = {
+    "highland", "vineyard", "south-jordan", "draper", "herriman",
+    "cottonwood-heights", "alpine",
+}
+
 TESTIMONIALS = [
     {
         "quote": "Pro-Worx converted our garage into a rental unit in under 5 weeks. Permits, design, everything — handled.",
