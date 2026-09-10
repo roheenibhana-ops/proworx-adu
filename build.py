@@ -1141,6 +1141,103 @@ def deep_content_vineyard():
 """
 
 
+def deep_content_bluffdale():
+    """Bespoke, research-backed deep-content section for Bluffdale. Real
+    50%-of-primary-home size cap, real no-short-term-rental rule, real
+    verified communities. Built by hand rather than the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: BLUFFDALE (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE BLUFFDALE DETAILS</p>
+      <h2>Bluffdale Caps Your ADU at Half Your Home's Size &mdash; And Bans Airbnb-Style Rentals</h2>
+      <p class="lede">Bluffdale's ADU ordinance is refreshingly permissive on lot size, but it's specific about what an ADU is for: a real second household, not a short-term rental. The size cap ties directly to your existing home, not a flat number.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1800&auto=format&fit=crop" alt="Semi-rural residential property in Bluffdale, Utah near the Salt Lake County equestrian trails">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">19,506</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">1978</div><div class="spec-label">Incorporated (settled 1848&ndash;49)</div></div>
+      <div class="spec-card"><div class="spec-value">6,000 sq ft</div><div class="spec-label">Minimum lot size for an ADU</div></div>
+      <div class="spec-card"><div class="spec-value">Jordan School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#bluffdale-neighborhoods">Neighborhoods</a>
+        <a href="#bluffdale-zoning">Zoning &amp; Permits</a>
+        <a href="#bluffdale-rentals">No Short-Term Rentals</a>
+        <a href="#bluffdale-cost">Cost</a>
+        <a href="#bluffdale-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="bluffdale-neighborhoods">
+          <h3>{PIN_SVG} Bluffdale Still Feels Rural in Places &mdash; And Newer in Others</h3>
+          <p>Salt Lake County's southernmost city has held onto a semi-rural, equestrian character even as growth pushes north from Utah County and south from Draper. That mix shows up block by block:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Day Ranch</h4><p>A townhome community reflecting Bluffdale's newer, denser development.</p></div>
+            <div class="neighborhood-card"><h4>Independence at the Point</h4><p>A detached single-family community on the newer end of Bluffdale's housing stock.</p></div>
+            <div class="neighborhood-card"><h4>Bringhurst Station</h4><p>Another of Bluffdale's active newer-construction communities.</p></div>
+          </div>
+          <p style="margin-top:8px;">Outside these newer communities, much of Bluffdale still carries larger, older agricultural-heritage lots &mdash; part of why the city's ADU ordinance is written to work across both without carving out separate rules by zone.</p>
+        </div>
+
+        <div class="content-block" id="bluffdale-zoning">
+          <h3>{CLIPBOARD_SVG} How Bluffdale Actually Sizes an ADU</h3>
+          <p>Bluffdale City Code Chapter 11.340 allows both internal (I-ADU) and detached (D-ADU) accessory dwelling units in residential, mixed-use and special-district zones, with the size cap tied directly to your existing home:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Bluffdale Standard</th></tr>
+              <tr><td>Minimum lot size</td><td>6,000 sq ft</td></tr>
+              <tr><td>Max ADU size</td><td>50% of the primary home's gross square footage</td></tr>
+              <tr><td>Parking, detached ADU</td><td>2 additional off-street spaces</td></tr>
+              <tr><td>Parking, internal ADU</td><td>1 additional off-street space</td></tr>
+              <tr><td>Units per property</td><td>One ADU maximum</td></tr>
+            </table>
+          </div>
+          <p>Owner-occupancy is required in either the main home or the ADU, a detached unit needs a permanent foundation (no trailers or manufactured units used as a workaround), and Bluffdale doesn't allow a separate utility meter or street address for the ADU. Bluffdale's 6,000-sq-ft minimum is already more permissive than the 11,000-sq-ft floor set by Utah's SB284, effective October 1, 2026, but we confirm the city's current compliance status with Community Development before pricing your project.</p>
+        </div>
+
+        <div class="content-block" id="bluffdale-rentals">
+          <h3>{HAMMER_SVG} Thinking Airbnb? Bluffdale's Ordinance Says No.</h3>
+          <p>Bluffdale requires a minimum 30-day occupancy for an ADU, which rules out nightly or short-term rental platforms entirely. If your goal is extended family housing or a genuine long-term tenant, that's not a problem &mdash; but if you were planning a short-term rental income stream, Bluffdale's ordinance is built specifically to prevent that use.</p>
+        </div>
+
+        <div class="content-block" id="bluffdale-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Bluffdale?</h3>
+          <p>Because Bluffdale's size cap scales with your home rather than a flat number, and the city permits both internal and detached units on the same 6,000-sq-ft threshold, project scope here varies more than in a single-formula city. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Bluffdale quote reflects your home's size under the 50% cap and your finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Bluffdale typically lands at $95K&ndash;$180K for an internal or attached conversion, and $190K&ndash;$290K for a detached, ground-up build sized to whatever your home's 50% cap allows.</p>
+        </div>
+
+        <div class="content-block" id="bluffdale-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://www.bluffdale.gov/271/Land-Use-Ordinances" target="_blank" rel="noopener">Bluffdale City Code Ch. 11.340</a>: accessory dwelling unit standards</li>
+            <li><a href="https://www.bluffdale.gov/580/Contact-Us" target="_blank" rel="noopener">City of Bluffdale</a>: Bluffdale City Hall, 2222 W 14400 S, Bluffdale, UT 84065</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/bluffdalecityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: Bluffdale population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -1208,6 +1305,7 @@ CITY_HERO_H1 = {
     "lindon": "How Big Can Your ADU Be in Lindon, Utah?",
     "provo": "Can You Build an ADU in Provo, Utah?",
     "vineyard": "Can You Build an ADU in Vineyard, or Does Your HOA Say No?",
+    "bluffdale": "How Big of an ADU Can You Build in Bluffdale, Utah?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -1241,6 +1339,7 @@ CITY_CTA1 = {
     "lindon": ("Not sure what size ADU your Lindon home qualifies for?", "We'll run your home's size against Lindon's formula and tell you the real number."),
     "provo": ("Not sure how Provo's rules apply to your rental plans?", "We'll walk your property and confirm your zone before you commit to anything."),
     "vineyard": ("Not sure if your Vineyard HOA allows an ADU?", "We'll check the city's rule and help you navigate your HOA's design standards."),
+    "bluffdale": ("Not sure what size ADU your Bluffdale home qualifies for?", "We'll measure your home and confirm the 50% size cap before you spend a dollar on design."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -1260,6 +1359,7 @@ CITY_CTA2 = {
     "lindon": ("See ADU plans sized to Lindon's formula-based cap", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "provo": ("See ADU plans built around Provo's occupancy rules", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "vineyard": ("See ADU plans that work with Vineyard's HOA standards", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "bluffdale": ("See ADU plans sized to Bluffdale's 50% cap", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -1454,7 +1554,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
