@@ -437,7 +437,7 @@
     transition:box-shadow 0.5s ease, transform 0.5s ease;
   }
   .testimonial-card:hover{box-shadow:var(--shadow-card); transform:translateY(-6px);}
-  .quote-icon{width:28px; height:28px; stroke:var(--primary); margin-bottom:16px;}
+  .quote-icon{width:32px; height:32px; stroke:none; fill:hsla(36,60%,48%,0.25); margin-bottom:16px;}
   .stars{display:flex; gap:2px; margin-bottom:12px;}
   .stars svg{width:14px; height:14px; fill:var(--primary); stroke:var(--primary);}
   .testimonial-card p.quote{font-size:15px; color:var(--foreground); margin-bottom:20px;}
