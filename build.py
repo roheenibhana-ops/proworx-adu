@@ -3,7 +3,7 @@
 import os
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'data'))
-from cities import CITIES, TESTIMONIALS, FAQS
+from cities import CITIES, TESTIMONIALS, FAQS, LOCAL_FOCUS
 
 ROOT = os.path.dirname(__file__)
 
@@ -44,6 +44,7 @@ def header_nav(active_areas=False):
       <a href="/index.html#portfolio">Portfolio</a>
       <a href="/index.html#areas">Service Areas</a>
       <a href="/blog/index.html">Blog</a>
+      <a href="/adu-rules-2026.html">2026 ADU Law</a>
       <a href="/index.html#faq">FAQ</a>
     </nav>
     <div style="display:flex; align-items:center; gap:12px;">
@@ -59,6 +60,7 @@ def header_nav(active_areas=False):
     <a href="/index.html#portfolio">Portfolio</a>
     <a href="/index.html#areas">Service Areas</a>
     <a href="/blog/index.html">Blog</a>
+    <a href="/adu-rules-2026.html">2026 ADU Law</a>
     <a href="/index.html#faq">FAQ</a>
     <a href="tel:8018884282" class="btn btn-outline">(801) 888-4282</a>
     <a href="/index.html#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
@@ -79,6 +81,7 @@ FOOTER = """<footer>
         <a href="/index.html#process">Our Process</a>
         <a href="/index.html#portfolio">Portfolio</a>
         <a href="/blog/index.html">Blog</a>
+        <a href="/adu-rules-2026.html">2026 ADU Law Changes</a>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
@@ -196,6 +199,15 @@ def page_shell(title, description, body, canonical_path):
 """
 
 def build_city_page(name, slug, county, index):
+    local_context, local_sb284_note = LOCAL_FOCUS.get(
+        slug,
+        (
+            f"Every {name} lot is different, which is why we walk the "
+            f"property before quoting anything.",
+            "We'll confirm exactly how the October 1, 2026 SB284 changes "
+            "apply to your specific lot as part of your free estimate.",
+        ),
+    )
     n_t = len(TESTIMONIALS)
     rotated_testimonials = [TESTIMONIALS[(index + i) % n_t] for i in range(n_t)]
     hero_img = CITY_IMAGES[index % len(CITY_IMAGES)]
@@ -257,7 +269,7 @@ def build_city_page(name, slug, county, index):
     <div class="stat"><div class="num" data-count="1100" data-suffix="+">0</div><div class="label">Projects Completed</div></div>
     <div class="stat"><div class="num" data-count="15" data-suffix="+">0</div><div class="label">Years of Excellence</div></div>
     <div class="stat"><div class="num">5&#9733;</div><div class="label">Google Rating</div></div>
-    <div class="stat"><div class="num" data-count="19" data-suffix="">0</div><div class="label">Utah Cities Served</div></div>
+    <div class="stat"><div class="num" data-count="{len(CITIES)}" data-suffix="">0</div><div class="label">Utah Cities Served</div></div>
   </div>
 </div>
 
@@ -331,7 +343,14 @@ def build_city_page(name, slug, county, index):
       </div>
       <div class="seasonal-band">
         {HAMMER_SVG}
-        <p><strong>Built for Utah's climate.</strong> Freeze-thaw winters make proper foundation insulation and drainage critical for a comfortable, durable ADU year-round &mdash; every Pro-Worx build is engineered to code for our climate, not a generic template.</p>
+        <p><strong>What's different about ADUs in {name}.</strong> {local_context}</p>
+      </div>
+    </div>
+    <div class="permit-callout reveal" style="margin-top:24px;">
+      {CLIPBOARD_SVG}
+      <div>
+        <h3>Utah's New ADU Law (Effective October 1, 2026)</h3>
+        <p>Utah's SB284 now requires most cities to allow one detached ADU per qualifying lot statewide. {local_sb284_note} See the full breakdown on our <a href="/adu-rules-2026.html" class="link-arrow">2026 ADU law page &rarr;</a>.</p>
       </div>
     </div>
   </div>
@@ -565,6 +584,70 @@ def build_blog():
     print("Built blog index + 3 posts")
 
 
+def build_law_page():
+    body = """<div class="container">
+  <div class="breadcrumb">
+    <a href="/index.html">Home</a><span>/</span>
+    <span class="current">2026 ADU Law Changes</span>
+  </div>
+</div>
+
+<section style="padding-top:24px;">
+  <div class="container">
+    <div class="blog-post-body">
+      <p class="eyebrow">UTAH LAW &middot; SB284</p>
+      <h1 style="font-size:36px; margin-bottom:12px;">Utah's New Detached ADU Law: What Changes on October 1, 2026</h1>
+      <p class="post-meta">Pro-Worx ADU Team &middot; Utah ADU Guides</p>
+
+      <p>Starting <strong>October 1, 2026</strong>, a new state law &mdash; Senate Bill 284 (SB284) &mdash; changes how Utah cities are allowed to regulate detached backyard ADUs. If you were told "no" on a detached ADU by your city a few years ago, or you've just never checked, this is worth a fresh look.</p>
+
+      <h2>What was true before SB284</h2>
+      <p>Many Utah cities historically only permitted <em>internal</em> ADUs &mdash; a basement apartment or an addition attached to the existing home &mdash; while prohibiting standalone, detached backyard units outright, or requiring a discretionary conditional-use permit that made approval unpredictable.</p>
+
+      <h2>What SB284 requires, starting October 1, 2026</h2>
+      <p>Cities with a population of 5,000 or more must now allow at least one detached ADU on qualifying single-family lots. The core provisions reported so far include:</p>
+      <ul>
+        <li><strong>Lot size:</strong> Detached ADUs must be permitted on parcels of roughly 11,000 square feet or larger with an existing single-family home. Many cities also allow them on smaller lots, at their discretion.</li>
+        <li><strong>One ADU per lot:</strong> A property gets one ADU &mdash; either internal or detached, not both.</li>
+        <li><strong>No conditional-use permits:</strong> Cities can no longer require a discretionary conditional-use review just to build a qualifying detached ADU.</li>
+        <li><strong>Size caps limited:</strong> Cities cannot set arbitrary maximum sizes, though they may cap a detached ADU at the size of the primary home.</li>
+        <li><strong>Parking:</strong> Up to two on-site parking spaces can be required for detached ADUs of 650 square feet or larger.</li>
+        <li><strong>Local control remains on the details:</strong> Cities still set their own setbacks, height limits, and owner-occupancy requirements, and must meet standard building codes.</li>
+      </ul>
+
+      <h2>Cities are still finalizing their local ordinances</h2>
+      <p>SB284 sets the floor, not the final word &mdash; individual cities are amending their own zoning codes to comply by the October 1 deadline, and the details vary. A few examples from public reporting:</p>
+      <ul>
+        <li><strong>Lehi</strong> already allowed detached ADUs on lots of 14,520+ sq ft with a 1,300 sq ft size cap, and has added a 6-foot setback from the primary home plus an owner-occupancy requirement to align with SB284 &mdash; city staff estimate this could make roughly 20% more properties newly eligible.</li>
+        <li><strong>Orem</strong>, which previously prohibited detached ADUs entirely, is proposing rules that restrict them from front yards and prohibit short-term rental use.</li>
+        <li><strong>Provo</strong> has proposed capping all accessory structures at 40% of total parcel area and has published maps showing which neighborhoods gain new eligibility.</li>
+      </ul>
+      <p>Because every city's final ordinance can differ on setbacks, height, and owner-occupancy rules, the only way to know exactly what your property qualifies for is to check with your specific city's building department &mdash; which is exactly what we do for you as part of every free estimate.</p>
+
+      <h2>What this means if you were told no before</h2>
+      <p>If a detached backyard ADU wasn't an option on your lot in the past, SB284 is a real reason to check again. Between the new statewide floor and each city's updated local ordinance, a meaningful number of Utah properties are newly eligible for a detached unit as of October 1, 2026.</p>
+
+      <p>Not sure where your property stands? <a href="/index.html#contact" class="link-arrow">Get a free ADU estimate &rarr;</a> and we'll walk you through exactly what's possible under your city's updated rules.</p>
+
+      <p style="font-size:13px; color:var(--muted-foreground); margin-top:32px;">This page summarizes public reporting on SB284 as of September 2026 for general information &mdash; it isn't legal advice, and every city's final ordinance may differ in its specifics. Confirm current requirements with your city's building department or with us before making decisions based on this page.</p>
+    </div>
+  </div>
+</section>
+
+""" + contact_section()
+
+    html = page_shell(
+        "Utah's New ADU Law: SB284 Explained (Effective October 1, 2026) | Pro-Worx ADU",
+        "What Utah's SB284 detached-ADU law changes on October 1, 2026 — lot size rules, parking, permitting, and how it affects Utah homeowners.",
+        body,
+        "/adu-rules-2026.html",
+    )
+    with open(os.path.join(ROOT, 'adu-rules-2026.html'), 'w') as f:
+        f.write(html)
+    print("Built adu-rules-2026.html")
+
+
 if __name__ == '__main__':
     build_locations()
     build_blog()
+    build_law_page()
