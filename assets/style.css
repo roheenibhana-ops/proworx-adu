@@ -466,6 +466,21 @@
   .city-chip:hover{box-shadow:var(--shadow-card); transform:translateY(-3px);}
   .city-chip svg{width:16px; height:16px; stroke:var(--primary); flex-shrink:0;}
 
+  /* County-grouped area list */
+  .areas-by-county{display:grid; gap:40px;}
+  .county-name{
+    font-family:'Playfair Display', serif;
+    font-size:19px;
+    font-weight:700;
+    color:var(--foreground);
+    margin-bottom:16px;
+    padding-bottom:10px;
+    border-bottom:1px solid var(--border);
+  }
+  .city-chip-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:12px;}
+  @media (min-width:640px){ .city-chip-grid{grid-template-columns:repeat(3,1fr);} }
+  @media (min-width:960px){ .city-chip-grid{grid-template-columns:repeat(4,1fr);} }
+
   /* Hero trust strip */
   .hero-trust{
     display:flex; flex-wrap:wrap; gap:24px;
