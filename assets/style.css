@@ -735,3 +735,9 @@
 
 /* Anchor offset so fixed header doesn't cover jump-nav targets */
 .content-block[id]{scroll-margin-top:104px;}
+
+.inline-cta{display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; background:var(--secondary); border-radius:var(--radius); padding:28px 32px;}
+.inline-cta h3{font-size:19px; margin-bottom:4px;}
+.inline-cta p{margin:0; font-size:14px; color:var(--muted-foreground); max-width:460px;}
+.inline-cta .btn{white-space:nowrap;}
+@media (max-width:640px){ .inline-cta{padding:22px; text-align:center; justify-content:center;} .inline-cta p{max-width:none;} }

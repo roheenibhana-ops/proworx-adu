@@ -1101,6 +1101,40 @@ def faq_jsonld(qa_pairs):
     return json.dumps(data)
 
 
+# Custom, hook-specific H1s for the bespoke cities, tied to what actually
+# makes each city's ADU rules distinct (rather than one template with the
+# name swapped in). Generic-template cities rotate through HERO_H1_TEMPLATES
+# instead, so even those don't all read identically.
+CITY_HERO_H1 = {
+    "alpine": "Alpine ADUs: Big Lots, Bigger Questions About Grading and Zoning",
+    "lehi": "Building an ADU in Lehi? Here's What Actually Changes Under SB284",
+    "mapleton": "In Mapleton, Your ADU Size Depends on Your Lot &mdash; Not a Flat Rule",
+    "spanish-fork": "Spanish Fork's ADU Cap Is Flat. The Zoning Map Isn't.",
+    "highland": "Highland ADUs Are Attached, Owner-Occupied, and Built to Hide in Plain Sight",
+    "lindon": "Lindon Sizes Your ADU By Formula, Not a Flat Number",
+    "provo": "Provo's ADU Rules Favor Owner-Occupants Over Rentals &mdash; Here's the Code",
+}
+
+HERO_H1_TEMPLATES = [
+    "Ready to Add an ADU in {name}?",
+    "Thinking About an Accessory Dwelling Unit in {name}?",
+    "Your {name} Backyard Could Be Worth a Second Home",
+    "Build an ADU in {name} Without the Guesswork",
+    "{name} Homeowners: Here's What an ADU Actually Takes",
+    "Considering an ADU on Your {name} Property?",
+    "Turn Unused Space Into an ADU in {name}",
+    "Planning an ADU in {name}, {county} County?",
+]
+
+
+def hero_h1_for(name, slug, county, index):
+    custom = CITY_HERO_H1.get(slug)
+    if custom:
+        return custom
+    template = HERO_H1_TEMPLATES[index % len(HERO_H1_TEMPLATES)]
+    return template.format(name=name, county=county)
+
+
 def build_city_page(name, slug, county, index):
     local_context, local_sb284_note = LOCAL_FOCUS.get(
         slug,
@@ -1160,7 +1194,7 @@ def build_city_page(name, slug, county, index):
   <div class="page-hero-bg"></div>
   <div class="container">
     <p class="eyebrow fade-up d1">{county.upper()} COUNTY &middot; UTAH ADU SPECIALISTS</p>
-    <h1 class="fade-up d2">Thinking About Building an ADU in {name}?</h1>
+    <h1 class="fade-up d2">{hero_h1_for(name, slug, county, index)}</h1>
     <p class="lede fade-up d3">Pro-Worx Construction designs, permits and builds custom Accessory Dwelling Units for {name} homeowners. Fixed pricing, licensed &amp; insured, 3&ndash;5 week builds on garage and basement conversions.</p>
     <div class="hero-ctas fade-up d4" style="margin-top:32px;">
       <a href="#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
@@ -1261,7 +1295,36 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
+<!-- MID-PAGE CTA 1 -->
+<section class="bg-secondary" style="padding-top:48px; padding-bottom:48px;">
+  <div class="container">
+    <div class="inline-cta reveal">
+      <div>
+        <h3>Not sure what your {name} lot actually allows?</h3>
+        <p>We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation.</p>
+      </div>
+      <a href="#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
+    </div>
+  </div>
+</section>
+
 {deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+<!-- MID-PAGE CTA 2 -->
+<section style="padding-top:8px; padding-bottom:8px;">
+  <div class="container">
+    <div class="inline-cta reveal" style="background:var(--card); border:1px solid var(--border);">
+      <div>
+        <h3>See ADU plans and pricing for {name}</h3>
+        <p>Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now.</p>
+      </div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="/index.html#plans" class="btn btn-light">SEE PLANS &amp; PRICING</a>
+        <a href="#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="bg-secondary">
   <div class="container">
     <div class="section-head reveal">
