@@ -1534,6 +1534,105 @@ def deep_content_sandy():
 """
 
 
+def deep_content_west_jordan():
+    """Bespoke, research-backed deep-content section for West Jordan. Real
+    Ordinance 21-18, real 10,000 sq ft detached threshold tied to specific
+    zones (PC/LSFR/VLSFR), real rental-license-not-owner-occupancy rule,
+    Redfin/Homes.com-verified neighborhoods. Built by hand rather than
+    the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: WEST JORDAN (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE WEST JORDAN DETAILS</p>
+      <h2>West Jordan's Detached-ADU Rule Only Applies in Certain Zones</h2>
+      <p class="lede">West Jordan already allowed detached ADUs years before SB284, but only on larger lots in specific zones. An internal ADU has a much lower bar &mdash; and West Jordan cares less about who lives where than most cities, and more about whether you've got a rental license.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in West Jordan, Utah near the Jordan River">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">116,812</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">1941</div><div class="spec-label">Incorporated (settled 1848)</div></div>
+      <div class="spec-card"><div class="spec-value">10,000 sq ft</div><div class="spec-label">Minimum lot size for a detached ADU</div></div>
+      <div class="spec-card"><div class="spec-value">Jordan School District</div><div class="spec-label">Serves most of the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#westjordan-neighborhoods">Neighborhoods</a>
+        <a href="#westjordan-zoning">Zoning &amp; Permits</a>
+        <a href="#westjordan-rental">Rental License, Not Occupancy</a>
+        <a href="#westjordan-cost">Cost</a>
+        <a href="#westjordan-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="westjordan-neighborhoods">
+          <h3>{PIN_SVG} From Jordan Landing's Growth Corridor to Older River-Adjacent Lots</h3>
+          <p>One of Utah's largest cities by population, West Jordan grew from 1848 farmland along the Jordan River into a major Salt Lake County hub anchored by Jordan Landing, a large mixed-use retail development, and a UTA TRAX line with six stops in the city. Its residential character spans real, distinct areas:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Jordan Hills</h4><p>A defined residential neighborhood in West Jordan.</p></div>
+            <div class="neighborhood-card"><h4>Copper Hills</h4><p>A named area toward the Oquirrh Mountains side of the city, newer growth territory.</p></div>
+            <div class="neighborhood-card"><h4>Jordan Oaks &amp; Cobble Creek</h4><p>Additional mapped residential areas reflecting West Jordan's mix of older and newer construction.</p></div>
+          </div>
+          <p style="margin-top:8px;">Because West Jordan genuinely mixes century-old agricultural-heritage lots with newer, tighter subdivisions toward the Oquirrh foothills, the zone your specific lot sits in matters more here than in a more uniform city.</p>
+        </div>
+
+        <div class="content-block" id="westjordan-zoning">
+          <h3>{CLIPBOARD_SVG} Internal vs. Detached: Two Very Different Bars to Clear</h3>
+          <p>West Jordan's ADU ordinance (adopted under Ordinance No. 21-18, years ahead of SB284) treats internal and detached units very differently:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>West Jordan Standard</th></tr>
+              <tr><td>Internal ADU</td><td>Allowed in all R-1 zones, no stated minimum lot size</td></tr>
+              <tr><td>Detached ADU</td><td>Only on lots 10,000 sq ft or larger, and only in PC, LSFR, and VLSFR zones</td></tr>
+              <tr><td>Detached ADU size</td><td>Smaller than the main house, capped at 20% of combined rear and side yard area</td></tr>
+              <tr><td>Setbacks (detached)</td><td>6 ft from the primary dwelling, 15 ft rear, 8 ft interior side, 20 ft corner side</td></tr>
+              <tr><td>Parking</td><td>1 additional paved, non-tandem space, 9&prime;&times;18&prime; minimum</td></tr>
+            </table>
+          </div>
+          <p>A detached ADU also isn't allowed on a lot with a failing septic system, and it can't be paired with multi-family, mobile-home or attached/townhome-style housing. Because the detached path only works in specific zones, we confirm your exact zone designation with West Jordan's Community Development Department before we tell you what's possible.</p>
+        </div>
+
+        <div class="content-block" id="westjordan-rental">
+          <h3>{HAMMER_SVG} West Jordan Cares About a Rental License, Not Who Lives Where</h3>
+          <p>Unlike most Utah cities we build in, West Jordan's ordinance doesn't hinge on an owner-occupancy requirement. Instead, the trigger is simpler: if either the main house or the ADU is rented out, you need a valid business license for that rental. That's a meaningfully different compliance path than a city like Provo or Highland, where owner-occupancy of the main home is the rule itself.</p>
+        </div>
+
+        <div class="content-block" id="westjordan-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in West Jordan?</h3>
+          <p>Because West Jordan's detached-ADU path is zone-restricted while internal conversions are allowed almost everywhere, most projects here split cleanly into one of two very different budgets. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your West Jordan quote reflects which zone and unit type fits your property, and your finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in West Jordan typically lands at $90K&ndash;$170K for an internal conversion, and $190K&ndash;$290K for a detached, ground-up build on a qualifying lot and zone.</p>
+        </div>
+
+        <div class="content-block" id="westjordan-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://www.westjordanutah.gov/" target="_blank" rel="noopener">West Jordan Ordinance No. 21-18</a>: accessory dwelling unit standards</li>
+            <li><a href="https://www.westjordanutah.gov/" target="_blank" rel="noopener">City of West Jordan</a>: City Hall, 8000 South Redwood Road, West Jordan, UT 84088</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/westjordancityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: West Jordan population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -1605,6 +1704,7 @@ CITY_HERO_H1 = {
     "draper": "Can You Build an ADU on a Hillside Lot in Draper, Utah?",
     "riverton": "How Big Can Your ADU Be in Riverton, Utah?",
     "sandy": "Can You Build a Detached ADU in Sandy, Utah?",
+    "west-jordan": "Can You Build a Detached ADU in West Jordan, Utah?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -1642,6 +1742,7 @@ CITY_CTA1 = {
     "draper": ("Not sure what your Draper lot's terrain adds to the budget?", "We'll walk your property, check the slope, and give you a real number before you commit to anything."),
     "riverton": ("Not sure what size ADU your Riverton lot qualifies for?", "We'll run your home's footprint and lot area through the city's formula and tell you the real number."),
     "sandy": ("Not sure if your Sandy home needs an attached or detached ADU path?", "We'll confirm which rule applies to your property before you spend a dollar on design."),
+    "west-jordan": ("Not sure if your West Jordan lot is in a detached-ADU zone?", "We'll confirm your zone and lot size before you spend a dollar on design."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -1665,6 +1766,7 @@ CITY_CTA2 = {
     "draper": ("See ADU plans built for Draper's hillside and flat lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "riverton": ("See ADU plans sized to Riverton's lot-based formula", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "sandy": ("See ADU plans for Sandy's attached and detached paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "west-jordan": ("See ADU plans for West Jordan's internal and detached paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -1859,7 +1961,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
