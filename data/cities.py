@@ -111,7 +111,7 @@ LOCAL_FOCUS = {
     "cottonwood-heights": (
         "Cottonwood Heights sits right up against the canyons, so snow "
         "load, slope grading and drainage engineering matter more here than "
-        "in flatter valley cities. And HOA aesthetic standards run higher "
+        "in flatter valley cities, and HOA aesthetic standards run higher "
         "than average.",
         "Foothill lots here can be larger than they look on a plat map, "
         "but canyon-adjacent parcels sometimes carry additional geotechnical "
@@ -248,7 +248,7 @@ DEEP_HEADLINES = {
     ),
     "highland": (
         "Why HOA Design Review Matters as Much as City Permits in Highland",
-        "Highland's newer master-planned subdivisions often have HOA architectural standards that predate SB284. And they don't disappear just because the city says yes."
+        "Highland's newer master-planned subdivisions often have HOA architectural standards that predate SB284, and they don't disappear just because the city says yes."
     ),
     "lehi": (
         "Lehi Already Allowed Detached ADUs. Here's What Changed on October 1, 2026",
@@ -284,7 +284,7 @@ DEEP_HEADLINES = {
     ),
     "draper": (
         "Why Draper's Hillside Neighborhoods Change the ADU Math",
-        "Suncrest and Corner Canyon's steep-slope lots mean more grading and drainage engineering than a flat-lot build elsewhere in the valley. And HOA review runs on top of city permitting."
+        "Suncrest and Corner Canyon's steep-slope lots mean more grading and drainage engineering than a flat-lot build elsewhere in the valley, and HOA review runs on top of city permitting."
     ),
     "herriman": (
         "Herriman's New-Build Subdivisions Are a Strong Match for SB284",

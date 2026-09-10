@@ -235,7 +235,7 @@ def deep_content_section(name, slug, county):
     if neighborhoods:
         tags = "".join(f'<span class="neighborhood-tag">{n}</span>' for n in neighborhoods)
         neighborhood_intro = f"""    <div class="content-block">
-      <p>We've worked on ADU projects across {name}, including {', '.join(neighborhoods[:-1])} and {neighborhoods[-1]}. And lot conditions, HOA layers and permit timelines can differ block to block, not just neighborhood to neighborhood.</p>
+      <p>We've worked on ADU projects across {name}, including {', '.join(neighborhoods[:-1])} and {neighborhoods[-1]}, and lot conditions, HOA layers and permit timelines can differ block to block, not just neighborhood to neighborhood.</p>
       <div class="neighborhood-tags">{tags}</div>
     </div>
 """
@@ -244,7 +244,7 @@ def deep_content_section(name, slug, county):
     if slug in HILLSIDE_TERRAIN:
         geotechnical = f"""    <div class="content-block">
       <h3>Why {name} Lots Sometimes Need Engineering a Flat-Lot ADU Quote Won't Include</h3>
-      <p>{name}'s hillside and bench terrain means some lots need a soils or geotechnical review before a detached ADU's foundation gets designed. A step flatter Utah cities often skip entirely. If a contractor is pricing your {name} ADU the same way they'd price one a few miles away on flat ground, that's usually where the budget goes sideways once excavation starts.</p>
+      <p>{name}'s hillside and bench terrain means some lots need a soils or geotechnical review before a detached ADU's foundation gets designed, a step flatter Utah cities often skip entirely. If a contractor is pricing your {name} ADU the same way they'd price one a few miles away on flat ground, that's usually where the budget goes sideways once excavation starts.</p>
       <div class="table-wrap">
         <table class="data-table">
           <tr><th>Item</th><th>Typical Range</th></tr>
@@ -253,7 +253,7 @@ def deep_content_section(name, slug, county):
           <tr><td>Licensed engineer labor</td><td>$100&ndash;$250 per hour</td></tr>
         </table>
       </div>
-      <p class="source-note">Source: <a href="https://www.homeadvisor.com/cost/architects-and-engineers/geotechnical-report" target="_blank" rel="noopener">HomeAdvisor geotechnical report cost data</a>, national averages. Not confirmed against {name}-specific pricing. We'll tell you during your free estimate whether your lot needs this step at all.</p>
+      <p class="source-note">Source: <a href="https://www.homeadvisor.com/cost/architects-and-engineers/geotechnical-report" target="_blank" rel="noopener">HomeAdvisor geotechnical report cost data</a>, national averages, not confirmed against {name}-specific pricing. We'll tell you during your free estimate whether your lot needs this step at all.</p>
     </div>
 """
 
