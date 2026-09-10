@@ -850,6 +850,90 @@ def deep_content_highland():
 """
 
 
+def deep_content_lindon():
+    """Bespoke, research-backed deep-content section for Lindon. Real
+    ordinance citation (Sec. 17.46.100), real detached-size formula, real
+    setback offset rule, real parking counts. Built by hand rather than
+    the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: LINDON (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE LINDON DETAILS</p>
+      <h2>Lindon's ADU Size Cap Isn't a Flat Number &mdash; It's a Formula</h2>
+      <p class="lede">Lindon doesn't just give you a square-footage ceiling for a detached ADU. The city caps it against a percentage of your existing home, which means the same detached ADU can be a different allowed size on two lots right next to each other.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1800&auto=format&fit=crop" alt="Single-family neighborhood street in Lindon, Utah">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">12,015</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">1924</div><div class="spec-label">Incorporated (settled 1861)</div></div>
+      <div class="spec-card"><div class="spec-value">6,000 sq ft</div><div class="spec-label">Minimum lot size for an ADU</div></div>
+      <div class="spec-card"><div class="spec-value">Alpine School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#lindon-zoning">Zoning &amp; Permits</a>
+        <a href="#lindon-setbacks">Setbacks &amp; Parking</a>
+        <a href="#lindon-cost">Cost</a>
+        <a href="#lindon-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="lindon-zoning">
+          <h3>{CLIPBOARD_SVG} How Lindon Actually Sizes a Detached ADU</h3>
+          <p>Lindon City's accessory apartment ordinance (Municipal Code &sect;17.46.100, adopted under Ordinance 2026-12) sets a min lot size of 6,000 sq ft, and it isn't allowed on lots below that or in areas marked on the city's own Accessory Apartment Map. Beyond that, the size math is formula-based rather than one flat number for everyone:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Unit Type</th><th>Max Size</th></tr>
+              <tr><td>Internal accessory apartment</td><td>No stated size cap</td></tr>
+              <tr><td>Detached ADU</td><td>Lesser of 1,500 sq ft or 40% of the primary home's size</td></tr>
+              <tr><td>Substantially attached ADU</td><td>Lesser of 1,200 sq ft or 60% of the primary home's livable area</td></tr>
+            </table>
+          </div>
+          <p>That "lesser of" language matters: on a smaller Lindon home, the 40% or 60% figure can cap your ADU well below the flat maximum, while a larger home unlocks closer to the full 1,500 or 1,200 sq ft. Owner-occupancy is required &mdash; the ordinance defines an eligible owner as holding at least 50% recorded deed ownership and living in the home as a primary residence. We run your specific home's size against this formula before we ever talk floor plans.</p>
+        </div>
+
+        <div class="content-block" id="lindon-setbacks">
+          <h3>{HAMMER_SVG} Lindon's Setback Rule Pushes a Detached ADU Behind the House</h3>
+          <p>A detached ADU in Lindon has to meet the underlying zone's setback and then sit at least 10 feet further back than your home's front-facing wall &mdash; and the same 10-foot offset applies to the street-facing side yard on a corner lot. On a deep lot (over 250 feet), the city allows an exception: a detached unit can sit in the front yard if it's at least 60 feet from the primary home. Parking is also spelled out precisely: an internal apartment needs 3 total stalls on the property (2 for the house, 1 for the apartment, none in the front setback), while a detached or attached ADU needs 4 total stalls, with at most one allowed in the front setback.</p>
+        </div>
+
+        <div class="content-block" id="lindon-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Lindon?</h3>
+          <p>Because Lindon's detached-ADU cap scales with your existing home's size rather than a flat number, the final allowed square footage &mdash; and the budget that goes with it &mdash; can only be pinned down once we've measured your house. Here's what <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> shows nationally for comparable home-investment projects:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Lindon quote reflects your home's size under the 40%/60% formula and your finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Lindon typically lands at $95K&ndash;$180K for an internal or attached conversion, and $180K&ndash;$280K for a detached, ground-up build sized to whatever your home's formula allows.</p>
+        </div>
+
+        <div class="content-block" id="lindon-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://lindon.municipal.codes/" target="_blank" rel="noopener">Lindon Municipal Code &sect;17.46.100</a>: accessory apartment standards</li>
+            <li><a href="https://www.lindon.gov/" target="_blank" rel="noopener">City of Lindon</a>: Lindon City Center, 100 North State Street, Lindon, UT 84042</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/lindoncityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: Lindon city population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -1064,7 +1148,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <section class="bg-secondary">
   <div class="container">
     <div class="section-head reveal">
