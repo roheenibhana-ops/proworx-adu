@@ -1838,6 +1838,109 @@ def deep_content_herriman():
 """
 
 
+def deep_content_salt_lake_city():
+    """Bespoke, research-backed deep-content section for Salt Lake City.
+    Real Sec. 21A.40.200, real 1,000 sq ft detached cap with no size limit
+    on internal units, real historic-district design review overlap, real
+    neighborhood-by-neighborhood lot character. Built by hand rather than
+    the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: SALT LAKE CITY (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE SALT LAKE CITY DETAILS</p>
+      <h2>In Salt Lake City, Your Neighborhood Decides More Than the Zoning Code Does</h2>
+      <p class="lede">SLC's ADU ordinance is mature and citywide, with no minimum lot size at all. But whether that means an easy internal conversion or a Historic Landmark Commission review depends entirely on which neighborhood your home sits in.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566752229-250ed79470f8?q=80&w=1800&auto=format&fit=crop" alt="Historic bungalow homes in a Salt Lake City neighborhood">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">218,428</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">1847</div><div class="spec-label">Founded (Utah's capital &amp; largest city)</div></div>
+      <div class="spec-card"><div class="spec-value">No minimum</div><div class="spec-label">Lot size required for an ADU</div></div>
+      <div class="spec-card"><div class="spec-value">Salt Lake City School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#slc-neighborhoods">Neighborhoods</a>
+        <a href="#slc-zoning">Zoning &amp; Permits</a>
+        <a href="#slc-historic">Historic Districts</a>
+        <a href="#slc-cost">Cost</a>
+        <a href="#slc-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="slc-neighborhoods">
+          <h3>{PIN_SVG} From the Avenues' Tight Historic Grid to Rose Park's Post-War Lots</h3>
+          <p>As Utah's capital and largest city, Salt Lake City covers more architectural and lot-size variety than any other city we build in:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>The Avenues</h4><p>Platted in the 1850s&ndash;1890s, a dense grid of small lots with mostly pre-1930 housing and its own local Historic Preservation Overlay District.</p></div>
+            <div class="neighborhood-card"><h4>Capitol Hill</h4><p>A separate, distinct local Historic Preservation Overlay District, also listed on the National Register.</p></div>
+            <div class="neighborhood-card"><h4>Yalecrest</h4><p>An east-bench National Historic District known for larger lots and architect-designed 1920s&ndash;40s homes.</p></div>
+            <div class="neighborhood-card"><h4>Sugar House</h4><p>A commercial core surrounded by residential blocks of mixed vintage, from older bungalows to newer infill.</p></div>
+            <div class="neighborhood-card"><h4>Rose Park &amp; Poplar Grove</h4><p>West-side neighborhoods with newer, post-WWII, more uniform suburban-style lots &mdash; generally more affordable and less design-restricted than the east-side historic districts.</p></div>
+          </div>
+          <p style="margin-top:8px;">The practical difference is real: an ADU in Rose Park and an ADU in the Avenues can involve completely different review processes even though they're in the same city.</p>
+        </div>
+
+        <div class="content-block" id="slc-zoning">
+          <h3>{CLIPBOARD_SVG} SLC's ADU Code Has No Minimum Lot Size</h3>
+          <p>Salt Lake City Code &sect;21A.40.200 governs ADUs citywide, and it's more permissive on lot size than almost any other city we build in:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Salt Lake City Standard</th></tr>
+              <tr><td>Minimum lot size</td><td>None required</td></tr>
+              <tr><td>Max detached ADU size</td><td>1,000 sq ft gross floor area</td></tr>
+              <tr><td>Max internal ADU size</td><td>No specific cap &mdash; just standard zone requirements</td></tr>
+              <tr><td>Setbacks (detached)</td><td>3 ft rear, 3 ft side, corner-side 20% of lot width or 10 ft, whichever is less</td></tr>
+              <tr><td>Parking</td><td>1 space, waived near transit, bike infrastructure, or with existing surplus parking</td></tr>
+            </table>
+          </div>
+          <p>Owner-occupancy is required (deed holder, a blood or marriage relative, or a trust's trustor), with exceptions for duplex/multi-family lots, temporary absences up to 3 years, or medical care placement. A restrictive covenant gets recorded with the county, and renting the ADU requires enrolling in the city's landlord-tenant program. Because SLC's rule predates SB284 and is already citywide, we confirm the current standard and any recent updates with SLC Planning before pricing your project.</p>
+        </div>
+
+        <div class="content-block" id="slc-historic">
+          <h3>{HAMMER_SVG} A Historic District Overlay Changes the Process, Not Just the Style</h3>
+          <p>If your home sits in the Avenues or Capitol Hill's local Historic Preservation Overlay District, an ADU project isn't just a building-permit conversation &mdash; it typically means design review through the city's Historic Landmark Commission, on top of the standard zoning process. Yalecrest carries National Register status, which is a different (and generally lighter) form of recognition than a local overlay. We confirm which category your specific address falls under before we scope any design work, since it changes both the timeline and what exterior changes are realistic.</p>
+        </div>
+
+        <div class="content-block" id="slc-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Salt Lake City?</h3>
+          <p>Because SLC's smaller historic lots often favor an internal conversion over a detached build, and historic-district design review can add both time and cost, project scope here varies more by neighborhood than by a single citywide number. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your SLC quote reflects your neighborhood, historic-district status and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Salt Lake City typically lands at $90K&ndash;$180K for an internal conversion, and $190K&ndash;$280K for a detached, ground-up build within the city's 1,000-sq-ft cap, with historic-district design review priced separately when it applies.</p>
+        </div>
+
+        <div class="content-block" id="slc-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://codelibrary.amlegal.com/codes/saltlakecityut/latest/saltlakecity_ut/0-0-0-68737" target="_blank" rel="noopener">Salt Lake City Code &sect;21A.40.200</a>: accessory dwelling unit standards</li>
+            <li><a href="https://www.slcdocs.com/Planning/Guides/ADU_handbook.pdf" target="_blank" rel="noopener">SLC Planning Division</a>: ADU Handbook</li>
+            <li><a href="https://www.slc.gov/historic-preservation/historic-districts-and-buildings/local-historic-districts/the-avenues/" target="_blank" rel="noopener">SLC Historic Preservation</a>: the Avenues local Historic District</li>
+            <li><a href="https://www.slc.gov/historic-preservation/historic-districts-and-buildings/national-historic-districts/capitol-hill/" target="_blank" rel="noopener">SLC Historic Preservation</a>: Capitol Hill Historic District</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/saltlakecitycityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: Salt Lake City population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -1912,6 +2015,7 @@ CITY_HERO_H1 = {
     "west-jordan": "Can You Build a Detached ADU in West Jordan, Utah?",
     "cottonwood-heights": "Do You Need a Permit for an ADU in Cottonwood Heights?",
     "herriman": "Can You Build an ADU in Herriman, or Does Your HOA Say No?",
+    "salt-lake-city": "Can You Build an ADU in Salt Lake City?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -1952,6 +2056,7 @@ CITY_CTA1 = {
     "west-jordan": ("Not sure if your West Jordan lot is in a detached-ADU zone?", "We'll confirm your zone and lot size before you spend a dollar on design."),
     "cottonwood-heights": ("Not sure if you need a conditional-use permit in Cottonwood Heights?", "We'll confirm which permit path applies to your project before you spend a dollar on design."),
     "herriman": ("Not sure how Herriman's changing ADU rule affects your lot?", "We'll confirm the current standard and your HOA's requirements before you spend a dollar on design."),
+    "salt-lake-city": ("Not sure if your SLC home is in a historic district?", "We'll confirm your neighborhood's review requirements before you spend a dollar on design."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -1978,6 +2083,7 @@ CITY_CTA2 = {
     "west-jordan": ("See ADU plans for West Jordan's internal and detached paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "cottonwood-heights": ("See ADU plans for Cottonwood Heights' licensed and permitted paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "herriman": ("See ADU plans that work with Herriman's HOA standards", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "salt-lake-city": ("See ADU plans built for SLC's historic and newer lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -2172,7 +2278,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_herriman() if slug == 'herriman' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_herriman() if slug == 'herriman' else deep_content_salt_lake_city() if slug == 'salt-lake-city' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
