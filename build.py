@@ -52,17 +52,16 @@ def header_nav(active_areas=False):
     <nav class="desktop-nav">
       <a href="/index.html#what-is-adu">What's an ADU?</a>
       <a href="/index.html#plans">Plans &amp; Pricing</a>
+      <a href="/index.html#portfolio">Portfolio</a>
+      <a href="/index.html#areas">Service Areas</a>
       <div class="nav-dropdown">
         <button class="nav-dropdown-trigger" type="button" aria-haspopup="true">Resources {CHEVRON_SVG}</button>
         <div class="nav-dropdown-menu">
-          <a href="/index.html#process">Our Process</a>
-          <a href="/index.html#portfolio">Portfolio</a>
-          <a href="/index.html#areas">Service Areas</a>
           <a href="/blog/index.html">Blog</a>
           <a href="/adu-rules-2026.html">2026 ADU Law</a>
+          <a href="/index.html#faq">FAQ</a>
         </div>
       </div>
-      <a href="/index.html#faq">FAQ</a>
     </nav>
     <div style="display:flex; align-items:center; gap:12px;">
       <a href="tel:8018884282" class="nav-cta btn btn-outline">(801) 888-4282</a>
@@ -73,7 +72,6 @@ def header_nav(active_areas=False):
   <div class="mobile-menu" id="mobileMenu">
     <a href="/index.html#what-is-adu">What's an ADU?</a>
     <a href="/index.html#plans">Plans &amp; Pricing</a>
-    <a href="/index.html#process">Our Process</a>
     <a href="/index.html#portfolio">Portfolio</a>
     <a href="/index.html#areas">Service Areas</a>
     <a href="/blog/index.html">Blog</a>
@@ -95,14 +93,13 @@ FOOTER = """<footer>
         <h4>Explore</h4>
         <a href="/index.html#what-is-adu">What's an ADU?</a>
         <a href="/index.html#plans">Plans &amp; Pricing</a>
-        <a href="/index.html#process">Our Process</a>
         <a href="/index.html#portfolio">Portfolio</a>
-        <a href="/blog/index.html">Blog</a>
-        <a href="/adu-rules-2026.html">2026 ADU Law Changes</a>
+        <a href="/index.html#areas">Service Areas</a>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
-        <a href="/index.html#areas">Service Areas</a>
+        <h4>Resources</h4>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/adu-rules-2026.html">2026 ADU Law Changes</a>
         <a href="/index.html#faq">FAQ</a>
         <a href="/index.html#contact">Get an Estimate</a>
       </div>
