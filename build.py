@@ -354,7 +354,7 @@ def deep_content_alpine():
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">THE ALPINE DETAILS</p>
-      <h2>Why Does an ADU in Alpine Mean Dealing With Grading, Zoning and HOA Review?</h2>
+      <h2>Can You Build an ADU in Alpine, and What Does Grading or HOA Review Add to It?</h2>
       <p class="lede">Alpine's large, sloped lots and conditional-use zoning make an ADU here a different conversation than it is a few miles away in flatter Utah County cities like Lehi or Lindon.</p>
     </div>
 
@@ -393,7 +393,7 @@ def deep_content_alpine():
         </div>
 
         <div class="content-block" id="alpine-zoning">
-          <h3>{CLIPBOARD_SVG} What Alpine's Zoning Code Actually Says About ADUs</h3>
+          <h3>{CLIPBOARD_SVG} What Does Alpine's Zoning Code Actually Say About ADUs?</h3>
           <p>Alpine City's Development Code lists accessory dwelling units as a <strong>conditional use</strong>, not an automatic right, in three residential zones, each with its own minimum lot size:</p>
           <div class="spec-cards">
             <div class="spec-card"><div class="spec-value">10,000 sq ft</div><div class="spec-label">TR-10,000 Zone</div></div>
@@ -469,7 +469,7 @@ def deep_content_lehi():
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">THE LEHI DETAILS</p>
-      <h2>Lehi Already Allowed Detached ADUs. Here's What SB284 Actually Changes</h2>
+      <h2>Did Lehi Already Allow Detached ADUs Before SB284?</h2>
       <p class="lede">Unlike cities writing an ADU ordinance from scratch for October 1, 2026, Lehi has allowed detached ADUs for years. The city just updated its existing rule, and city staff estimate roughly 20% more Lehi properties are now newly eligible.</p>
     </div>
 
@@ -507,7 +507,7 @@ def deep_content_lehi():
         </div>
 
         <div class="content-block" id="lehi-zoning">
-          <h3>{CLIPBOARD_SVG} What Changed in Lehi's ADU Ordinance</h3>
+          <h3>{CLIPBOARD_SVG} What Changed in Lehi's ADU Ordinance?</h3>
           <p>Lehi's council approved a Development Code Amendment on <strong>July 14, 2026</strong> to bring its long-standing detached-ADU rule in line with SB284. Here's the before and after:</p>
           <div class="table-wrap">
             <table class="data-table">
@@ -572,7 +572,7 @@ def deep_content_mapleton():
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">THE MAPLETON DETAILS</p>
-      <h2>In Mapleton, the ADU Question Isn't Lot Size. It's Water and Grading</h2>
+      <h2>Can You Build an ADU in Mapleton, or Does Well and Septic Capacity Stop You First?</h2>
       <p class="lede">Mapleton's lots run large by Utah County standards, so almost every property clears the minimum size for an ADU. The real qualifying questions here are about well capacity, septic systems and foothill drainage.</p>
     </div>
 
@@ -607,7 +607,7 @@ def deep_content_mapleton():
         </div>
 
         <div class="content-block" id="mapleton-zoning">
-          <h3>{CLIPBOARD_SVG} Mapleton's ADU Rule Scales the Size Cap to Your Lot</h3>
+          <h3>{CLIPBOARD_SVG} How Big Can a Detached ADU Be on Your Mapleton Lot?</h3>
           <p>Mapleton's ordinance (Municipal Code &sect;18.84.410, last amended June 2026) is unusual in Utah County for tying a detached ADU's maximum size to how big your lot actually is, rather than applying one flat cap to everyone:</p>
           <div class="table-wrap">
             <table class="data-table">
@@ -668,7 +668,7 @@ def deep_content_spanish_fork():
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">THE SPANISH FORK DETAILS</p>
-      <h2>In Spanish Fork, the ADU Rule Is Flat &mdash; But the Zone Map Isn't</h2>
+      <h2>Can You Build an ADU in Spanish Fork, and Which Zones Are Excluded?</h2>
       <p class="lede">Spanish Fork keeps its detached ADU size cap the same for every qualifying lot in the city. The real work is confirming your property sits in a zone that allows one at all, and that your parking plan pencils out.</p>
     </div>
 
@@ -703,7 +703,7 @@ def deep_content_spanish_fork():
         </div>
 
         <div class="content-block" id="spanishfork-zoning">
-          <h3>{CLIPBOARD_SVG} One Flat Size Cap, But Several Zones Where It Doesn't Apply</h3>
+          <h3>{CLIPBOARD_SVG} What Size ADU Can You Build in Spanish Fork, and Which Zones Don't Allow One?</h3>
           <p>Spanish Fork's accessory dwelling ordinance sets a single, flat maximum for a detached ADU rather than scaling it to lot size the way a city like Mapleton does:</p>
           <div class="table-wrap">
             <table class="data-table">
@@ -764,7 +764,7 @@ def deep_content_highland():
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">THE HIGHLAND DETAILS</p>
-      <h2>In Highland, the ADU Question Is Really an Attached-Unit Question</h2>
+      <h2>Can You Build a Detached ADU in Highland, Utah?</h2>
       <p class="lede">Highland's large lots make room for an ADU on paper, but the city's own ordinance is built around an internal, attached unit that doesn't read as a second home from the street &mdash; not a standalone building in the backyard.</p>
     </div>
 
@@ -798,7 +798,7 @@ def deep_content_highland():
         </div>
 
         <div class="content-block" id="highland-zoning">
-          <h3>{CLIPBOARD_SVG} Highland's ADU Ordinance Predates SB284 &mdash; And It's Stricter Than the State Baseline</h3>
+          <h3>{CLIPBOARD_SVG} What Does Highland's ADU Ordinance Actually Require?</h3>
           <p>Highland City's Development Code already addressed accessory dwelling units before Utah's SB284 changes take effect October 1, 2026, through its Supplementary Regulations, referenced in the R-1-20 and R-1-30 residential zones:</p>
           <div class="table-wrap">
             <table class="data-table">
@@ -860,7 +860,7 @@ def deep_content_lindon():
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">THE LINDON DETAILS</p>
-      <h2>Lindon's ADU Size Cap Isn't a Flat Number &mdash; It's a Formula</h2>
+      <h2>How Big Can Your ADU Be in Lindon, Utah?</h2>
       <p class="lede">Lindon doesn't just give you a square-footage ceiling for a detached ADU. The city caps it against a percentage of your existing home, which means the same detached ADU can be a different allowed size on two lots right next to each other.</p>
     </div>
 
@@ -890,7 +890,7 @@ def deep_content_lindon():
         </div>
 
         <div class="content-block" id="lindon-zoning">
-          <h3>{CLIPBOARD_SVG} How Lindon Actually Sizes a Detached ADU</h3>
+          <h3>{CLIPBOARD_SVG} How Does Lindon Actually Size a Detached ADU?</h3>
           <p>Lindon City's accessory apartment ordinance (Municipal Code &sect;17.46.100, adopted under Ordinance 2026-12) sets a min lot size of 6,000 sq ft, and it isn't allowed on lots below that or in areas marked on the city's own Accessory Apartment Map. Beyond that, the size math is formula-based rather than one flat number for everyone:</p>
           <div class="table-wrap">
             <table class="data-table">
@@ -954,7 +954,7 @@ def deep_content_provo():
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">THE PROVO DETAILS</p>
-      <h2>Provo's ADU Code Was Built to Stop Student Rentals &mdash; Not to Enable Them</h2>
+      <h2>Can You Build an ADU in Provo, or Rent It Out to Students?</h2>
       <p class="lede">Provo's accessory apartment ordinance predates SB284 by years, and it reads that way: owner-occupancy is required, occupancy is capped, and a rental license is mandatory. If your goal is extended family or rental income from an owner-occupied home, this works in your favor &mdash; but the rules are built to prevent a pure student-rental play.</p>
     </div>
 
@@ -991,7 +991,7 @@ def deep_content_provo():
         </div>
 
         <div class="content-block" id="provo-zoning">
-          <h3>{CLIPBOARD_SVG} Provo's Accessory Apartment Code Is Built Around Owner-Occupancy</h3>
+          <h3>{CLIPBOARD_SVG} What Does Provo's Accessory Apartment Code Actually Require?</h3>
           <p>Provo City Code Title 14.30 governs accessory apartments, and it's noticeably stricter on occupancy than a lot of Utah County ordinances, which makes sense in a city with a huge student rental market to manage:</p>
           <div class="table-wrap">
             <table class="data-table">
@@ -1008,7 +1008,7 @@ def deep_content_provo():
         </div>
 
         <div class="content-block" id="provo-sb284">
-          <h3>{HAMMER_SVG} Provo Hasn't Finalized Its SB284 Ordinance Yet</h3>
+          <h3>{HAMMER_SVG} Has Provo Adopted Its SB284 Ordinance Yet?</h3>
           <p>Unlike some Utah County cities that already had a detached-ADU rule in place, Provo was still working through its response to Utah's statewide SB284 mandate as of early September 2026. City staff proposed a 40%-of-parcel accessory-structure limit for detached ADUs, but as of the most recent reporting, that proposal hadn't yet gone through Planning Commission or a council vote &mdash; with the state's October 1, 2026 compliance deadline just weeks away. Because this is actively moving, we check the current status with Provo's Community Development Department at the time we scope your project rather than quoting a rule that may have changed.</p>
         </div>
 
@@ -1106,24 +1106,24 @@ def faq_jsonld(qa_pairs):
 # name swapped in). Generic-template cities rotate through HERO_H1_TEMPLATES
 # instead, so even those don't all read identically.
 CITY_HERO_H1 = {
-    "alpine": "Alpine ADUs: Big Lots, Bigger Questions About Grading and Zoning",
-    "lehi": "Building an ADU in Lehi? Here's What Actually Changes Under SB284",
-    "mapleton": "In Mapleton, Your ADU Size Depends on Your Lot &mdash; Not a Flat Rule",
-    "spanish-fork": "Spanish Fork's ADU Cap Is Flat. The Zoning Map Isn't.",
-    "highland": "Highland ADUs Are Attached, Owner-Occupied, and Built to Hide in Plain Sight",
-    "lindon": "Lindon Sizes Your ADU By Formula, Not a Flat Number",
-    "provo": "Provo's ADU Rules Favor Owner-Occupants Over Rentals &mdash; Here's the Code",
+    "alpine": "Can You Build an ADU in Alpine, Utah?",
+    "lehi": "Can You Build a Detached ADU in Lehi After SB284?",
+    "mapleton": "How Big of an ADU Can You Build in Mapleton, Utah?",
+    "spanish-fork": "Can You Build an ADU in Spanish Fork, Utah?",
+    "highland": "Can You Build an ADU in Highland, Utah?",
+    "lindon": "How Big Can Your ADU Be in Lindon, Utah?",
+    "provo": "Can You Build an ADU in Provo, Utah?",
 }
 
 HERO_H1_TEMPLATES = [
-    "Ready to Add an ADU in {name}?",
-    "Thinking About an Accessory Dwelling Unit in {name}?",
-    "Your {name} Backyard Could Be Worth a Second Home",
-    "Build an ADU in {name} Without the Guesswork",
-    "{name} Homeowners: Here's What an ADU Actually Takes",
-    "Considering an ADU on Your {name} Property?",
-    "Turn Unused Space Into an ADU in {name}",
-    "Planning an ADU in {name}, {county} County?",
+    "Can You Build an ADU in {name}, Utah?",
+    "How Much Does an ADU Cost in {name}?",
+    "What Does It Take to Build an ADU in {name}?",
+    "Is Your {name} Lot Big Enough for an ADU?",
+    "Do You Need a Permit to Build an ADU in {name}?",
+    "What Are the ADU Rules in {name}, {county} County?",
+    "Can You Add a Rental Unit to Your {name} Property?",
+    "How Do You Build an ADU in {name}, Utah?",
 ]
 
 
@@ -1276,7 +1276,7 @@ def build_city_page(name, slug, county, index):
       <div class="permit-callout">
         {CLIPBOARD_SVG}
         <div>
-          <h3>Permits &amp; {name} Zoning</h3>
+          <h3>Do I Need a Permit for an ADU in {name}?</h3>
           <p>Most ADU permits in {county} County are processed through the {name} building and planning department. We handle intake, plan review coordination and inspection scheduling for you from start to finish, so you never have to deal with the city directly.</p>
         </div>
       </div>
@@ -1288,7 +1288,7 @@ def build_city_page(name, slug, county, index):
     <div class="permit-callout reveal" style="margin-top:24px;">
       {CLIPBOARD_SVG}
       <div>
-        <h3>Utah's New ADU Law (Effective October 1, 2026)</h3>
+        <h3>What Does Utah's New ADU Law (SB284) Mean for {name} Homeowners?</h3>
         <p>Utah's SB284 now requires most cities to allow one detached ADU per qualifying lot statewide. {local_sb284_note} See the full breakdown on our <a href="/adu-rules-2026.html" class="link-arrow">2026 ADU law page &rarr;</a>.</p>
       </div>
     </div>

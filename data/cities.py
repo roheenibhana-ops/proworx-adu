@@ -271,55 +271,55 @@ DEEP_HEADLINES = {
         "A mix of older grid-platted lots and newer subdivisions means SB284 eligibility varies more within Spanish Fork than in a single-era-built city."
     ),
     "vineyard": (
-        "Vineyard's Uniform New-Build Lots Make SB284 Eligibility the Easy Part",
+        "Does Every Lot in Vineyard Qualify for an ADU Under SB284?",
         "Nearly every lot in Vineyard sits under the same HOA design standard. The real question is what the HOA will approve, not whether the city allows it."
     ),
     "bluffdale": (
-        "Bluffdale's Larger, Rural-Transition Lots Are Ahead of the SB284 Curve",
+        "Is Your Bluffdale Lot Big Enough for a Detached ADU?",
         "Bluffdale carries a rural-transition feel with larger average lots than its denser Salt Lake County neighbors, making it one of the stronger SB284 candidates in the county."
     ),
     "cottonwood-heights": (
-        "Why Canyon-Adjacent Lots in Cottonwood Heights Need a Different Engineering Conversation",
+        "Do Canyon-Adjacent Lots in Cottonwood Heights Need Extra ADU Engineering?",
         "Snow load, slope grading and drainage matter more here than in flatter valley cities, and HOA aesthetic standards run higher than average."
     ),
     "draper": (
-        "Why Draper's Hillside Neighborhoods Change the ADU Math",
+        "How Do Draper's Hillside Lots Change the Cost of an ADU?",
         "Suncrest and Corner Canyon's steep-slope lots mean more grading and drainage engineering than a flat-lot build elsewhere in the valley, and HOA review runs on top of city permitting."
     ),
     "herriman": (
-        "Herriman's New-Build Subdivisions Are a Strong Match for SB284",
+        "Does Your Herriman Subdivision Qualify for a Detached ADU?",
         "Master-planned communities on larger modern lots mean most new Herriman subdivisions clear the detached-ADU threshold comfortably."
     ),
     "riverton": (
-        "Riverton's Lot Sizes Vary Enough That You Should Check Yours Specifically",
+        "Is Your Riverton Lot Big Enough for an ADU?",
         "A mix of older agricultural-heritage lots and newer growth means SB284 eligibility isn't uniform across the city. Some of the older parcels are genuinely large."
     ),
     "salt-lake-city": (
-        "Why Most Salt Lake City ADUs Are Basement Conversions, Not Backyard Cottages",
+        "Can You Build a Detached ADU in Salt Lake City, or Only an Internal One?",
         "Older, denser SLC lots often sit under SB284's 11,000-sq-ft detached-ADU threshold. For most homeowners here, an internal ADU is the realistic path, not a zoning failure."
     ),
     "sandy": (
-        "What Sandy Homeowners Need to Know About Foothill Lots and HOA Layers",
+        "Do You Need HOA Approval to Build an ADU in Sandy?",
         "Sandy's established mid-size lots are common, but several newer developments carry HOA design guidelines on top of city zoning, and foothill lots need proper snow-load design."
     ),
     "south-jordan": (
-        "Daybreak's HOA Design Guidelines Can Be Stricter Than South Jordan's Own Code",
+        "Does Daybreak's HOA Make Building an ADU Harder in South Jordan?",
         "If you're in Daybreak, budget time for HOA architectural review in addition to the city's SB284-compliant permitting process. Older South Jordan neighborhoods follow standard city zoning instead."
     ),
     "west-jordan": (
-        "West Jordan's Older, Larger-Lot Neighborhoods Are Where SB284 Opens the Most Doors",
+        "Which West Jordan Neighborhoods Qualify for a Detached ADU?",
         "West Jordan has some of the more varied lot sizes in Salt Lake County. Older neighborhoods on larger parcels clear the threshold; newer, tighter subdivisions are more likely to need an internal ADU."
     ),
     "bountiful": (
-        "Why Bountiful's Bench Lots Are Well-Suited to a Detached ADU",
+        "Is Your Bountiful Lot Well-Suited to a Detached ADU?",
         "Older, larger lots along the Wasatch Front bench frequently clear the SB284 threshold. Aging utility connections are the detail worth checking early."
     ),
     "heber-city": (
-        "Heber City's Rural-Residential Lots Meet Growing Wasatch Back Demand",
+        "Can You Build an ADU on a Rural-Residential Lot in Heber City?",
         "Larger lots are generally well-suited to SB284's detached-ADU rules, but well and septic capacity should be confirmed on outlying parcels."
     ),
     "park-city": (
-        "Why Park City's Overlays Matter as Much as SB284 Itself",
+        "Can You Build an ADU in Park City With Historic-District or STR Overlays?",
         "Historic-district design review in Old Town and short-term-rental restrictions can limit how a Park City ADU gets used, regardless of what the state law allows."
     ),
 }
