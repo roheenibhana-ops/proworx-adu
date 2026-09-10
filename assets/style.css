@@ -692,3 +692,6 @@
 .office-callout svg{width:22px; height:22px; stroke:var(--primary); flex-shrink:0; margin-top:2px;}
 .office-callout p{margin:0; font-size:14px; color:var(--muted-foreground); line-height:1.6;}
 .office-callout strong{color:var(--foreground);}
+
+/* Anchor offset so fixed header doesn't cover jump-nav targets */
+.content-block[id]{scroll-margin-top:104px;}

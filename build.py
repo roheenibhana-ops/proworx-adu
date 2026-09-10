@@ -77,7 +77,7 @@ FOOTER = """<footer>
     <div class="footer-grid">
       <div class="footer-col">
         <a href="/index.html" class="wordmark">PRO-WORX ADU</a>
-        <p class="footer-desc">A <a href="https://proworxconstruction.com" target="_blank" rel="noopener">Pro-Worx Construction</a> company &mdash; 20 years building in Utah. Utah's fixed-price ADU builder &mdash; permits, design and construction, handled. <a href="https://proworxconstruction.com/adu-builders-utah/" target="_blank" rel="noopener" style="text-decoration:underline;">See our full ADU services on the main site &rarr;</a></p>
+        <p class="footer-desc">A <a href="https://proworxconstruction.com" target="_blank" rel="noopener">Pro-Worx Construction</a> company  -  20 years building in Utah. Utah's fixed-price ADU builder  -  permits, design and construction, handled. <a href="https://proworxconstruction.com/adu-builders-utah/" target="_blank" rel="noopener" style="text-decoration:underline;">See our full ADU services on the main site &rarr;</a></p>
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
@@ -165,7 +165,7 @@ def contact_section(prefill_city=""):
       <div>
         <p class="eyebrow">GET STARTED</p>
         <h2 style="font-size:32px; margin-bottom:16px;">Request a Free ADU Estimate</h2>
-        <p class="lede" style="margin-bottom:32px;">Tell us about your property and we'll follow up with next steps &mdash; usually within one business day.</p>
+        <p class="lede" style="margin-bottom:32px;">Tell us about your property and we'll follow up with next steps  -  usually within one business day.</p>
         <div class="contact-row">{PHONE_SVG}<div><p class="label">Call us</p><p class="value">(801) 888-4282</p></div></div>
         <div class="contact-row">{MAIL_SVG}<div><p class="label">Email</p><p class="value">info@proworxconstruction.com</p></div></div>
         <div class="contact-row">{PIN_SVG}<div><p class="label">Service area</p><p class="value">Salt Lake, Utah, Davis &amp; Summit counties</p></div></div>
@@ -206,7 +206,7 @@ def page_shell(title, description, body, canonical_path):
 def deep_content_section(name, slug, county):
     """Long-form, hyper-local ADU content block for a city page: cost/ROI
     table, terrain/permit/inspection detail, optional HOA section, and a
-    quote-evaluation checklist — modeled on the depth of the main site's
+    quote-evaluation checklist  -  modeled on the depth of the main site's
     Alpine renovation page. National benchmark figures are sourced and
     disclaimed rather than presented as confirmed local numbers."""
 
@@ -215,7 +215,7 @@ def deep_content_section(name, slug, county):
     if neighborhoods:
         tags = "".join(f'<span class="neighborhood-tag">{n}</span>' for n in neighborhoods)
         neighborhood_intro = f"""    <div class="content-block">
-      <p>We've worked on ADU projects across {name}, including {', '.join(neighborhoods[:-1])} and {neighborhoods[-1]} &mdash; and lot conditions, HOA layers and permit timelines can differ block to block, not just neighborhood to neighborhood.</p>
+      <p>We've worked on ADU projects across {name}, including {', '.join(neighborhoods[:-1])} and {neighborhoods[-1]}  -  and lot conditions, HOA layers and permit timelines can differ block to block, not just neighborhood to neighborhood.</p>
       <div class="neighborhood-tags">{tags}</div>
     </div>
 """
@@ -224,7 +224,7 @@ def deep_content_section(name, slug, county):
     if slug in HILLSIDE_TERRAIN:
         geotechnical = f"""    <div class="content-block">
       <h3>Why {name} Lots Sometimes Need Engineering a Flat-Lot ADU Quote Won't Include</h3>
-      <p>{name}'s hillside and bench terrain means some lots need a soils or geotechnical review before a detached ADU's foundation gets designed &mdash; a step flatter Utah cities often skip entirely. If a contractor is pricing your {name} ADU the same way they'd price one a few miles away on flat ground, that's usually where the budget goes sideways once excavation starts.</p>
+      <p>{name}'s hillside and bench terrain means some lots need a soils or geotechnical review before a detached ADU's foundation gets designed  -  a step flatter Utah cities often skip entirely. If a contractor is pricing your {name} ADU the same way they'd price one a few miles away on flat ground, that's usually where the budget goes sideways once excavation starts.</p>
       <div class="table-wrap">
         <table class="data-table">
           <tr><th>Item</th><th>Typical Range</th></tr>
@@ -233,7 +233,7 @@ def deep_content_section(name, slug, county):
           <tr><td>Licensed engineer labor</td><td>$100&ndash;$250 per hour</td></tr>
         </table>
       </div>
-      <p class="source-note">Source: <a href="https://www.homeadvisor.com/cost/architects-and-engineers/geotechnical-report" target="_blank" rel="noopener">HomeAdvisor geotechnical report cost data</a>, national averages &mdash; not confirmed against {name}-specific pricing. We'll tell you during your free estimate whether your lot needs this step at all.</p>
+      <p class="source-note">Source: <a href="https://www.homeadvisor.com/cost/architects-and-engineers/geotechnical-report" target="_blank" rel="noopener">HomeAdvisor geotechnical report cost data</a>, national averages  -  not confirmed against {name}-specific pricing. We'll tell you during your free estimate whether your lot needs this step at all.</p>
     </div>
 """
 
@@ -242,7 +242,7 @@ def deep_content_section(name, slug, county):
         hoa_name = neighborhoods[0] if neighborhoods else f"{name}'s master-planned communities"
         hoa_section = f"""    <div class="content-block">
       <h3>Do I Need HOA Approval in Addition to a {name} City Permit?</h3>
-      <p>If your property is in one of {name}'s HOA-governed communities like {hoa_name}, clearing your city permit doesn't automatically clear your HOA's architectural review &mdash; they're separate approvals, and homeowners sometimes assume one covers the other. Most HOA design boards in these communities focus on exterior massing, materials and placement more than interior layout, but they still need to sign off before you build.</p>
+      <p>If your property is in one of {name}'s HOA-governed communities like {hoa_name}, clearing your city permit doesn't automatically clear your HOA's architectural review  -  they're separate approvals, and homeowners sometimes assume one covers the other. Most HOA design boards in these communities focus on exterior massing, materials and placement more than interior layout, but they still need to sign off before you build.</p>
       <p>We submit both in parallel from the start of your project, which is usually where an ADU either saves a few weeks or loses them.</p>
     </div>
 """
@@ -251,14 +251,14 @@ def deep_content_section(name, slug, county):
     if slug in WELL_SEPTIC:
         well_septic = f"""    <div class="content-block">
       <h3>Well &amp; Septic Capacity Matters More Than Lot Size in {name}</h3>
-      <p>Some {name} properties, especially on the outlying and foothill lots, are still on well water or a septic system rather than full city utilities. A detached ADU adds real load to both &mdash; before we talk floor plans, we confirm your well's capacity and your septic system's rating can support a second living unit, since that's a harder constraint than anything in the zoning code.</p>
+      <p>Some {name} properties, especially on the outlying and foothill lots, are still on well water or a septic system rather than full city utilities. A detached ADU adds real load to both  -  before we talk floor plans, we confirm your well's capacity and your septic system's rating can support a second living unit, since that's a harder constraint than anything in the zoning code.</p>
     </div>
 """
 
     headline, headline_lede = DEEP_HEADLINES.get(
         slug,
         (f"What Actually Goes Into an ADU Project in {name}",
-         f"The permitting, engineering and cost questions that come up specifically for {name} homeowners — not a generic statewide answer.")
+         f"The permitting, engineering and cost questions that come up specifically for {name} homeowners  -  not a generic statewide answer.")
     )
 
     body = f"""<!-- HYPER-LOCAL DEEP CONTENT -->
@@ -280,7 +280,7 @@ def deep_content_section(name, slug, county):
           <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
         </table>
       </div>
-      <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data for comparable remodel categories &mdash; your {name} ADU quote will reflect your specific lot, structure and finish level, not this table.</p>
+      <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data for comparable remodel categories  -  your {name} ADU quote will reflect your specific lot, structure and finish level, not this table.</p>
       <p>Pro-Worx ADU pricing in {name} typically lands at $100K&ndash;$200K for a garage or basement conversion, and $200K&ndash;$300K for a full detached, ground-up build.</p>
     </div>
 {geotechnical}{well_septic}    <div class="content-block">
@@ -301,15 +301,15 @@ def deep_content_section(name, slug, county):
           <tr><td>Electrical (new circuit/panel work)</td><td>$50&ndash;$500</td></tr>
         </table>
       </div>
-      <p class="source-note">Source: <a href="https://permitmint.com/reports.php" target="_blank" rel="noopener">PermitMint national building permit data</a>, based on municipal fee schedules across 1,500+ US cities &mdash; national ranges only, not confirmed against {name}'s specific fee schedule. We confirm your exact fees with the {name} building department as part of your free estimate.</p>
+      <p class="source-note">Source: <a href="https://permitmint.com/reports.php" target="_blank" rel="noopener">PermitMint national building permit data</a>, based on municipal fee schedules across 1,500+ US cities  -  national ranges only, not confirmed against {name}'s specific fee schedule. We confirm your exact fees with the {name} building department as part of your free estimate.</p>
     </div>
     <div class="content-block">
       <h3>What Gets Inspected During an ADU Build in {name}, and When?</h3>
-      <p>Every ADU we build in {name} goes through the same three inspection stages: framing (before drywall goes up), rough electrical and plumbing (before walls close), and a final inspection before move-in. Egress windows get inspected specifically for size and clearance &mdash; a common point where unpermitted basement conversions fail if a homeowner tries to sell or refinance later.</p>
+      <p>Every ADU we build in {name} goes through the same three inspection stages: framing (before drywall goes up), rough electrical and plumbing (before walls close), and a final inspection before move-in. Egress windows get inspected specifically for size and clearance  -  a common point where unpermitted basement conversions fail if a homeowner tries to sell or refinance later.</p>
     </div>
 {hoa_section}    <div class="content-block">
       <h3>What Should a Real {name} ADU Quote Include?</h3>
-      <p>A quote that doesn't account for {name}'s specific conditions isn't necessarily wrong on purpose &mdash; it's usually just based on a generic countywide template. Before you sign anything, make sure your quote itemizes:</p>
+      <p>A quote that doesn't account for {name}'s specific conditions isn't necessarily wrong on purpose  -  it's usually just based on a generic countywide template. Before you sign anything, make sure your quote itemizes:</p>
       <div class="check-list">
         <div class="check-item">{CHECK_SVG}<span>Soils or engineering review, if your lot needs one</span></div>
         <div class="check-item">{CHECK_SVG}<span>HOA submission time priced into the schedule, not just build time</span></div>
@@ -326,7 +326,7 @@ def deep_content_section(name, slug, county):
 
 
 def deep_content_alpine():
-    """Bespoke, research-backed deep-content section for Alpine — real
+    """Bespoke, research-backed deep-content section for Alpine  -  real
     neighborhoods, real zoning code citations, real city hall address.
     Built by hand rather than through the generic per-city template."""
     return f"""<!-- HYPER-LOCAL DEEP CONTENT: ALPINE (bespoke) -->
@@ -336,6 +336,13 @@ def deep_content_alpine():
       <p class="eyebrow">THE ALPINE DETAILS</p>
       <h2>Why Does an ADU in Alpine Mean Dealing With Grading, Zoning and HOA Review?</h2>
       <p class="lede">Alpine's large, sloped lots and conditional-use zoning make an ADU here a different conversation than it is a few miles away in flatter Utah County cities like Lehi or Lindon.</p>
+    </div>
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">10,251</div><div class="spec-label">Population (2020 Census)</div></div>
+      <div class="spec-card"><div class="spec-value">5,049 ft</div><div class="spec-label">Elevation</div></div>
+      <div class="spec-card"><div class="spec-value">1850</div><div class="spec-label">Settled (as "Mountainville")</div></div>
+      <div class="spec-card"><div class="spec-value">Alpine School District</div><div class="spec-label">Serves the city</div></div>
     </div>
 
     <div class="deep-layout reveal">
@@ -352,26 +359,28 @@ def deep_content_alpine():
           <h3>Alpine's Neighborhoods Aren't All Built the Same</h3>
           <p>We've scoped ADU projects across Alpine's east-bench and foothill neighborhoods, and grading conditions can differ block to block, not just neighborhood to neighborhood:</p>
           <div class="neighborhood-cards">
-            <div class="neighborhood-card"><h4>Heritage Hills</h4><p>Mature east-bench subdivision with an active HOA architectural review board &mdash; most homes built late 1990s&ndash;early 2000s.</p></div>
-            <div class="neighborhood-card"><h4>Alpine Cove</h4><p>Planned community on Alpine's north end with a uniform design feel and its own covenants &mdash; lots are slightly smaller than the Alpine average.</p></div>
-            <div class="neighborhood-card"><h4>Willow Canyon</h4><p>East foothill custom-home lots with direct trail access and generous acreage &mdash; grading and drainage engineering come up often here.</p></div>
+            <div class="neighborhood-card"><h4>Heritage Hills</h4><p>Mature east-bench subdivision with an active HOA architectural review board  -  most homes built late 1990s&ndash;early 2000s.</p></div>
+            <div class="neighborhood-card"><h4>Alpine Cove</h4><p>Planned community on Alpine's north end with a uniform design feel and its own covenants  -  lots are slightly smaller than the Alpine average.</p></div>
+            <div class="neighborhood-card"><h4>Willow Canyon</h4><p>East foothill custom-home lots with direct trail access and generous acreage  -  grading and drainage engineering come up often here.</p></div>
             <div class="neighborhood-card"><h4>Box Elder Area</h4><p>Upper east-bench lots, frequently an acre or more, with sweeping valley views and mountain-adjacent terrain.</p></div>
-            <div class="neighborhood-card"><h4>Lambert Park Area</h4><p>Homes near Alpine's 250-acre Lambert Park open space and its Fort Canyon trail system &mdash; a popular draw for families considering an ADU for extended family.</p></div>
+            <div class="neighborhood-card"><h4>Lambert Park Area</h4><p>Homes near Alpine's 250-acre Lambert Park open space and its Fort Canyon trail system  -  a popular draw for families considering an ADU for extended family.</p></div>
+            <div class="neighborhood-card"><h4>Three Falls</h4><p>A platted custom-lot subdivision on Alpine's east side, developed in phases  -  larger parcels with the same soils-review considerations as neighboring Willow Canyon.</p></div>
           </div>
+          <p style="margin-top:4px;">Alpine sits on the slopes of the Wasatch Range at 5,049 feet, with American Fork Canyon, Tibble Fork Reservoir and Mount Timpanogos all accessible from the city  -  part of why lot terrain here varies so much even within a single subdivision.</p>
         </div>
 
         <div class="content-block" id="alpine-zoning">
           <h3>What Alpine's Zoning Code Actually Says About ADUs</h3>
-          <p>Alpine City's Development Code lists accessory dwelling units as a <strong>conditional use</strong> &mdash; not an automatic right &mdash; in three residential zones, each with its own minimum lot size:</p>
+          <p>Alpine City's Development Code lists accessory dwelling units as a <strong>conditional use</strong>  -  not an automatic right  -  in three residential zones, each with its own minimum lot size:</p>
           <div class="spec-cards">
             <div class="spec-card"><div class="spec-value">10,000 sq ft</div><div class="spec-label">TR-10,000 Zone</div></div>
             <div class="spec-card"><div class="spec-value">20,000 sq ft</div><div class="spec-label">CR-20,000 Zone</div></div>
             <div class="spec-card"><div class="spec-value">40,000 sq ft</div><div class="spec-label">CR-40,000 Zone</div></div>
           </div>
-          <p>Because ADUs are a conditional use here, your project goes through Alpine's conditional-use review process, not just an over-the-counter permit &mdash; on top of whatever SB284 changes for detached ADUs specifically as of October 1, 2026. We confirm which zone your lot sits in and what that means for your timeline before you commit to anything.</p>
+          <p>Because ADUs are a conditional use here, your project goes through Alpine's conditional-use review process, not just an over-the-counter permit  -  on top of whatever SB284 changes for detached ADUs specifically as of October 1, 2026. We confirm which zone your lot sits in and what that means for your timeline before you commit to anything.</p>
           <div class="office-callout">
             {PIN_SVG}
-            <p><strong>Alpine City Hall &amp; Building Department</strong><br>20 North Main Street, Alpine, UT 84004 &mdash; where conditional-use applications and building permits for Alpine ADU projects are filed and reviewed.</p>
+            <p><strong>Alpine City Hall &amp; Building Department</strong><br>20 North Main Street, Alpine, UT 84004  -  where conditional-use applications and building permits for Alpine ADU projects are filed and reviewed.</p>
           </div>
         </div>
 
@@ -385,13 +394,13 @@ def deep_content_alpine():
               <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
             </table>
           </div>
-          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a> &mdash; national data; your Alpine quote reflects your lot, zone and finish level, not this table.</p>
-          <p>Pro-Worx ADU pricing in Alpine typically lands at $100K&ndash;$200K for a garage or basement conversion, and $200K&ndash;$300K for a full detached, ground-up build &mdash; often toward the higher end here given Alpine's larger lots and grading requirements.</p>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>  -  national data; your Alpine quote reflects your lot, zone and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Alpine typically lands at $100K&ndash;$200K for a garage or basement conversion, and $200K&ndash;$300K for a full detached, ground-up build  -  often toward the higher end here given Alpine's larger lots and grading requirements.</p>
         </div>
 
         <div class="content-block" id="alpine-hoa-terrain">
           <h3>Why Alpine Lots Sometimes Need Engineering a Flat-Lot Quote Won't Include</h3>
-          <p>Alpine's hillside and bench terrain means many lots need a soils or geotechnical review before a detached ADU's foundation gets designed &mdash; a step flatter Utah County cities often skip entirely. If a contractor is pricing your Alpine ADU the same way they'd price one a few miles away on flat ground, that's usually where the budget goes sideways once excavation starts.</p>
+          <p>Alpine's hillside and bench terrain means many lots need a soils or geotechnical review before a detached ADU's foundation gets designed  -  a step flatter Utah County cities often skip entirely. If a contractor is pricing your Alpine ADU the same way they'd price one a few miles away on flat ground, that's usually where the budget goes sideways once excavation starts.</p>
           <div class="table-wrap">
             <table class="data-table">
               <tr><th>Item</th><th>Typical Range</th></tr>
@@ -400,18 +409,18 @@ def deep_content_alpine():
               <tr><td>Licensed engineer labor</td><td>$100&ndash;$250 per hour</td></tr>
             </table>
           </div>
-          <p class="source-note">Source: <a href="https://www.homeadvisor.com/cost/architects-and-engineers/geotechnical-report" target="_blank" rel="noopener">HomeAdvisor geotechnical report cost data</a>, national averages &mdash; not confirmed against Alpine-specific pricing.</p>
+          <p class="source-note">Source: <a href="https://www.homeadvisor.com/cost/architects-and-engineers/geotechnical-report" target="_blank" rel="noopener">HomeAdvisor geotechnical report cost data</a>, national averages  -  not confirmed against Alpine-specific pricing.</p>
           <h3 style="margin-top:28px;">Do I Need HOA Approval Too?</h3>
-          <p>If you're in Heritage Hills, Alpine Cove, or another HOA-governed subdivision, clearing your conditional-use permit with the city doesn't clear your HOA's architectural review &mdash; they're separate approvals. These design boards tend to focus on exterior massing and materials more than interior layout, but they still need to sign off. We submit both in parallel from the start, which is usually where a project either saves weeks or loses them.</p>
+          <p>If you're in Heritage Hills, Alpine Cove, or another HOA-governed subdivision, clearing your conditional-use permit with the city doesn't clear your HOA's architectural review  -  they're separate approvals. These design boards tend to focus on exterior massing and materials more than interior layout, but they still need to sign off. We submit both in parallel from the start, which is usually where a project either saves weeks or loses them.</p>
         </div>
 
         <div class="content-block" id="alpine-sources">
           <h3>Sources</h3>
           <ul class="sources-list">
-            <li><a href="https://cdn.sqhk.co/alpinecity/jela7oF/AlpineCityDevelopmentCodeCurrent.pdf" target="_blank" rel="noopener">Alpine City Development Code</a> &mdash; zoning districts and conditional-use ADU provisions</li>
-            <li><a href="https://www.alpineut.gov/157/Building-Department" target="_blank" rel="noopener">Alpine City Building Department</a> &mdash; permit process</li>
-            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a> &mdash; national remodel ROI benchmarks</li>
-            <li><a href="https://www.homeadvisor.com/cost/architects-and-engineers/geotechnical-report" target="_blank" rel="noopener">HomeAdvisor</a> &mdash; geotechnical report cost data</li>
+            <li><a href="https://cdn.sqhk.co/alpinecity/jela7oF/AlpineCityDevelopmentCodeCurrent.pdf" target="_blank" rel="noopener">Alpine City Development Code</a>  -  zoning districts and conditional-use ADU provisions</li>
+            <li><a href="https://www.alpineut.gov/157/Building-Department" target="_blank" rel="noopener">Alpine City Building Department</a>  -  permit process</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>  -  national remodel ROI benchmarks</li>
+            <li><a href="https://www.homeadvisor.com/cost/architects-and-engineers/geotechnical-report" target="_blank" rel="noopener">HomeAdvisor</a>  -  geotechnical report cost data</li>
             <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
           </ul>
         </div>
@@ -482,7 +491,7 @@ def build_city_page(name, slug, county, index):
   <div class="container">
     <p class="eyebrow fade-up d1">{county.upper()} COUNTY &middot; UTAH ADU SPECIALISTS</p>
     <h1 class="fade-up d2">Thinking About Building an ADU in {name}?</h1>
-    <p class="lede fade-up d3">Pro-Worx Construction designs, permits and builds custom Accessory Dwelling Units for {name} homeowners &mdash; fixed pricing, licensed &amp; insured, 3&ndash;5 week builds on garage and basement conversions.</p>
+    <p class="lede fade-up d3">Pro-Worx Construction designs, permits and builds custom Accessory Dwelling Units for {name} homeowners  -  fixed pricing, licensed &amp; insured, 3&ndash;5 week builds on garage and basement conversions.</p>
     <div class="hero-ctas fade-up d4" style="margin-top:32px;">
       <a href="#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
       <a href="/index.html#plans" class="btn btn-light">SEE ADU PLANS &amp; PRICING</a>
@@ -525,7 +534,7 @@ def build_city_page(name, slug, county, index):
     <div class="section-head reveal">
       <p class="eyebrow">OUR SERVICES</p>
       <h2>Which ADU Is Right for Your {name} Lot?</h2>
-      <p class="lede">Every property is different &mdash; we'll walk your site and recommend the configuration that fits your space, budget and goals.</p>
+      <p class="lede">Every property is different  -  we'll walk your site and recommend the configuration that fits your space, budget and goals.</p>
     </div>
     <div class="grid grid-3 reveal">
       <div class="image-tile">
@@ -674,14 +683,14 @@ def build_blog():
             "slug": "how-much-does-an-adu-cost-in-utah",
             "title": "How Much Does an ADU Cost in Utah? A 2026 Pricing Breakdown",
             "cat": "Pricing",
-            "excerpt": "A realistic look at what drives ADU pricing across Salt Lake, Utah, Davis and Summit counties &mdash; from garage conversions to detached cottages.",
+            "excerpt": "A realistic look at what drives ADU pricing across Salt Lake, Utah, Davis and Summit counties  -  from garage conversions to detached cottages.",
             "img": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
         },
         {
             "slug": "adu-permits-utah-what-to-know",
             "title": "ADU Permits in Utah: What Every Homeowner Should Know Before Building",
             "cat": "Permitting",
-            "excerpt": "Zoning, setbacks, utility hookups and inspections &mdash; what actually happens between your first estimate and your first tenant.",
+            "excerpt": "Zoning, setbacks, utility hookups and inspections  -  what actually happens between your first estimate and your first tenant.",
             "img": "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1200&auto=format&fit=crop",
         },
         {
@@ -752,12 +761,12 @@ def build_blog():
       <p class="eyebrow">PRICING</p>
       <h1 style="font-size:36px; margin-bottom:12px;">How Much Does an ADU Cost in Utah?</h1>
       <p class="post-meta">Pro-Worx ADU Team &middot; Utah ADU Guides</p>
-      <p>Accessory Dwelling Units have become one of the most popular ways for Utah homeowners to add living space, house family or generate rental income &mdash; but the first question everyone asks is the same: what does it actually cost?</p>
+      <p>Accessory Dwelling Units have become one of the most popular ways for Utah homeowners to add living space, house family or generate rental income  -  but the first question everyone asks is the same: what does it actually cost?</p>
       <h2>The short answer</h2>
       <p>Across Salt Lake, Utah, Davis and Summit counties, Pro-Worx ADU pricing typically runs $100K&ndash;$200K for a garage or basement conversion and $200K&ndash;$300K for a full detached, ground-up build. Where your project lands in that range depends mainly on three things: the structure you're starting from, the size of the finished unit, and your lot's utility access.</p>
       <h2>What drives the price up or down</h2>
-      <p>A garage or basement conversion is almost always the most affordable path, since the foundation, framing and roof already exist &mdash; the work is mostly interior build-out, plumbing and electrical. A detached, ground-up ADU costs more because it includes excavation, foundation, framing and a full exterior envelope, but it also offers the most privacy and flexibility for renters or family members.</p>
-      <p>Utility hookups are the other major swing factor. If your existing service panel and sewer line have capacity for a second unit, costs stay predictable. If they don't, expect an additional line item for upgrades &mdash; something we flag clearly during your free estimate, never after signing.</p>
+      <p>A garage or basement conversion is almost always the most affordable path, since the foundation, framing and roof already exist  -  the work is mostly interior build-out, plumbing and electrical. A detached, ground-up ADU costs more because it includes excavation, foundation, framing and a full exterior envelope, but it also offers the most privacy and flexibility for renters or family members.</p>
+      <p>Utility hookups are the other major swing factor. If your existing service panel and sewer line have capacity for a second unit, costs stay predictable. If they don't, expect an additional line item for upgrades  -  something we flag clearly during your free estimate, never after signing.</p>
       <h2>Why fixed pricing matters</h2>
       <p>Every Pro-Worx ADU plan tier is a fixed price once we've walked your property, not a rough estimate that grows during construction. That's the same transparent-pricing standard we've applied to over 1,100 projects across Utah in 20 years.</p>
       <p>Ready to see what your specific lot would cost? <a href="/index.html#contact" class="link-arrow">Get a free ADU estimate &rarr;</a></p>
@@ -792,7 +801,7 @@ def build_blog():
       <p class="eyebrow">{p['cat'].upper()}</p>
       <h1 style="font-size:36px; margin-bottom:12px;">{p['title']}</h1>
       <p class="post-meta">Pro-Worx ADU Team &middot; Coming soon</p>
-      <p>{p['excerpt']} We're finishing this guide &mdash; check back soon, or <a href="/index.html#contact" class="link-arrow">get a free estimate &rarr;</a> in the meantime.</p>
+      <p>{p['excerpt']} We're finishing this guide  -  check back soon, or <a href="/index.html#contact" class="link-arrow">get a free estimate &rarr;</a> in the meantime.</p>
     </div>
   </div>
 </section>
@@ -800,7 +809,7 @@ def build_blog():
 {contact_section()}"""
         placeholder_html = page_shell(
             f"{p['title']} | Pro-Worx ADU",
-            p['excerpt'].replace('&mdash;', '-'),
+            p['excerpt'].replace(' - ', '-'),
             placeholder_body,
             f"/blog/{p['slug']}.html",
         )
@@ -825,16 +834,16 @@ def build_law_page():
       <h1 style="font-size:36px; margin-bottom:12px;">Utah's New Detached ADU Law: What Changes on October 1, 2026</h1>
       <p class="post-meta">Pro-Worx ADU Team &middot; Utah ADU Guides</p>
 
-      <p>Starting <strong>October 1, 2026</strong>, a new state law &mdash; Senate Bill 284 (SB284) &mdash; changes how Utah cities are allowed to regulate detached backyard ADUs. If you were told "no" on a detached ADU by your city a few years ago, or you've just never checked, this is worth a fresh look.</p>
+      <p>Starting <strong>October 1, 2026</strong>, a new state law  -  Senate Bill 284 (SB284)  -  changes how Utah cities are allowed to regulate detached backyard ADUs. If you were told "no" on a detached ADU by your city a few years ago, or you've just never checked, this is worth a fresh look.</p>
 
       <h2>What was true before SB284</h2>
-      <p>Many Utah cities historically only permitted <em>internal</em> ADUs &mdash; a basement apartment or an addition attached to the existing home &mdash; while prohibiting standalone, detached backyard units outright, or requiring a discretionary conditional-use permit that made approval unpredictable.</p>
+      <p>Many Utah cities historically only permitted <em>internal</em> ADUs  -  a basement apartment or an addition attached to the existing home  -  while prohibiting standalone, detached backyard units outright, or requiring a discretionary conditional-use permit that made approval unpredictable.</p>
 
       <h2>What SB284 requires, starting October 1, 2026</h2>
       <p>Cities with a population of 5,000 or more must now allow at least one detached ADU on qualifying single-family lots. The core provisions reported so far include:</p>
       <ul>
         <li><strong>Lot size:</strong> Detached ADUs must be permitted on parcels of roughly 11,000 square feet or larger with an existing single-family home. Many cities also allow them on smaller lots, at their discretion.</li>
-        <li><strong>One ADU per lot:</strong> A property gets one ADU &mdash; either internal or detached, not both.</li>
+        <li><strong>One ADU per lot:</strong> A property gets one ADU  -  either internal or detached, not both.</li>
         <li><strong>No conditional-use permits:</strong> Cities can no longer require a discretionary conditional-use review just to build a qualifying detached ADU.</li>
         <li><strong>Size caps limited:</strong> Cities cannot set arbitrary maximum sizes, though they may cap a detached ADU at the size of the primary home.</li>
         <li><strong>Parking:</strong> Up to two on-site parking spaces can be required for detached ADUs of 650 square feet or larger.</li>
@@ -842,20 +851,20 @@ def build_law_page():
       </ul>
 
       <h2>Cities are still finalizing their local ordinances</h2>
-      <p>SB284 sets the floor, not the final word &mdash; individual cities are amending their own zoning codes to comply by the October 1 deadline, and the details vary. A few examples from public reporting:</p>
+      <p>SB284 sets the floor, not the final word  -  individual cities are amending their own zoning codes to comply by the October 1 deadline, and the details vary. A few examples from public reporting:</p>
       <ul>
-        <li><strong>Lehi</strong> already allowed detached ADUs on lots of 14,520+ sq ft with a 1,300 sq ft size cap, and has added a 6-foot setback from the primary home plus an owner-occupancy requirement to align with SB284 &mdash; city staff estimate this could make roughly 20% more properties newly eligible.</li>
+        <li><strong>Lehi</strong> already allowed detached ADUs on lots of 14,520+ sq ft with a 1,300 sq ft size cap, and has added a 6-foot setback from the primary home plus an owner-occupancy requirement to align with SB284  -  city staff estimate this could make roughly 20% more properties newly eligible.</li>
         <li><strong>Orem</strong>, which previously prohibited detached ADUs entirely, is proposing rules that restrict them from front yards and prohibit short-term rental use.</li>
         <li><strong>Provo</strong> has proposed capping all accessory structures at 40% of total parcel area and has published maps showing which neighborhoods gain new eligibility.</li>
       </ul>
-      <p>Because every city's final ordinance can differ on setbacks, height, and owner-occupancy rules, the only way to know exactly what your property qualifies for is to check with your specific city's building department &mdash; which is exactly what we do for you as part of every free estimate.</p>
+      <p>Because every city's final ordinance can differ on setbacks, height, and owner-occupancy rules, the only way to know exactly what your property qualifies for is to check with your specific city's building department  -  which is exactly what we do for you as part of every free estimate.</p>
 
       <h2>What this means if you were told no before</h2>
       <p>If a detached backyard ADU wasn't an option on your lot in the past, SB284 is a real reason to check again. Between the new statewide floor and each city's updated local ordinance, a meaningful number of Utah properties are newly eligible for a detached unit as of October 1, 2026.</p>
 
       <p>Not sure where your property stands? <a href="/index.html#contact" class="link-arrow">Get a free ADU estimate &rarr;</a> and we'll walk you through exactly what's possible under your city's updated rules.</p>
 
-      <p style="font-size:13px; color:var(--muted-foreground); margin-top:32px;">This page summarizes public reporting on SB284 as of September 2026 for general information &mdash; it isn't legal advice, and every city's final ordinance may differ in its specifics. Confirm current requirements with your city's building department or with us before making decisions based on this page.</p>
+      <p style="font-size:13px; color:var(--muted-foreground); margin-top:32px;">This page summarizes public reporting on SB284 as of September 2026 for general information  -  it isn't legal advice, and every city's final ordinance may differ in its specifics. Confirm current requirements with your city's building department or with us before making decisions based on this page.</p>
     </div>
   </div>
 </section>
@@ -864,7 +873,7 @@ def build_law_page():
 
     html = page_shell(
         "Utah's New ADU Law: SB284 Explained (Effective October 1, 2026) | Pro-Worx ADU",
-        "What Utah's SB284 detached-ADU law changes on October 1, 2026 — lot size rules, parking, permitting, and how it affects Utah homeowners.",
+        "What Utah's SB284 detached-ADU law changes on October 1, 2026  -  lot size rules, parking, permitting, and how it affects Utah homeowners.",
         body,
         "/adu-rules-2026.html",
     )

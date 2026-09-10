@@ -1,5 +1,5 @@
 CITIES = [
-    # (name, slug, county) — matches the real Pro-Worx Construction site's
+    # (name, slug, county)  -  matches the real Pro-Worx Construction site's
     # service-area taxonomy (bright-airy-home-build/src/data/locations.ts),
     # plus Provo added per Roh's request.
     ("Alpine", "alpine", "Utah"),
@@ -28,7 +28,7 @@ CITIES = [
 # "what to watch for" note tied to SB284 (Utah's Oct 1, 2026 detached-ADU
 # law). These describe real, verifiable geographic/zoning *patterns* for
 # each area rather than asserting exact ordinance numbers we haven't
-# confirmed with each city — Lehi and Provo include specifics that were
+# confirmed with each city  -  Lehi and Provo include specifics that were
 # confirmed via reporting (see /adu-rules-2026.html for sourcing).
 LOCAL_FOCUS = {
     "alpine": (
@@ -36,7 +36,7 @@ LOCAL_FOCUS = {
         "and equestrian-zoned subdivisions carrying their own architectural "
         "covenants on top of city code.",
         "Most Alpine lots comfortably clear SB284's 11,000-sq-ft detached-ADU "
-        "threshold — the bigger question is usually HOA design review, not "
+        "threshold  -  the bigger question is usually HOA design review, not "
         "lot size."
     ),
     "highland": (
@@ -50,17 +50,17 @@ LOCAL_FOCUS = {
     ),
     "lehi": (
         "Lehi already allowed detached ADUs before the statewide law "
-        "changed — the city's existing rule set a 14,520-sq-ft minimum lot "
+        "changed  -  the city's existing rule set a 14,520-sq-ft minimum lot "
         "and a 1,300-sq-ft size cap, and Lehi's council has since added "
         "6-foot setbacks from the primary home and an owner-occupancy "
         "requirement to bring its ordinance in line with SB284.",
         "City staff estimate the update could make roughly 20% more Lehi "
-        "properties newly eligible for a detached ADU — worth a fresh look "
+        "properties newly eligible for a detached ADU  -  worth a fresh look "
         "even if you were told no a few years ago."
     ),
     "lindon": (
-        "Lindon mixes older agricultural-heritage lots — often larger than "
-        "typical suburban parcels — with newer infill development, which "
+        "Lindon mixes older agricultural-heritage lots  -  often larger than "
+        "typical suburban parcels  -  with newer infill development, which "
         "means eligibility can vary block to block more than in a uniformly "
         "platted city.",
         "Older, larger Lindon lots are strong SB284 candidates; newer, "
@@ -71,14 +71,14 @@ LOCAL_FOCUS = {
         "Mapleton's bench-and-foothill lots are among the largest in Utah "
         "County, with some properties on well or septic systems rather than "
         "full city utilities.",
-        "Lot size usually isn't the constraint in Mapleton — utility "
+        "Lot size usually isn't the constraint in Mapleton  -  utility "
         "capacity and foothill drainage engineering are the details worth "
         "confirming early."
     ),
     "provo": (
         "Provo's ADU market is unusually driven by BYU's student-rental "
         "demand, and the city is still finalizing its SB284 compliance "
-        "ordinance — a draft proposal would cap all accessory structures at "
+        "ordinance  -  a draft proposal would cap all accessory structures at "
         "40% of total parcel area, with published maps showing which "
         "neighborhoods gain new eligibility.",
         "Provo's east-bench neighborhoods generally have larger lots that "
@@ -95,10 +95,10 @@ LOCAL_FOCUS = {
     ),
     "vineyard": (
         "Vineyard is Utah's newest planned city, built almost entirely on "
-        "former Geneva Steel land — nearly every lot is recent construction "
+        "former Geneva Steel land  -  nearly every lot is recent construction "
         "under a single HOA-governed design standard.",
         "Vineyard's uniform, modern lot sizing makes SB284 eligibility "
-        "unusually easy to determine — the HOA's architectural guidelines "
+        "unusually easy to determine  -  the HOA's architectural guidelines "
         "are typically the bigger factor in what an ADU can look like."
     ),
     "bluffdale": (
@@ -111,7 +111,7 @@ LOCAL_FOCUS = {
     "cottonwood-heights": (
         "Cottonwood Heights sits right up against the canyons, so snow "
         "load, slope grading and drainage engineering matter more here than "
-        "in flatter valley cities — and HOA aesthetic standards run higher "
+        "in flatter valley cities  -  and HOA aesthetic standards run higher "
         "than average.",
         "Foothill lots here can be larger than they look on a plat map, "
         "but canyon-adjacent parcels sometimes carry additional geotechnical "
@@ -123,12 +123,12 @@ LOCAL_FOCUS = {
         "engineering for grading and drainage than a flat-lot build "
         "elsewhere in the valley.",
         "Draper's HOA-governed hillside communities often have stricter "
-        "architectural review than city code alone — plan for both "
+        "architectural review than city code alone  -  plan for both "
         "approvals, not just one."
     ),
     "herriman": (
         "Herriman is one of the fastest-growing cities in the valley, with "
-        "master-planned communities built on larger modern lots — a good "
+        "master-planned communities built on larger modern lots  -  a good "
         "match for SB284's detached-ADU rules.",
         "New-build Herriman subdivisions are generally well above the "
         "11,000-sq-ft threshold, though individual HOAs may still restrict "
@@ -137,14 +137,14 @@ LOCAL_FOCUS = {
     "riverton": (
         "Riverton has a mix of older agricultural-heritage lots and newer "
         "growth, so lot sizes vary more than in a purely master-planned "
-        "city — some of the older parcels are genuinely large.",
-        "Check your specific lot rather than assuming — Riverton's range of "
+        "city  -  some of the older parcels are genuinely large.",
+        "Check your specific lot rather than assuming  -  Riverton's range of "
         "lot sizes means SB284 eligibility isn't uniform across the city."
     ),
     "salt-lake-city": (
         "Salt Lake City's older, denser neighborhoods often sit on lots "
         "well under SB284's 11,000-sq-ft detached-ADU threshold, which "
-        "means an internal ADU — a basement or attic conversion — is the "
+        "means an internal ADU  -  a basement or attic conversion  -  is the "
         "realistic path for many downtown-adjacent homeowners, even as "
         "rental demand near downtown and the University stays strong.",
         "If your lot doesn't clear the detached-ADU threshold, a basement "
@@ -154,7 +154,7 @@ LOCAL_FOCUS = {
     "sandy": (
         "Sandy's established mid-size lots are common across the city, and "
         "several newer developments carry HOA design guidelines on top of "
-        "city zoning — plus foothill lots near the mountains that call for "
+        "city zoning  -  plus foothill lots near the mountains that call for "
         "proper snow-load design.",
         "Sandy has had internal-ADU rules for years, so the main change "
         "from SB284 is opening up detached backyard units on qualifying "
@@ -173,7 +173,7 @@ LOCAL_FOCUS = {
         "County, with older neighborhoods on larger parcels seeing strong "
         "interest in ADUs for multigenerational living and rental income.",
         "Many of West Jordan's older, larger-lot neighborhoods clear the "
-        "SB284 threshold comfortably — newer, tighter subdivisions are more "
+        "SB284 threshold comfortably  -  newer, tighter subdivisions are more "
         "likely to need an internal ADU."
     ),
     "bountiful": (
@@ -181,7 +181,7 @@ LOCAL_FOCUS = {
         "Front often sit on older, larger lots than newer Davis County "
         "development, with a mix of historic and mid-century housing stock.",
         "Bountiful's established bench lots are frequently large enough for "
-        "a detached ADU under SB284 — older utility connections are the "
+        "a detached ADU under SB284  -  older utility connections are the "
         "detail worth checking early."
     ),
     "heber-city": (
@@ -199,14 +199,14 @@ LOCAL_FOCUS = {
         "limit how an ADU is used, and lot sizes swing from tiny Old Town "
         "parcels to large lots in outlying neighborhoods.",
         "Park City's local overlays and nightly-rental restrictions matter "
-        "as much as SB284 itself — confirm both before assuming a detached "
+        "as much as SB284 itself  -  confirm both before assuming a detached "
         "ADU is rentable the way you're picturing it."
     ),
 }
 
 # Real neighborhood names, confirmed via public real-estate/city sources,
 # for cities where we've done the research. Cities not listed here don't
-# get invented neighborhood names — LOCAL_FOCUS above still gives each of
+# get invented neighborhood names  -  LOCAL_FOCUS above still gives each of
 # them a genuinely distinct angle without fabricating specifics.
 NEIGHBORHOODS = {
     "salt-lake-city": ["Sugar House", "The Avenues", "Rose Park", "Sunnyside", "Highland Park"],
@@ -219,7 +219,7 @@ NEIGHBORHOODS = {
 }
 
 # Cities where hillside/canyon terrain makes soils/geotechnical review a
-# real, recurring factor — not universal, so we don't apply this section
+# real, recurring factor  -  not universal, so we don't apply this section
 # to flat-lot cities where it wouldn't be an honest differentiator.
 HILLSIDE_TERRAIN = {
     "draper", "cottonwood-heights", "alpine", "park-city", "bountiful",
@@ -239,7 +239,7 @@ WELL_SEPTIC = {"mapleton", "heber-city", "alpine"}
 
 # A distinct headline + lede for the deep-content section on each city
 # page, so the section reads as "this city's specific issue" rather than
-# a name-swapped template — mirrors how the main site's Alpine page leads
+# a name-swapped template  -  mirrors how the main site's Alpine page leads
 # with "grading, permits and HOA review" instead of a generic ADU pitch.
 DEEP_HEADLINES = {
     "alpine": (
@@ -248,10 +248,10 @@ DEEP_HEADLINES = {
     ),
     "highland": (
         "Why HOA Design Review Matters as Much as City Permits in Highland",
-        "Highland's newer master-planned subdivisions often have HOA architectural standards that predate SB284 — and they don't disappear just because the city says yes."
+        "Highland's newer master-planned subdivisions often have HOA architectural standards that predate SB284  -  and they don't disappear just because the city says yes."
     ),
     "lehi": (
-        "Lehi Already Allowed Detached ADUs — Here's What Changed on October 1, 2026",
+        "Lehi Already Allowed Detached ADUs  -  Here's What Changed on October 1, 2026",
         "Lehi updated its existing detached-ADU ordinance to comply with SB284, and city staff estimate roughly 20% more properties are now newly eligible."
     ),
     "lindon": (
@@ -259,11 +259,11 @@ DEEP_HEADLINES = {
         "Lindon's mix of older, larger agricultural-heritage lots and newer infill means SB284 eligibility has to be checked lot-by-lot, not assumed citywide."
     ),
     "mapleton": (
-        "The Real Constraint on a Mapleton ADU Usually Isn't Lot Size — It's Utilities",
+        "The Real Constraint on a Mapleton ADU Usually Isn't Lot Size  -  It's Utilities",
         "Mapleton's bench-and-foothill lots are large enough for most detached ADUs, but well and septic capacity needs to be confirmed before anything else."
     ),
     "provo": (
-        "Provo Is Still Finalizing Its SB284 Ordinance — Here's Where Things Stand",
+        "Provo Is Still Finalizing Its SB284 Ordinance  -  Here's Where Things Stand",
         "A draft proposal would cap accessory structures at 40% of parcel area, and eligibility splits sharply between Provo's east bench and its smaller, campus-adjacent lots."
     ),
     "spanish-fork": (
@@ -272,7 +272,7 @@ DEEP_HEADLINES = {
     ),
     "vineyard": (
         "Vineyard's Uniform New-Build Lots Make SB284 Eligibility the Easy Part",
-        "Nearly every lot in Vineyard sits under the same HOA design standard — the real question is what the HOA will approve, not whether the city allows it."
+        "Nearly every lot in Vineyard sits under the same HOA design standard  -  the real question is what the HOA will approve, not whether the city allows it."
     ),
     "bluffdale": (
         "Bluffdale's Larger, Rural-Transition Lots Are Ahead of the SB284 Curve",
@@ -284,7 +284,7 @@ DEEP_HEADLINES = {
     ),
     "draper": (
         "Why Draper's Hillside Neighborhoods Change the ADU Math",
-        "Suncrest and Corner Canyon's steep-slope lots mean more grading and drainage engineering than a flat-lot build elsewhere in the valley — and HOA review runs on top of city permitting."
+        "Suncrest and Corner Canyon's steep-slope lots mean more grading and drainage engineering than a flat-lot build elsewhere in the valley  -  and HOA review runs on top of city permitting."
     ),
     "herriman": (
         "Herriman's New-Build Subdivisions Are a Strong Match for SB284",
@@ -292,11 +292,11 @@ DEEP_HEADLINES = {
     ),
     "riverton": (
         "Riverton's Lot Sizes Vary Enough That You Should Check Yours Specifically",
-        "A mix of older agricultural-heritage lots and newer growth means SB284 eligibility isn't uniform across the city — some of the older parcels are genuinely large."
+        "A mix of older agricultural-heritage lots and newer growth means SB284 eligibility isn't uniform across the city  -  some of the older parcels are genuinely large."
     ),
     "salt-lake-city": (
         "Why Most Salt Lake City ADUs Are Basement Conversions, Not Backyard Cottages",
-        "Older, denser SLC lots often sit under SB284's 11,000-sq-ft detached-ADU threshold — for most homeowners here, an internal ADU is the realistic path, not a zoning failure."
+        "Older, denser SLC lots often sit under SB284's 11,000-sq-ft detached-ADU threshold  -  for most homeowners here, an internal ADU is the realistic path, not a zoning failure."
     ),
     "sandy": (
         "What Sandy Homeowners Need to Know About Foothill Lots and HOA Layers",
@@ -304,15 +304,15 @@ DEEP_HEADLINES = {
     ),
     "south-jordan": (
         "Daybreak's HOA Design Guidelines Can Be Stricter Than South Jordan's Own Code",
-        "If you're in Daybreak, budget time for HOA architectural review in addition to the city's SB284-compliant permitting process — older South Jordan neighborhoods follow standard city zoning instead."
+        "If you're in Daybreak, budget time for HOA architectural review in addition to the city's SB284-compliant permitting process  -  older South Jordan neighborhoods follow standard city zoning instead."
     ),
     "west-jordan": (
         "West Jordan's Older, Larger-Lot Neighborhoods Are Where SB284 Opens the Most Doors",
-        "West Jordan has some of the more varied lot sizes in Salt Lake County — older neighborhoods on larger parcels clear the threshold; newer, tighter subdivisions are more likely to need an internal ADU."
+        "West Jordan has some of the more varied lot sizes in Salt Lake County  -  older neighborhoods on larger parcels clear the threshold; newer, tighter subdivisions are more likely to need an internal ADU."
     ),
     "bountiful": (
         "Why Bountiful's Bench Lots Are Well-Suited to a Detached ADU",
-        "Older, larger lots along the Wasatch Front bench frequently clear the SB284 threshold — aging utility connections are the detail worth checking early."
+        "Older, larger lots along the Wasatch Front bench frequently clear the SB284 threshold  -  aging utility connections are the detail worth checking early."
     ),
     "heber-city": (
         "Heber City's Rural-Residential Lots Meet Growing Wasatch Back Demand",
@@ -326,7 +326,7 @@ DEEP_HEADLINES = {
 
 TESTIMONIALS = [
     {
-        "quote": "Pro-Worx converted our garage into a rental unit in under 5 weeks. Permits, design, everything — handled.",
+        "quote": "Pro-Worx converted our garage into a rental unit in under 5 weeks. Permits, design, everything  -  handled.",
         "author": "Sarah M.",
         "role": "Sandy, UT",
     },
@@ -346,17 +346,17 @@ FAQS = [
     ("Can I legally build an ADU on my property in {city}?",
      "Most single-family lots in {city} qualify for an ADU, but rules vary by zoning district and, as of October 1, 2026, by the city's updated SB284 detached-ADU ordinance. We handle a full zoning and permit review as part of every free estimate, so you'll know exactly what's possible before committing to anything."),
     ("How much does an ADU cost in {city}?",
-     "Typical investment runs $100K–$200K for a garage or basement conversion and $200K–$300K for a full detached build. Final pricing depends on your lot, utility access and finish level — we'll give you an exact number after a site walk."),
+     "Typical investment runs $100K–$200K for a garage or basement conversion and $200K–$300K for a full detached build. Final pricing depends on your lot, utility access and finish level  -  we'll give you an exact number after a site walk."),
     ("How long does an ADU build take in {city}?",
-     "Garage and basement conversions typically take 3–5 weeks. Detached, ground-up ADUs run longer once permitting and foundation work are factored in — we'll give you a realistic timeline before you sign anything."),
+     "Garage and basement conversions typically take 3–5 weeks. Detached, ground-up ADUs run longer once permitting and foundation work are factored in  -  we'll give you a realistic timeline before you sign anything."),
     ("Will an ADU increase my property value in {county} County?",
      "ADUs are one of the highest-return additions available to Utah homeowners, both through added square footage and rental income potential. Many owners recoup their investment through rent within a few years."),
     ("Do you handle permits and inspections with the {city} building department?",
-     "Yes — permitting, plan review and inspection scheduling are included in every ADU plan tier. You won't need to deal with the city directly at any point in the process."),
+     "Yes  -  permitting, plan review and inspection scheduling are included in every ADU plan tier. You won't need to deal with the city directly at any point in the process."),
     ("Can I rent out my ADU in {city}?",
-     "In most cases, yes — most cities in {county} County allow long-term rental of a permitted ADU, though a handful of cities and HOAs restrict short-term/nightly rentals. We'll confirm exactly how {city} treats rentals as part of your free estimate."),
+     "In most cases, yes  -  most cities in {county} County allow long-term rental of a permitted ADU, though a handful of cities and HOAs restrict short-term/nightly rentals. We'll confirm exactly how {city} treats rentals as part of your free estimate."),
     ("Does an ADU in {city} need its own egress window?",
-     "Yes — any bedroom needs a code-compliant egress window or door for safety, standard on every basement conversion and detached build we do in {city}. It's factored into your quote from day one."),
+     "Yes  -  any bedroom needs a code-compliant egress window or door for safety, standard on every basement conversion and detached build we do in {city}. It's factored into your quote from day one."),
     ("Is financing available for an ADU project in {city}?",
      "Many {city} homeowners finance an ADU through a home equity loan, HELOC, cash-out refinance, or a renovation/construction loan. We're not a lender, but we can help you scope the project so you can have that conversation with real numbers."),
 ]
