@@ -1633,6 +1633,104 @@ def deep_content_west_jordan():
 """
 
 
+def deep_content_cottonwood_heights():
+    """Bespoke, research-backed deep-content section for Cottonwood
+    Heights. Real $100 license fee, real $1,100 detached conditional-use
+    fee, real short-term-rental ban, real egress rule. Honest about
+    unverified max-size and setback figures. Built by hand rather than
+    the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: COTTONWOOD HEIGHTS (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE COTTONWOOD HEIGHTS DETAILS</p>
+      <h2>Cottonwood Heights Requires a License and a Conditional-Use Permit &mdash; That's Two Different Fees</h2>
+      <p class="lede">Cottonwood Heights legalized ADUs back in 2021, well ahead of SB284. An internal conversion is a relatively simple licensing process, but a detached ADU adds a conditional-use permit on top &mdash; and a separate fee for it.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in Cottonwood Heights, Utah near the mouth of Big Cottonwood Canyon">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">32,265</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">2005</div><div class="spec-label">Incorporated (after a 2004 referendum)</div></div>
+      <div class="spec-card"><div class="spec-value">6,000 sq ft</div><div class="spec-label">Minimum lot size for an ADU</div></div>
+      <div class="spec-card"><div class="spec-value">Canyons School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#ch-neighborhoods">Neighborhoods</a>
+        <a href="#ch-zoning">Zoning &amp; Permits</a>
+        <a href="#ch-rentals">No Short-Term Rentals</a>
+        <a href="#ch-cost">Cost</a>
+        <a href="#ch-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="ch-neighborhoods">
+          <h3>{PIN_SVG} A Canyon-Mouth City Built Around Established Neighborhoods</h3>
+          <p>Cottonwood Heights sits at the mouth of both Big and Little Cottonwood Canyons, giving it direct access to some of Utah's best-known ski resorts. It's one of Salt Lake County's newer incorporated cities, becoming official in 2005 after decades as unincorporated county land, and its housing stock reflects that older, established suburban character:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Old Mill</h4><p>A recognized area tied to the city's Old Mill Golf Course and surrounding development.</p></div>
+            <div class="neighborhood-card"><h4>Butler &amp; Butler West</h4><p>Established residential neighborhoods on the ridge between Big and Little Cottonwood Creeks.</p></div>
+          </div>
+          <p style="margin-top:8px;">Because most of Cottonwood Heights was built out well before incorporation, lot sizes and layouts tend to follow older suburban patterns rather than newer subdivision standards &mdash; something we factor into every ADU conversion here.</p>
+        </div>
+
+        <div class="content-block" id="ch-zoning">
+          <h3>{CLIPBOARD_SVG} What Cottonwood Heights' ADU Ordinance Actually Requires</h3>
+          <p>Cottonwood Heights City Council legalized ADUs on September 21, 2021, years ahead of Utah's SB284 mandate. The city's official ADU checklists spell out two distinct paths:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Cottonwood Heights Standard</th></tr>
+              <tr><td>Minimum lot size</td><td>6,000 sq ft (R-1, RR-1, F-1 zones)</td></tr>
+              <tr><td>Internal ADU parking</td><td>1 additional space beyond the 2 required for the main home, no tandem</td></tr>
+              <tr><td>ADU license fee</td><td>$100</td></tr>
+              <tr><td>Owner-occupancy</td><td>Required (main home or ADU), with proof required at application</td></tr>
+              <tr><td>Units per property</td><td>One ADU maximum</td></tr>
+            </table>
+          </div>
+          <p>A detached ADU adds a conditional-use permit on top of the standard license, which the internal path doesn't require. Cottonwood Heights' published checklists don't state a maximum ADU square footage or specific setback figures the way some cities do, so we confirm those details, along with the current conditional-use fee, directly with the city's Community Development Department before pricing any detached project.</p>
+        </div>
+
+        <div class="content-block" id="ch-rentals">
+          <h3>{HAMMER_SVG} Long-Term Only &mdash; No Airbnb, and a Real Egress Rule</h3>
+          <p>Cottonwood Heights requires a minimum 30 consecutive days for any ADU rental, and short-term rentals are explicitly prohibited under city code. If you're converting a basement or below-grade space, the city also requires a minimum 5.0-square-foot egress opening &mdash; a specific number worth knowing before you finalize a floor plan, since it affects where windows and stairwells can go.</p>
+        </div>
+
+        <div class="content-block" id="ch-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Cottonwood Heights?</h3>
+          <p>Because a detached ADU here adds a conditional-use permit on top of the standard license fee, that path carries more upfront process than an internal conversion. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Cottonwood Heights quote reflects your home's layout, permit path and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Cottonwood Heights typically lands at $95K&ndash;$180K for an internal conversion, and $200K&ndash;$300K for a detached, ground-up build once the conditional-use permit and its requirements are confirmed with the city.</p>
+        </div>
+
+        <div class="content-block" id="ch-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://www.cottonwoodheights.utah.gov/city-services/community-development/accessory-dwelling-units" target="_blank" rel="noopener">City of Cottonwood Heights</a>: ADU program overview and official Internal ADU checklist</li>
+            <li><a href="https://www.cottonwoodheights.utah.gov/community/history/contact-us" target="_blank" rel="noopener">Cottonwood Heights City Hall</a>: 2277 Bengal Blvd, Cottonwood Heights, UT 84121</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/cottonwoodheightscityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: Cottonwood Heights population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -1705,6 +1803,7 @@ CITY_HERO_H1 = {
     "riverton": "How Big Can Your ADU Be in Riverton, Utah?",
     "sandy": "Can You Build a Detached ADU in Sandy, Utah?",
     "west-jordan": "Can You Build a Detached ADU in West Jordan, Utah?",
+    "cottonwood-heights": "Do You Need a Permit for an ADU in Cottonwood Heights?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -1743,6 +1842,7 @@ CITY_CTA1 = {
     "riverton": ("Not sure what size ADU your Riverton lot qualifies for?", "We'll run your home's footprint and lot area through the city's formula and tell you the real number."),
     "sandy": ("Not sure if your Sandy home needs an attached or detached ADU path?", "We'll confirm which rule applies to your property before you spend a dollar on design."),
     "west-jordan": ("Not sure if your West Jordan lot is in a detached-ADU zone?", "We'll confirm your zone and lot size before you spend a dollar on design."),
+    "cottonwood-heights": ("Not sure if you need a conditional-use permit in Cottonwood Heights?", "We'll confirm which permit path applies to your project before you spend a dollar on design."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -1767,6 +1867,7 @@ CITY_CTA2 = {
     "riverton": ("See ADU plans sized to Riverton's lot-based formula", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "sandy": ("See ADU plans for Sandy's attached and detached paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "west-jordan": ("See ADU plans for West Jordan's internal and detached paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "cottonwood-heights": ("See ADU plans for Cottonwood Heights' licensed and permitted paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -1961,7 +2062,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
