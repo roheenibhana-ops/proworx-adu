@@ -1436,6 +1436,104 @@ def deep_content_riverton():
 """
 
 
+def deep_content_sandy():
+    """Bespoke, research-backed deep-content section for Sandy. Real
+    internal-only accessory apartment rule (no detached ADU under this
+    provision, separate guesthouse rule for detached), real proof-of-
+    occupancy requirement. Honest about unverified figures (lot size,
+    fee, setbacks) rather than inventing them. Built by hand rather
+    than the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: SANDY (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE SANDY DETAILS</p>
+      <h2>Sandy's Existing Ordinance Only Covers Attached Units &mdash; Detached Is a Different Rule</h2>
+      <p class="lede">Sandy's accessory apartment code was written around a unit inside your existing home, not a standalone structure in the backyard. If you want a detached ADU, you're looking at a separate provision and, likely, the new SB284 mandate rather than the accessory apartment rule itself.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1800&auto=format&fit=crop" alt="Established residential neighborhood in Sandy, Utah near the Wasatch foothills">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">92,386</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">1893</div><div class="spec-label">Incorporated (settled 1871, mining roots)</div></div>
+      <div class="spec-card"><div class="spec-value">1</div><div class="spec-label">Accessory apartment allowed per single-family home</div></div>
+      <div class="spec-card"><div class="spec-value">Canyons School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#sandy-neighborhoods">Neighborhoods</a>
+        <a href="#sandy-zoning">Zoning &amp; Permits</a>
+        <a href="#sandy-proof">Proof of Occupancy</a>
+        <a href="#sandy-cost">Cost</a>
+        <a href="#sandy-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="sandy-neighborhoods">
+          <h3>{PIN_SVG} From Historic Mining Roots to Foothill Growth Near Little Cottonwood Canyon</h3>
+          <p>Sandy grew out of the silver-mining and smelting boom tied to Little Cottonwood Canyon in the 1870s before incorporating in 1893, and today it's one of the larger, more established cities in Salt Lake County. Its residential character ranges from older, flatter neighborhoods near the historic Main Street core to newer development toward the foothills:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Dimple Dell Oaks</h4><p>A subdivision near Dimple Dell Regional Park, one of Sandy's signature natural landmarks.</p></div>
+            <div class="neighborhood-card"><h4>The Dell</h4><p>A residential area associated with the Dimple Dell park corridor.</p></div>
+          </div>
+          <p style="margin-top:8px;">Because Sandy spans everything from century-old lots to newer foothill-adjacent construction, we confirm your specific zone and lot history before pricing anything &mdash; an older Sandy lot and a newer one can fall under genuinely different practical constraints even under the same code.</p>
+        </div>
+
+        <div class="content-block" id="sandy-zoning">
+          <h3>{CLIPBOARD_SVG} Sandy's Accessory Apartment Rule Is Attached-Only</h3>
+          <p>Sandy City's accessory apartment ordinance is specific about what it covers: an accessory apartment "shall not occupy any accessory buildings," meaning it's written for a unit inside your existing single-family home, not a detached structure. A separate "guesthouse" provision covers detached structures, with its own setback rules apart from the accessory apartment code:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Sandy Standard</th></tr>
+              <tr><td>Unit type covered</td><td>Internal/attached only (no accessory buildings)</td></tr>
+              <tr><td>Units per property</td><td>One accessory apartment per single-family structure</td></tr>
+              <tr><td>Parking</td><td>1 additional off-street space, beyond standard household parking</td></tr>
+              <tr><td>Permit</td><td>Administrative special use permit plus an accessory apartment business license</td></tr>
+            </table>
+          </div>
+          <p>Sandy hasn't published a specific minimum lot size, square-footage cap or setback figure for the accessory apartment provision itself in what we could verify, and we didn't want to guess at numbers that could be wrong. If you're set on a detached ADU, that likely falls under Utah's SB284 mandate (effective October 1, 2026) rather than this existing ordinance &mdash; we confirm the current, exact standards with Sandy's Community Development Department as the first step on every project here.</p>
+        </div>
+
+        <div class="content-block" id="sandy-proof">
+          <h3>{HAMMER_SVG} Sandy Actually Requires Proof You Live There</h3>
+          <p>Most Utah cities state an owner-occupancy requirement in a sentence. Sandy spells out exactly how you prove it: a deed, tax return, government ID, or notarized affidavit showing the primary dwelling is your primary residence. It's a small detail, but it's worth knowing before you apply &mdash; have that documentation ready rather than finding out about it mid-application.</p>
+        </div>
+
+        <div class="content-block" id="sandy-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Sandy?</h3>
+          <p>Because Sandy's existing ordinance points toward an internal conversion, and a detached unit runs through a separate process entirely, project scope here depends heavily on which path fits your property and goals. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Sandy quote reflects which path (internal apartment vs. detached ADU) fits your property, and your finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Sandy typically lands at $90K&ndash;$170K for an internal accessory apartment conversion, with a detached ADU priced separately once we've confirmed how the city is applying SB284 to your specific lot.</p>
+        </div>
+
+        <div class="content-block" id="sandy-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://sandyutah.legistar.com/View.ashx?GUID=1221E71F-91D9-41B9-99DF-73367A5D7E57&amp;ID=9806732&amp;M=F" target="_blank" rel="noopener">Sandy City Council</a>: accessory apartment ordinance language</li>
+            <li><a href="https://sandy.utah.gov/2353/Accessory-Apartments" target="_blank" rel="noopener">City of Sandy</a>: accessory apartment permitting overview; City Hall, 10000 S Centennial Parkway, Sandy, UT 84070</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/sandycityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: Sandy population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -1506,6 +1604,7 @@ CITY_HERO_H1 = {
     "bluffdale": "How Big of an ADU Can You Build in Bluffdale, Utah?",
     "draper": "Can You Build an ADU on a Hillside Lot in Draper, Utah?",
     "riverton": "How Big Can Your ADU Be in Riverton, Utah?",
+    "sandy": "Can You Build a Detached ADU in Sandy, Utah?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -1542,6 +1641,7 @@ CITY_CTA1 = {
     "bluffdale": ("Not sure what size ADU your Bluffdale home qualifies for?", "We'll measure your home and confirm the 50% size cap before you spend a dollar on design."),
     "draper": ("Not sure what your Draper lot's terrain adds to the budget?", "We'll walk your property, check the slope, and give you a real number before you commit to anything."),
     "riverton": ("Not sure what size ADU your Riverton lot qualifies for?", "We'll run your home's footprint and lot area through the city's formula and tell you the real number."),
+    "sandy": ("Not sure if your Sandy home needs an attached or detached ADU path?", "We'll confirm which rule applies to your property before you spend a dollar on design."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -1564,6 +1664,7 @@ CITY_CTA2 = {
     "bluffdale": ("See ADU plans sized to Bluffdale's 50% cap", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "draper": ("See ADU plans built for Draper's hillside and flat lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "riverton": ("See ADU plans sized to Riverton's lot-based formula", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "sandy": ("See ADU plans for Sandy's attached and detached paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -1758,7 +1859,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
