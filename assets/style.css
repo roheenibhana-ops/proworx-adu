@@ -10,7 +10,7 @@
     --shadow-soft:0 4px 30px hsla(220,20%,18%,0.06);
     --shadow-card:0 8px 40px hsla(220,20%,18%,0.08);
     --radius:6px;
-    --hero-overlay:linear-gradient(135deg, hsla(220,20%,18%,0.55), hsla(220,20%,18%,0.30));
+    --hero-overlay:linear-gradient(135deg, hsla(220,20%,14%,0.72), hsla(220,20%,14%,0.48));
     --card-image-scrim:linear-gradient(to top, hsla(220,20%,18%,0.80), hsla(220,20%,18%,0));
   }
 
@@ -196,12 +196,13 @@
   /* Hero */
   .hero{
     position:relative;
-    min-height:100vh;
+    min-height:auto;
     display:flex;
     align-items:center;
     padding-top:80px;
     overflow:hidden;
   }
+  @media (min-width:768px){ .hero{min-height:82vh;} }
   .hero-bg{
     position:absolute; inset:0;
     background-image:var(--hero-overlay), url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1800&auto=format&fit=crop');
@@ -216,25 +217,26 @@
     .fade-up{animation:none; opacity:1;}
     .reveal{transition:none !important; opacity:1 !important; transform:none !important;}
   }
-  .hero .container{position:relative; z-index:2; padding-top:64px; padding-bottom:64px;}
+  .hero .container{position:relative; z-index:2; padding-top:56px; padding-bottom:56px;}
   .hero-content{max-width:760px;}
   .hero .eyebrow{color:var(--gold-light);}
   .hero h1{
-    font-size:42px;
+    font-size:38px;
+    line-height:1.15;
     color:#fff;
-    margin-bottom:24px;
+    margin-bottom:16px;
   }
-  .hero h1 em{font-style:italic; font-weight:500; color:var(--gold-light); display:block;}
-  @media (min-width:768px){ .hero h1{font-size:60px;} }
+  .hero h1 em{font-style:italic; font-weight:500; color:var(--gold-light); display:block; margin-top:4px;}
+  @media (min-width:768px){ .hero h1{font-size:54px;} }
   .hero-lede{
     font-weight:300;
-    font-size:20px;
-    line-height:1.625;
+    font-size:19px;
+    line-height:1.55;
     color:hsla(40,33%,98%,0.9);
     max-width:560px;
-    margin-bottom:40px;
+    margin-bottom:28px;
   }
-  .hero-ctas{display:flex; flex-wrap:wrap; gap:16px;}
+  .hero-ctas{display:flex; flex-wrap:wrap; gap:16px; margin-bottom:8px;}
 
   .fade-up{opacity:0; animation:fade-up 0.8s ease-out forwards;}
   @keyframes fade-up{ from{opacity:0; transform:translateY(24px);} to{opacity:1; transform:translateY(0);} }
@@ -461,8 +463,8 @@
   /* Hero trust strip */
   .hero-trust{
     display:flex; flex-wrap:wrap; gap:24px;
-    margin-top:40px;
-    padding-top:32px;
+    margin-top:24px;
+    padding-top:20px;
     border-top:1px solid hsla(40,33%,98%,0.2);
   }
   .hero-trust .item{
