@@ -117,14 +117,15 @@
     align-items:center;
     justify-content:space-between;
   }
-  .wordmark{font-family:'Playfair Display', serif; font-weight:700; font-size:20px; letter-spacing:0.02em;}
+  .wordmark{font-family:'Playfair Display', serif; font-weight:700; font-size:20px; letter-spacing:0.02em; display:flex; flex-direction:column;}
   .wordmark span{
     display:block;
     font-family:'Inter', sans-serif;
     font-weight:500;
     font-size:10px;
     letter-spacing:0.25em;
-    color:var(--primary);
+    margin-top:-2px;
+    color:var(--muted-foreground);
   }
   nav.desktop-nav{display:none; gap:28px; align-items:center; flex-wrap:nowrap;}
   nav.desktop-nav > a{font-size:14px; font-weight:500; color:var(--muted-foreground); transition:color 0.2s ease; white-space:nowrap;}

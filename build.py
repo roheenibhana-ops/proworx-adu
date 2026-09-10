@@ -48,7 +48,7 @@ CITY_IMAGES = [
 def header_nav(active_areas=False):
     return f"""<header>
   <div class="container">
-    <a href="/index.html" class="wordmark">PRO-WORX ADU</a>
+    <a href="/index.html" class="wordmark">PRO-WORX<span>ADU</span></a>
     <nav class="desktop-nav">
       <a href="/index.html#what-is-adu">What's an ADU?</a>
       <a href="/index.html#plans">Plans &amp; Pricing</a>
@@ -66,7 +66,7 @@ def header_nav(active_areas=False):
     </nav>
     <div style="display:flex; align-items:center; gap:12px;">
       <a href="tel:8018884282" class="nav-cta btn btn-outline">(801) 888-4282</a>
-      <a href="/index.html#contact" class="nav-cta btn btn-primary">GET FREE ESTIMATE</a>
+      <a href="/index.html#contact" class="nav-cta btn btn-primary" style="text-transform:none; letter-spacing:normal;">Free Estimate</a>
       <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">{MENU_SVG}</button>
     </div>
   </div>
@@ -80,7 +80,7 @@ def header_nav(active_areas=False):
     <a href="/adu-rules-2026.html">2026 ADU Law</a>
     <a href="/index.html#faq">FAQ</a>
     <a href="tel:8018884282" class="btn btn-outline">(801) 888-4282</a>
-    <a href="/index.html#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
+    <a href="/index.html#contact" class="btn btn-primary" style="text-transform:none; letter-spacing:normal;">Free Estimate</a>
   </div>
 </header>"""
 
@@ -88,7 +88,7 @@ FOOTER = """<footer>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-col">
-        <a href="/index.html" class="wordmark">PRO-WORX ADU</a>
+        <a href="/index.html" class="wordmark">PRO-WORX<span>ADU</span></a>
         <p class="footer-desc">A <a href="https://proworxconstruction.com" target="_blank" rel="noopener">Pro-Worx Construction</a> company. 20 years building in Utah. Utah's fixed-price ADU builder. Permits, design and construction, handled. <a href="https://proworxconstruction.com/adu-builders-utah/" target="_blank" rel="noopener" style="text-decoration:underline;">See our full ADU services on the main site &rarr;</a></p>
       </div>
       <div class="footer-col">
