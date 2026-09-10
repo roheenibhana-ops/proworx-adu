@@ -7,6 +7,18 @@ from cities import CITIES, TESTIMONIALS, FAQS, LOCAL_FOCUS, NEIGHBORHOODS, HILLS
 
 ROOT = os.path.dirname(__file__)
 
+# Update this the moment a custom domain is live (e.g. https://proworxadu.com)
+# — canonical tags, sitemap.xml, robots.txt and JSON-LD all key off it, so
+# this one line is the whole migration.
+BASE_URL = "https://proworxadu.roheeni-bhana.workers.dev"
+
+# Tracks every page we generate (path, changefreq, priority) so sitemap.xml
+# stays in sync with whatever build_* functions actually write to disk.
+SITEMAP_ENTRIES = []
+
+def _register(path, changefreq="monthly", priority="0.6"):
+    SITEMAP_ENTRIES.append((path, changefreq, priority))
+
 HEAD_COMMON = """<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -176,7 +188,12 @@ def contact_section(prefill_city=""):
   </div>
 </section>"""
 
-def page_shell(title, description, body, canonical_path):
+def page_shell(title, description, body, canonical_path, json_ld=None):
+    canonical_url = f"{BASE_URL}{canonical_path}"
+    json_ld_tags = ""
+    if json_ld:
+        for block in json_ld:
+            json_ld_tags += f'<script type="application/ld+json">{block}</script>\n'
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -184,11 +201,14 @@ def page_shell(title, description, body, canonical_path):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{description}">
+<link rel="canonical" href="{canonical_url}">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
 <meta property="og:type" content="website">
+<meta property="og:url" content="{canonical_url}">
+<meta name="twitter:card" content="summary">
 {HEAD_COMMON}
-</head>
+{json_ld_tags}</head>
 <body>
 
 {header_nav()}
@@ -433,6 +453,60 @@ def deep_content_alpine():
 """
 
 
+def local_business_jsonld():
+    import json
+    data = {
+        "@context": "https://schema.org",
+        "@type": "GeneralContractor",
+        "name": "Pro-Worx ADU",
+        "url": BASE_URL,
+        "telephone": "+18018884282",
+        "email": "info@proworxconstruction.com",
+        "parentOrganization": {
+            "@type": "Organization",
+            "name": "Pro-Worx Construction",
+            "url": "https://proworxconstruction.com",
+        },
+        "areaServed": [
+            {"@type": "AdministrativeArea", "name": f"{n}, Utah"} for n, s, c in CITIES
+        ],
+        "priceRange": "$100K-$300K",
+        "openingHours": "Mo-Fr 08:00-18:00",
+    }
+    return json.dumps(data)
+
+
+def breadcrumb_jsonld(crumbs):
+    """crumbs: list of (name, path) tuples, path may be '' for the current page (no url)."""
+    import json
+    items = []
+    for i, (name, path) in enumerate(crumbs, start=1):
+        entry = {"@type": "ListItem", "position": i, "name": name}
+        if path:
+            entry["item"] = f"{BASE_URL}{path}"
+        items.append(entry)
+    data = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items}
+    return json.dumps(data)
+
+
+def faq_jsonld(qa_pairs):
+    """qa_pairs: list of (question, answer) plain-text tuples (HTML tags should already be stripped)."""
+    import json
+    data = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": q,
+                "acceptedAnswer": {"@type": "Answer", "text": a},
+            }
+            for q, a in qa_pairs
+        ],
+    }
+    return json.dumps(data)
+
+
 def build_city_page(name, slug, county, index):
     local_context, local_sb284_note = LOCAL_FOCUS.get(
         slug,
@@ -456,9 +530,11 @@ def build_city_page(name, slug, county, index):
     )
 
     faq_html = ""
+    faq_pairs = []
     for q, a in FAQS:
         q_f = q.format(city=name, county=county)
         a_f = a.format(city=name, county=county)
+        faq_pairs.append((q_f, a_f))
         faq_html += f"""      <div class="accordion-item">
         <button class="accordion-trigger">{q_f}
           {CHEVRON_SVG}
@@ -664,7 +740,11 @@ def build_city_page(name, slug, county, index):
 
     title = f"ADU Builder in {name}, UT | Pro-Worx ADU"
     desc = f"Pro-Worx builds custom Accessory Dwelling Units in {name}, Utah. Fixed pricing, full permitting with the {name} building department, licensed & insured. Get a free ADU estimate."
-    return page_shell(title, desc, body, f"/locations/{slug}.html")
+    path = f"/locations/{slug}.html"
+    crumbs = [("Home", "/index.html"), ("Service Areas", "/index.html#areas"), (name, "")]
+    json_ld = [local_business_jsonld(), breadcrumb_jsonld(crumbs), faq_jsonld(faq_pairs)]
+    _register(path, changefreq="monthly", priority="0.8")
+    return page_shell(title, desc, body, path, json_ld=json_ld)
 
 
 def build_locations():
@@ -736,11 +816,13 @@ def build_blog():
 
 {contact_section()}"""
 
+    _register("/blog/index.html", changefreq="weekly", priority="0.7")
     html = page_shell(
         "The ADU Blog | Pro-Worx ADU",
         "Guides on ADU pricing, permitting and planning for Utah homeowners, from the Pro-Worx ADU team.",
         body,
         "/blog/index.html",
+        json_ld=[breadcrumb_jsonld([("Home", "/index.html"), ("Blog", "")])],
     )
     with open(os.path.join(ROOT, 'blog', 'index.html'), 'w') as f:
         f.write(html)
@@ -776,11 +858,13 @@ def build_blog():
 
 {contact_section()}"""
 
+    _register("/blog/how-much-does-an-adu-cost-in-utah.html", changefreq="monthly", priority="0.6")
     post_html = page_shell(
         "How Much Does an ADU Cost in Utah? | Pro-Worx ADU",
         "A realistic breakdown of Accessory Dwelling Unit pricing across Salt Lake, Utah, Davis and Summit counties.",
         post_body,
         "/blog/how-much-does-an-adu-cost-in-utah.html",
+        json_ld=[breadcrumb_jsonld([("Home", "/index.html"), ("Blog", "/blog/index.html"), ("Pricing", "")])],
     )
     with open(os.path.join(ROOT, 'blog', 'how-much-does-an-adu-cost-in-utah.html'), 'w') as f:
         f.write(post_html)
@@ -807,11 +891,13 @@ def build_blog():
 </section>
 
 {contact_section()}"""
+        _register(f"/blog/{p['slug']}.html", changefreq="monthly", priority="0.5")
         placeholder_html = page_shell(
             f"{p['title']} | Pro-Worx ADU",
             p['excerpt'].replace(' - ', '-'),
             placeholder_body,
             f"/blog/{p['slug']}.html",
+            json_ld=[breadcrumb_jsonld([("Home", "/index.html"), ("Blog", "/blog/index.html"), (p['cat'], "")])],
         )
         with open(os.path.join(ROOT, 'blog', f"{p['slug']}.html"), 'w') as f:
             f.write(placeholder_html)
@@ -871,18 +957,50 @@ def build_law_page():
 
 """ + contact_section()
 
+    _register("/adu-rules-2026.html", changefreq="monthly", priority="0.8")
     html = page_shell(
         "Utah's New ADU Law: SB284 Explained (Effective October 1, 2026) | Pro-Worx ADU",
         "What Utah's SB284 detached-ADU law changes on October 1, 2026  -  lot size rules, parking, permitting, and how it affects Utah homeowners.",
         body,
         "/adu-rules-2026.html",
+        json_ld=[breadcrumb_jsonld([("Home", "/index.html"), ("2026 ADU Law Changes", "")])],
     )
     with open(os.path.join(ROOT, 'adu-rules-2026.html'), 'w') as f:
         f.write(html)
     print("Built adu-rules-2026.html")
 
 
+def build_sitemap_and_robots():
+    _register("/index.html", changefreq="weekly", priority="1.0")
+
+    urls = ""
+    for path, changefreq, priority in SITEMAP_ENTRIES:
+        urls += f"""  <url>
+    <loc>{BASE_URL}{path}</loc>
+    <changefreq>{changefreq}</changefreq>
+    <priority>{priority}</priority>
+  </url>
+"""
+    sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{urls}</urlset>
+"""
+    with open(os.path.join(ROOT, 'sitemap.xml'), 'w') as f:
+        f.write(sitemap)
+
+    robots = f"""User-agent: *
+Allow: /
+
+Sitemap: {BASE_URL}/sitemap.xml
+"""
+    with open(os.path.join(ROOT, 'robots.txt'), 'w') as f:
+        f.write(robots)
+
+    print(f"Built sitemap.xml ({len(SITEMAP_ENTRIES)} URLs) + robots.txt")
+
+
 if __name__ == '__main__':
     build_locations()
     build_blog()
     build_law_page()
+    build_sitemap_and_robots()
