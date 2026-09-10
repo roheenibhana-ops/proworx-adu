@@ -325,6 +325,105 @@ def deep_content_section(name, slug, county):
     return body
 
 
+def deep_content_alpine():
+    """Bespoke, research-backed deep-content section for Alpine — real
+    neighborhoods, real zoning code citations, real city hall address.
+    Built by hand rather than through the generic per-city template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: ALPINE (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE ALPINE DETAILS</p>
+      <h2>Why Does an ADU in Alpine Mean Dealing With Grading, Zoning and HOA Review?</h2>
+      <p class="lede">Alpine's large, sloped lots and conditional-use zoning make an ADU here a different conversation than it is a few miles away in flatter Utah County cities like Lehi or Lindon.</p>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#alpine-neighborhoods">Neighborhoods</a>
+        <a href="#alpine-zoning">Zoning &amp; Permits</a>
+        <a href="#alpine-cost">Cost</a>
+        <a href="#alpine-hoa-terrain">HOA &amp; Terrain</a>
+        <a href="#alpine-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="alpine-neighborhoods">
+          <h3>Alpine's Neighborhoods Aren't All Built the Same</h3>
+          <p>We've scoped ADU projects across Alpine's east-bench and foothill neighborhoods, and grading conditions can differ block to block, not just neighborhood to neighborhood:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Heritage Hills</h4><p>Mature east-bench subdivision with an active HOA architectural review board &mdash; most homes built late 1990s&ndash;early 2000s.</p></div>
+            <div class="neighborhood-card"><h4>Alpine Cove</h4><p>Planned community on Alpine's north end with a uniform design feel and its own covenants &mdash; lots are slightly smaller than the Alpine average.</p></div>
+            <div class="neighborhood-card"><h4>Willow Canyon</h4><p>East foothill custom-home lots with direct trail access and generous acreage &mdash; grading and drainage engineering come up often here.</p></div>
+            <div class="neighborhood-card"><h4>Box Elder Area</h4><p>Upper east-bench lots, frequently an acre or more, with sweeping valley views and mountain-adjacent terrain.</p></div>
+            <div class="neighborhood-card"><h4>Lambert Park Area</h4><p>Homes near Alpine's 250-acre Lambert Park open space and its Fort Canyon trail system &mdash; a popular draw for families considering an ADU for extended family.</p></div>
+          </div>
+        </div>
+
+        <div class="content-block" id="alpine-zoning">
+          <h3>What Alpine's Zoning Code Actually Says About ADUs</h3>
+          <p>Alpine City's Development Code lists accessory dwelling units as a <strong>conditional use</strong> &mdash; not an automatic right &mdash; in three residential zones, each with its own minimum lot size:</p>
+          <div class="spec-cards">
+            <div class="spec-card"><div class="spec-value">10,000 sq ft</div><div class="spec-label">TR-10,000 Zone</div></div>
+            <div class="spec-card"><div class="spec-value">20,000 sq ft</div><div class="spec-label">CR-20,000 Zone</div></div>
+            <div class="spec-card"><div class="spec-value">40,000 sq ft</div><div class="spec-label">CR-40,000 Zone</div></div>
+          </div>
+          <p>Because ADUs are a conditional use here, your project goes through Alpine's conditional-use review process, not just an over-the-counter permit &mdash; on top of whatever SB284 changes for detached ADUs specifically as of October 1, 2026. We confirm which zone your lot sits in and what that means for your timeline before you commit to anything.</p>
+          <div class="office-callout">
+            {PIN_SVG}
+            <p><strong>Alpine City Hall &amp; Building Department</strong><br>20 North Main Street, Alpine, UT 84004 &mdash; where conditional-use applications and building permits for Alpine ADU projects are filed and reviewed.</p>
+          </div>
+        </div>
+
+        <div class="content-block" id="alpine-cost">
+          <h3>What Does an ADU Cost in Alpine?</h3>
+          <p>For context on how similar home-investment categories perform, <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> tracks return-on-investment for comparable projects nationally:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a> &mdash; national data; your Alpine quote reflects your lot, zone and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Alpine typically lands at $100K&ndash;$200K for a garage or basement conversion, and $200K&ndash;$300K for a full detached, ground-up build &mdash; often toward the higher end here given Alpine's larger lots and grading requirements.</p>
+        </div>
+
+        <div class="content-block" id="alpine-hoa-terrain">
+          <h3>Why Alpine Lots Sometimes Need Engineering a Flat-Lot Quote Won't Include</h3>
+          <p>Alpine's hillside and bench terrain means many lots need a soils or geotechnical review before a detached ADU's foundation gets designed &mdash; a step flatter Utah County cities often skip entirely. If a contractor is pricing your Alpine ADU the same way they'd price one a few miles away on flat ground, that's usually where the budget goes sideways once excavation starts.</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Item</th><th>Typical Range</th></tr>
+              <tr><td>Geotechnical/soils review</td><td>$1,000&ndash;$5,000</td></tr>
+              <tr><td>Standard single-family soils report</td><td>~$2,700 average</td></tr>
+              <tr><td>Licensed engineer labor</td><td>$100&ndash;$250 per hour</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://www.homeadvisor.com/cost/architects-and-engineers/geotechnical-report" target="_blank" rel="noopener">HomeAdvisor geotechnical report cost data</a>, national averages &mdash; not confirmed against Alpine-specific pricing.</p>
+          <h3 style="margin-top:28px;">Do I Need HOA Approval Too?</h3>
+          <p>If you're in Heritage Hills, Alpine Cove, or another HOA-governed subdivision, clearing your conditional-use permit with the city doesn't clear your HOA's architectural review &mdash; they're separate approvals. These design boards tend to focus on exterior massing and materials more than interior layout, but they still need to sign off. We submit both in parallel from the start, which is usually where a project either saves weeks or loses them.</p>
+        </div>
+
+        <div class="content-block" id="alpine-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://cdn.sqhk.co/alpinecity/jela7oF/AlpineCityDevelopmentCodeCurrent.pdf" target="_blank" rel="noopener">Alpine City Development Code</a> &mdash; zoning districts and conditional-use ADU provisions</li>
+            <li><a href="https://www.alpineut.gov/157/Building-Department" target="_blank" rel="noopener">Alpine City Building Department</a> &mdash; permit process</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a> &mdash; national remodel ROI benchmarks</li>
+            <li><a href="https://www.homeadvisor.com/cost/architects-and-engineers/geotechnical-report" target="_blank" rel="noopener">HomeAdvisor</a> &mdash; geotechnical report cost data</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def build_city_page(name, slug, county, index):
     local_context, local_sb284_note = LOCAL_FOCUS.get(
         slug,
@@ -483,7 +582,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <section class="bg-secondary">
   <div class="container">
     <div class="section-head reveal">
