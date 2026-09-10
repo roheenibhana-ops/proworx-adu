@@ -1337,6 +1337,105 @@ def deep_content_draper():
 """
 
 
+def deep_content_riverton():
+    """Bespoke, research-backed deep-content section for Riverton. Real
+    Municipal Code 18.225.080, real 2x-footprint/10%-of-lot size cap, real
+    $175 registration fee, real Redfin-verified neighborhoods. Built by
+    hand rather than the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: RIVERTON (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE RIVERTON DETAILS</p>
+      <h2>Riverton Sizes Your ADU Off Your Lot, Not a Flat Number</h2>
+      <p class="lede">Riverton already had a working detached-ADU ordinance well before SB284, and it ties the size cap to your specific lot and home rather than handing every property the same ceiling.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in Riverton, Utah near the Jordan River">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">47,395</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">1948</div><div class="spec-label">Incorporated (settled 1850s as "Gardnerville")</div></div>
+      <div class="spec-card"><div class="spec-value">$175</div><div class="spec-label">ADU registration fee</div></div>
+      <div class="spec-card"><div class="spec-value">Jordan School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#riverton-neighborhoods">Neighborhoods</a>
+        <a href="#riverton-zoning">Zoning &amp; Permits</a>
+        <a href="#riverton-setbacks">Setbacks &amp; Parking</a>
+        <a href="#riverton-cost">Cost</a>
+        <a href="#riverton-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="riverton-neighborhoods">
+          <h3>{PIN_SVG} Riverton Runs From Its Agricultural Roots to Newer Growth Along the Jordan River</h3>
+          <p>Named for its position along the Jordan River, Riverton grew from 1850s farmland into a full Salt Lake County city by the time it incorporated in 1948. Its residential character today spans several distinct, real-mapped areas:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Riverton South</h4><p>A defined residential area on the city's south side.</p></div>
+            <div class="neighborhood-card"><h4>Central Riverton</h4><p>The older, more established core of the city.</p></div>
+            <div class="neighborhood-card"><h4>Western Springs</h4><p>A named residential area on Riverton's west side.</p></div>
+            <div class="neighborhood-card"><h4>Summerhill</h4><p>Another of Riverton's distinct, mapped residential areas.</p></div>
+          </div>
+          <p style="margin-top:8px;">Because Riverton mixes older agricultural-heritage parcels with newer subdivisions across these areas, lot size and layout vary enough that we check your specific property against the code before pricing anything.</p>
+        </div>
+
+        <div class="content-block" id="riverton-zoning">
+          <h3>{CLIPBOARD_SVG} How Riverton Actually Sizes a Detached ADU</h3>
+          <p>Riverton Municipal Code &sect;18.225.080 already allowed detached ADUs in single-family zones well before Utah's SB284 mandate, and it ties the size limit to your existing property rather than a flat cap:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Riverton Standard</th></tr>
+              <tr><td>Max detached ADU size</td><td>Lesser of 2&times; the principal home's footprint, or 10% of the lot area</td></tr>
+              <tr><td>Registration fee</td><td>$175, including required inspections</td></tr>
+              <tr><td>Owner-occupancy</td><td>Required (main house or ADU) &mdash; with exceptions for military deployment, medical need or sabbatical up to 3 years</td></tr>
+              <tr><td>Re-registration</td><td>Required when the property changes owners</td></tr>
+            </table>
+          </div>
+          <p>A building permit and certificate of occupancy are both required on top of the registration fee. Because the size formula depends on your specific home's footprint and lot area, we run the actual numbers on your property before we ever talk floor plans.</p>
+        </div>
+
+        <div class="content-block" id="riverton-setbacks">
+          <h3>{HAMMER_SVG} Riverton's Setback Rules Are Detailed &mdash; Especially Around Entrances</h3>
+          <p>Riverton spells out setbacks more precisely than most cities we build in. An ADU's entrance and any exterior stairs need to sit at least 10 feet from the side or rear property line (or face an alley, street, or the rear of the main house instead). General accessory-structure setbacks run 5 feet at the rear and between structures, 10 feet from the main dwelling, and a side setback that scales from 1 to 15 feet depending on the structure's size and placement. Parking requires one dedicated on-site space, though an existing driveway at least 20 by 8 feet can satisfy that requirement without adding new pavement.</p>
+        </div>
+
+        <div class="content-block" id="riverton-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Riverton?</h3>
+          <p>Because Riverton's size cap scales with your specific home and lot rather than a flat number, the final allowed footprint &mdash; and the budget behind it &mdash; comes down to your property's actual measurements. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Riverton quote reflects your lot and home's size under the 2x/10% formula, and your finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Riverton typically lands at $95K&ndash;$180K for an internal conversion, and $190K&ndash;$290K for a detached, ground-up build sized to whatever your property's formula allows.</p>
+        </div>
+
+        <div class="content-block" id="riverton-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://ecode360.com/47630284" target="_blank" rel="noopener">Riverton Municipal Code &sect;18.225.080</a>: accessory dwelling unit standards</li>
+            <li><a href="https://www.rivertonutah.gov/contact" target="_blank" rel="noopener">City of Riverton</a>: Riverton City Hall, 12830 S Redwood Road, Riverton, UT 84065</li>
+            <li><a href="https://www.rivertonutah.gov/about/history" target="_blank" rel="noopener">City of Riverton</a>: incorporation history</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/rivertoncityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: Riverton population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -1406,6 +1505,7 @@ CITY_HERO_H1 = {
     "vineyard": "Can You Build an ADU in Vineyard, or Does Your HOA Say No?",
     "bluffdale": "How Big of an ADU Can You Build in Bluffdale, Utah?",
     "draper": "Can You Build an ADU on a Hillside Lot in Draper, Utah?",
+    "riverton": "How Big Can Your ADU Be in Riverton, Utah?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -1441,6 +1541,7 @@ CITY_CTA1 = {
     "vineyard": ("Not sure if your Vineyard HOA allows an ADU?", "We'll check the city's rule and help you navigate your HOA's design standards."),
     "bluffdale": ("Not sure what size ADU your Bluffdale home qualifies for?", "We'll measure your home and confirm the 50% size cap before you spend a dollar on design."),
     "draper": ("Not sure what your Draper lot's terrain adds to the budget?", "We'll walk your property, check the slope, and give you a real number before you commit to anything."),
+    "riverton": ("Not sure what size ADU your Riverton lot qualifies for?", "We'll run your home's footprint and lot area through the city's formula and tell you the real number."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -1462,6 +1563,7 @@ CITY_CTA2 = {
     "vineyard": ("See ADU plans that work with Vineyard's HOA standards", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "bluffdale": ("See ADU plans sized to Bluffdale's 50% cap", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "draper": ("See ADU plans built for Draper's hillside and flat lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "riverton": ("See ADU plans sized to Riverton's lot-based formula", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -1656,7 +1758,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
