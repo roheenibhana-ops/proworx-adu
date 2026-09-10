@@ -1731,6 +1731,113 @@ def deep_content_cottonwood_heights():
 """
 
 
+def deep_content_herriman():
+    """Bespoke, research-backed deep-content section for Herriman. Real
+    current I-ADU/DADU rules, real Jan 2026 staff proposal to rewrite the
+    DADU ordinance (framed honestly as pending, not adopted), real HOA
+    prevalence. Built by hand rather than the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: HERRIMAN (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE HERRIMAN DETAILS</p>
+      <h2>Herriman's Detached ADU Rule Is Being Rewritten Right Now</h2>
+      <p class="lede">Herriman already allows detached ADUs, but the city's Planning Commission has a new, more permissive ordinance under review as of early 2026 &mdash; and almost every lot in this fast-growing city also sits inside an HOA with its own say.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="New master-planned subdivision in Herriman, Utah near the Oquirrh Mountains">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">63,282</div><div class="spec-label">Population (2025 est., +14.7% since 2020)</div></div>
+      <div class="spec-card"><div class="spec-value">2001</div><div class="spec-label">Became a city (town since 1999)</div></div>
+      <div class="spec-card"><div class="spec-value">$559</div><div class="spec-label">Current detached ADU application review fee</div></div>
+      <div class="spec-card"><div class="spec-value">Jordan School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#herriman-neighborhoods">Neighborhoods</a>
+        <a href="#herriman-zoning">Current Zoning Rule</a>
+        <a href="#herriman-proposed">Proposed Rewrite</a>
+        <a href="#herriman-hoa">HOA Reality Check</a>
+        <a href="#herriman-cost">Cost</a>
+        <a href="#herriman-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="herriman-neighborhoods">
+          <h3>{PIN_SVG} One of Utah's Fastest-Growing Cities, Almost Entirely New Construction</h3>
+          <p>Herriman grew nearly 15% between 2020 and 2025 alone, expanding from a small settlement near the Oquirrh Mountains into a major Salt Lake County city built almost entirely on master-planned communities:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Rosecrest</h4><p>A major Sorenson Companies master-planned community and one of Herriman's best-known developments.</p></div>
+            <div class="neighborhood-card"><h4>Blackridge &amp; Silvercrest</h4><p>Established newer-build communities within the city.</p></div>
+            <div class="neighborhood-card"><h4>Herriman Towne Center</h4><p>A mixed residential and commercial area with its own dedicated Master HOA.</p></div>
+            <div class="neighborhood-card"><h4>Olympia</h4><p>A newer growth area added through a 933-acre annexation in 2022.</p></div>
+          </div>
+          <p style="margin-top:8px;">Because nearly every one of these communities is HOA-governed, we treat the HOA conversation as a real, separate step on every Herriman project &mdash; not an afterthought.</p>
+        </div>
+
+        <div class="content-block" id="herriman-zoning">
+          <h3>{CLIPBOARD_SVG} What Herriman's Rule Requires Right Now</h3>
+          <p>Herriman currently allows both internal (I-ADU) and detached (DADU) accessory dwelling units in residential and agricultural zones:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Herriman Standard (Current)</th></tr>
+              <tr><td>Minimum lot size, internal ADU</td><td>6,000 sq ft</td></tr>
+              <tr><td>Minimum lot size, detached ADU</td><td>0.2295 acres (about 10,000 sq ft)</td></tr>
+              <tr><td>Internal ADU structure rule</td><td>Must share a wall with the primary dwelling</td></tr>
+              <tr><td>Parking</td><td>1 additional space beyond the 4 already required for the main home</td></tr>
+              <tr><td>Detached ADU application fee</td><td>$559 review fee, plus standard building permit fees</td></tr>
+              <tr><td>Units per lot</td><td>One ADU maximum</td></tr>
+            </table>
+          </div>
+          <p>Owner-occupancy is required, backed by a recorded agreement on the property. We confirm your specific zone and lot size with Herriman's Planning Department before pricing anything, especially given the ordinance is actively changing (see next section).</p>
+        </div>
+
+        <div class="content-block" id="herriman-proposed">
+          <h3>{HAMMER_SVG} A More Permissive Rule Is Already Under Review</h3>
+          <p>As of a January 21, 2026 Planning Commission staff report, Herriman has a new detached ADU ordinance proposed &mdash; not yet adopted &mdash; that would meaningfully change the math: a lower 6,000-sq-ft lot minimum (matching the internal-ADU threshold), a size cap of 1,000 sq ft or 50% of the main dwelling, a 20-ft height limit, 10-ft rear and 8-ft side setbacks, and a requirement that the ADU match the primary home's materials and style. The proposal also explicitly prohibits short-term rentals. City staff cited anticipated state legislation, almost certainly Utah's SB284, as a driver for the rewrite. Because this hasn't been formally adopted as of this writing, we confirm the current, in-force version of the ordinance with the city before finalizing any detached ADU plan.</p>
+        </div>
+
+        <div class="content-block" id="herriman-hoa">
+          <h3>{CLOCK_SVG} The City Might Say Yes. Your HOA Still Gets a Vote.</h3>
+          <p>Herriman itself maintains a dedicated HOA map layer on its city GIS system, which tells you how prevalent HOA coverage is here &mdash; similar to what we see in Vineyard. Communities like Rosecrest and Herriman Towne Center have active, well-organized HOAs with their own architectural review. We treat HOA approval as a distinct step from city zoning on every Herriman project, and confirm your specific community's covenants before finalizing a design.</p>
+        </div>
+
+        <div class="content-block" id="herriman-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Herriman?</h3>
+          <p>Because Herriman's building stock is almost entirely new construction and its detached-ADU rule is actively changing, most projects here are ground-up builds priced against the current ordinance, with a plan to confirm any new standard before permits are pulled. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Herriman quote reflects your community, HOA requirements and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Herriman typically lands at $190K&ndash;$290K for a full detached, ground-up build, with HOA-driven design matching (exterior materials, rooflines) priced separately once we know your community's standards.</p>
+        </div>
+
+        <div class="content-block" id="herriman-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://www.herriman.org/uploads/files/2600/I-ADU-General-Requirements.pdf" target="_blank" rel="noopener">City of Herriman</a>: Internal ADU requirements</li>
+            <li><a href="https://www.herriman.gov/dadu" target="_blank" rel="noopener">City of Herriman</a>: current Detached ADU standards and fees</li>
+            <li><a href="https://herrimancity-meeting-files-pc.s3.us-west-1.amazonaws.com/1-21-26/Item+5.3+-+Staff+Report.pdf" target="_blank" rel="noopener">Herriman Planning Commission</a>: January 21, 2026 staff report on a proposed DADU ordinance rewrite</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/herrimancityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: Herriman population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -1804,6 +1911,7 @@ CITY_HERO_H1 = {
     "sandy": "Can You Build a Detached ADU in Sandy, Utah?",
     "west-jordan": "Can You Build a Detached ADU in West Jordan, Utah?",
     "cottonwood-heights": "Do You Need a Permit for an ADU in Cottonwood Heights?",
+    "herriman": "Can You Build an ADU in Herriman, or Does Your HOA Say No?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -1843,6 +1951,7 @@ CITY_CTA1 = {
     "sandy": ("Not sure if your Sandy home needs an attached or detached ADU path?", "We'll confirm which rule applies to your property before you spend a dollar on design."),
     "west-jordan": ("Not sure if your West Jordan lot is in a detached-ADU zone?", "We'll confirm your zone and lot size before you spend a dollar on design."),
     "cottonwood-heights": ("Not sure if you need a conditional-use permit in Cottonwood Heights?", "We'll confirm which permit path applies to your project before you spend a dollar on design."),
+    "herriman": ("Not sure how Herriman's changing ADU rule affects your lot?", "We'll confirm the current standard and your HOA's requirements before you spend a dollar on design."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -1868,6 +1977,7 @@ CITY_CTA2 = {
     "sandy": ("See ADU plans for Sandy's attached and detached paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "west-jordan": ("See ADU plans for West Jordan's internal and detached paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "cottonwood-heights": ("See ADU plans for Cottonwood Heights' licensed and permitted paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "herriman": ("See ADU plans that work with Herriman's HOA standards", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -2062,7 +2172,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_herriman() if slug == 'herriman' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
