@@ -1233,6 +1233,57 @@ def hero_h1_for(name, slug, county, index):
     return template.format(name=name, county=county)
 
 
+# Mid-page CTA banner copy, same variation logic as the H1s: custom wording
+# tied to each bespoke city's real hook, a rotation pool for the rest.
+CITY_CTA1 = {
+    "alpine": ("Not sure what your Alpine lot's grading actually allows?", "We'll walk your property, check the slope and your zone, and tell you what's realistic before you commit to anything."),
+    "lehi": ("Wondering how SB284 changed things for your Lehi lot?", "We'll check your lot against Lehi's updated ordinance and tell you exactly what's possible &mdash; free, no obligation."),
+    "mapleton": ("Not sure your well or septic can handle a Mapleton ADU?", "We'll check your utilities and your lot's size tier before you spend a dollar on design."),
+    "spanish-fork": ("Not sure your Spanish Fork lot is in an eligible zone?", "We'll confirm your zone and parking layout before you commit to a floor plan."),
+    "highland": ("Wondering if your Highland home can fit an attached ADU?", "We'll walk your layout and confirm what Highland's ordinance actually allows."),
+    "lindon": ("Not sure what size ADU your Lindon home qualifies for?", "We'll run your home's size against Lindon's formula and tell you the real number."),
+    "provo": ("Not sure how Provo's rules apply to your rental plans?", "We'll walk your property and confirm your zone before you commit to anything."),
+    "vineyard": ("Not sure if your Vineyard HOA allows an ADU?", "We'll check the city's rule and help you navigate your HOA's design standards."),
+}
+CTA1_TEMPLATES = [
+    ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
+    ("Wondering what an ADU would actually cost in {name}?", "We'll give you a real number based on your property, not a generic estimate."),
+    ("Is your {name} property a good fit for an ADU?", "We'll check your lot against {name}'s current rules and tell you what's realistic."),
+    ("Ready to find out what's possible on your {name} lot?", "A free on-site visit gets you a real answer, not a guess."),
+    ("Still deciding if an ADU makes sense in {name}?", "We'll walk you through the numbers and the permitting timeline, free of charge."),
+    ("Curious what {name}'s ADU rules mean for your property?", "We'll translate the zoning code into a straight answer for your specific lot."),
+]
+
+CITY_CTA2 = {
+    "alpine": ("See ADU plans built for Alpine's larger, sloped lots", "Browse fixed-price plan tiers designed with grading and drainage in mind."),
+    "lehi": ("See ADU plans and pricing updated for post-SB284 Lehi", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "mapleton": ("See ADU plans sized for Mapleton's tiered lot rule", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "spanish-fork": ("See ADU plans that fit Spanish Fork's 1,000 sq ft cap", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "highland": ("See attached ADU plans built for Highland's ordinance", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "lindon": ("See ADU plans sized to Lindon's formula-based cap", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "provo": ("See ADU plans built around Provo's occupancy rules", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "vineyard": ("See ADU plans that work with Vineyard's HOA standards", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+}
+CTA2_TEMPLATES = [
+    ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
+    ("Compare {name} ADU plan tiers before you decide", "Every plan is fixed-price, so you know your budget upfront."),
+    ("Get a head start on your {name} ADU budget", "Browse our plan tiers, or skip straight to a free on-site estimate."),
+    ("Explore what fits your {name} budget and lot", "Fixed-price plans mean no surprises once construction starts."),
+    ("See what's already built for {name} homeowners", "Browse our plan tiers, or book a free estimate to get specific numbers."),
+    ("Ready to put real numbers to your {name} project?", "Browse fixed-price plans, or get a free on-site estimate now."),
+]
+
+
+def cta1_for(name, slug, index):
+    h, p = CITY_CTA1.get(slug) or CTA1_TEMPLATES[index % len(CTA1_TEMPLATES)]
+    return h.format(name=name), p.format(name=name)
+
+
+def cta2_for(name, slug, index):
+    h, p = CITY_CTA2.get(slug) or CTA2_TEMPLATES[(index + 3) % len(CTA2_TEMPLATES)]
+    return h.format(name=name), p.format(name=name)
+
+
 def build_city_page(name, slug, county, index):
     local_context, local_sb284_note = LOCAL_FOCUS.get(
         slug,
@@ -1398,8 +1449,8 @@ def build_city_page(name, slug, county, index):
   <div class="container">
     <div class="inline-cta reveal">
       <div>
-        <h3>Not sure what your {name} lot actually allows?</h3>
-        <p>We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation.</p>
+        <h3>{cta1_for(name, slug, index)[0]}</h3>
+        <p>{cta1_for(name, slug, index)[1]}</p>
       </div>
       <a href="#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
     </div>
@@ -1412,8 +1463,8 @@ def build_city_page(name, slug, county, index):
   <div class="container">
     <div class="inline-cta reveal" style="background:var(--card); border:1px solid var(--border);">
       <div>
-        <h3>See ADU plans and pricing for {name}</h3>
-        <p>Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now.</p>
+        <h3>{cta2_for(name, slug, index)[0]}</h3>
+        <p>{cta2_for(name, slug, index)[1]}</p>
       </div>
       <div style="display:flex; gap:12px; flex-wrap:wrap;">
         <a href="/index.html#plans" class="btn btn-light">SEE PLANS &amp; PRICING</a>
