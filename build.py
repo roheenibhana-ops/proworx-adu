@@ -563,6 +563,101 @@ def deep_content_lehi():
 """
 
 
+def deep_content_mapleton():
+    """Bespoke, research-backed deep-content section for Mapleton. Real
+    tiered floor-area ordinance, real well/septic and TDR-foothill context,
+    real neighborhoods. Built by hand rather than the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: MAPLETON (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE MAPLETON DETAILS</p>
+      <h2>In Mapleton, the ADU Question Isn't Lot Size. It's Water and Grading</h2>
+      <p class="lede">Mapleton's lots run large by Utah County standards, so almost every property clears the minimum size for an ADU. The real qualifying questions here are about well capacity, septic systems and foothill drainage.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1800&auto=format&fit=crop" alt="Large-lot foothill property near Maple Mountain in Mapleton, Utah">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">16,275</div><div class="spec-label">Population (2025 est., +43% since 2020)</div></div>
+      <div class="spec-card"><div class="spec-value">13.34 sq mi</div><div class="spec-label">City area</div></div>
+      <div class="spec-card"><div class="spec-value">1850</div><div class="spec-label">Settled (as "Union Bench")</div></div>
+      <div class="spec-card"><div class="spec-value">Nebo School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#mapleton-neighborhoods">Neighborhoods</a>
+        <a href="#mapleton-zoning">Zoning &amp; Permits</a>
+        <a href="#mapleton-utilities">Well &amp; Septic</a>
+        <a href="#mapleton-cost">Cost</a>
+        <a href="#mapleton-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="mapleton-neighborhoods">
+          <h3>{PIN_SVG} Mapleton's Bench and Foothill Lots Aren't All the Same</h3>
+          <p>Mapleton has grown more than 40% since the 2020 census, but it's held onto a large-lot, semi-rural character on purpose:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Maple Hills Estates</h4><p>Active new-home community on Mapleton's bench, with lots generally sized comfortably above the city's ADU minimum.</p></div>
+            <div class="neighborhood-card"><h4>Foothill &amp; Ranch Estate Lots</h4><p>Mapleton's development code carries dedicated Ranch Estate and Hillside Estate zones with their own setback rules, a sign of how seriously the city treats sloped-lot construction.</p></div>
+            <div class="neighborhood-card"><h4>Hobble Creek Corridor</h4><p>Properties along Mapleton's northern boundary near Hobble Creek, where older, larger parcels are common.</p></div>
+          </div>
+          <p style="margin-top:8px;">The city uses Transferable Development Rights specifically to preserve its foothills near Maple Canyon and Spanish Fork Peak, part of why most residential lots here run a third of an acre to two acres or more. That's good news for ADU eligibility on paper, but it also means grading and drainage engineering come up more often than they would on a standard subdivision lot.</p>
+        </div>
+
+        <div class="content-block" id="mapleton-zoning">
+          <h3>{CLIPBOARD_SVG} Mapleton's ADU Rule Scales the Size Cap to Your Lot</h3>
+          <p>Mapleton's ordinance (Municipal Code &sect;18.84.410, last amended June 2026) is unusual in Utah County for tying a detached ADU's maximum size to how big your lot actually is, rather than applying one flat cap to everyone:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Lot Size</th><th>Max Detached ADU Size</th></tr>
+              <tr><td>11,000 &ndash; 87,119 sq ft</td><td>1,000 sq ft</td></tr>
+              <tr><td>87,120 &ndash; 130,679 sq ft (2&ndash;3 acres)</td><td>1,200 sq ft</td></tr>
+              <tr><td>3+ acres</td><td>1,400 sq ft</td></tr>
+            </table>
+          </div>
+          <p>A detached ADU also needs to sit at least 10 feet behind the front wall of your main house, and the city requires one dedicated off-street parking stall. Internal accessory apartments have a lower bar: a 6,000-sq-ft minimum lot, provided the home keeps its single-family appearance from the street. Either way, owner-occupancy of the main house or the ADU is required, and the rule doesn't apply in the SDP-1 or R-2-B zones. We confirm your lot's tier and zone with Mapleton's Community Development Department before pricing anything.</p>
+        </div>
+
+        <div class="content-block" id="mapleton-utilities">
+          <h3>{HAMMER_SVG} Why Well and Septic Capacity Matters More Here Than Lot Size</h3>
+          <p>Mapleton runs both a culinary water system and a separate pressurized irrigation system, and older or outlying parcels have historically relied on private wells rather than full city utilities. Adding an ADU means adding real demand to whatever water and waste system your property already has. Before we talk floor plans, we confirm whether your well can support a second living unit and whether your septic system (if you have one) has the rated capacity, since that's a harder constraint than anything in the zoning code.</p>
+        </div>
+
+        <div class="content-block" id="mapleton-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Mapleton?</h3>
+          <p>Because Mapleton's lots run larger and its ADU sizes scale up with them, a Mapleton project can land on the higher end of the range compared to a flat-lot city with a fixed cap. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Mapleton quote reflects your lot tier, utility setup and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Mapleton typically lands at $100K&ndash;$200K for a garage or basement conversion, and $200K&ndash;$300K for a full detached, ground-up build, with well or septic upgrades priced separately once we know what your property actually has.</p>
+        </div>
+
+        <div class="content-block" id="mapleton-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://codelibrary.amlegal.com/codes/mapletonut/latest/mapleton_ut/0-0-0-9585" target="_blank" rel="noopener">Mapleton Municipal Code &sect;18.84.410</a>: accessory apartment and detached ADU standards</li>
+            <li><a href="https://www.mapleton.org/departments/community_development/building/index.php" target="_blank" rel="noopener">Mapleton Community Development, Building Division</a>: permit process</li>
+            <li><a href="https://waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1220" target="_blank" rel="noopener">Utah Division of Water Rights</a>: Mapleton public water system record</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -777,7 +872,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <section class="bg-secondary">
   <div class="container">
     <div class="section-head reveal">
