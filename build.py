@@ -1047,6 +1047,103 @@ def deep_content_provo():
 """
 
 
+def deep_content_vineyard():
+    """Bespoke, research-backed deep-content section for Vineyard. Real
+    licensing/fee requirements, real min lot sizes, real named new-build
+    communities, honest HOA-vs-zoning framing. Built by hand rather than
+    the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: VINEYARD (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE VINEYARD DETAILS</p>
+      <h2>In Vineyard, City Zoning May Say Yes &mdash; But Has Your HOA?</h2>
+      <p class="lede">Vineyard is one of the fastest-growing cities in Utah, built almost entirely on new master-planned subdivisions since the old Geneva Steel mill closed. That means the city's ADU rule is clear and licensed &mdash; but nearly every lot also sits inside an HOA whose covenants haven't necessarily caught up.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="New master-planned subdivision homes in Vineyard, Utah near Utah Lake">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">16,092</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">1989</div><div class="spec-label">Incorporated (growth began ~2012)</div></div>
+      <div class="spec-card"><div class="spec-value">12,000 sq ft</div><div class="spec-label">Minimum lot size for a detached ADU</div></div>
+      <div class="spec-card"><div class="spec-value">Alpine School District</div><div class="spec-label">Serves the city (currently)</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#vineyard-neighborhoods">Neighborhoods</a>
+        <a href="#vineyard-zoning">Zoning &amp; Licensing</a>
+        <a href="#vineyard-hoa">HOA Reality Check</a>
+        <a href="#vineyard-cost">Cost</a>
+        <a href="#vineyard-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="vineyard-neighborhoods">
+          <h3>{PIN_SVG} A City Built From Scratch on the Old Geneva Steel Site</h3>
+          <p>Vineyard had fewer than 200 residents as recently as 2010. Redevelopment of the former Geneva Steel mill site on Utah Lake, plus the arrival of UVU's Vineyard campus and the FrontRunner Vineyard Station in 2022, turned it into one of Utah's fastest-growing cities almost overnight. That means the city is made up almost entirely of active new-construction communities rather than older, established neighborhoods:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Holdaway Fields</h4><p>An active new-home community with Estate and Cottage sections, built by Goodboro Homes.</p></div>
+            <div class="neighborhood-card"><h4>The Villas at Waters Edge</h4><p>A newer development by Leisure Villas, part of Vineyard's ongoing build-out near the lake.</p></div>
+            <div class="neighborhood-card"><h4>The Maples</h4><p>A Home Center Construction community among Vineyard's current active subdivisions.</p></div>
+          </div>
+          <p style="margin-top:8px;">Because Vineyard is still actively building, the specific HOA and lot-plat details of a brand-new phase can differ from the phase built two years earlier in the same community. We confirm your exact subdivision and phase before pricing anything.</p>
+        </div>
+
+        <div class="content-block" id="vineyard-zoning">
+          <h3>{CLIPBOARD_SVG} Vineyard's ADU Rule Comes With a Licensing Requirement, Not Just a Permit</h3>
+          <p>Vineyard requires an ADU license, not just a building permit, and treats it as an ongoing city-tracked use rather than a one-time approval:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Vineyard Standard</th></tr>
+              <tr><td>Minimum lot size, internal/attached ADU</td><td>5,200 sq ft</td></tr>
+              <tr><td>Minimum lot size, detached ADU</td><td>12,000 sq ft</td></tr>
+              <tr><td>Parking</td><td>4 on-site spaces, minimum 8&prime;&times;18&prime; each, no tandem owner/tenant parking</td></tr>
+              <tr><td>License fee</td><td>$50, renewed every 2 years with a code-enforcement inspection</td></tr>
+            </table>
+          </div>
+          <p>Vineyard's 12,000-sq-ft detached-ADU minimum is actually stricter than the 11,000-sq-ft statewide floor set by Utah's SB284, which takes effect October 1, 2026 &mdash; how the city reconciles that difference is exactly what we confirm with Vineyard's Community Development Department before pricing your project, rather than assuming.</p>
+        </div>
+
+        <div class="content-block" id="vineyard-hoa">
+          <h3>{HAMMER_SVG} The City Says Yes. Your HOA Still Gets a Vote.</h3>
+          <p>Because nearly every lot in Vineyard sits inside a homeowners association tied to a specific master-planned community, the city's ADU license is often only half the approval you need. HOA design review, architectural standards and, in some cases, outright restrictions on secondary units can apply on top of whatever the city allows. We treat this as a real, separate step in every Vineyard project &mdash; not a formality &mdash; and confirm your specific HOA's covenants before finalizing a design.</p>
+        </div>
+
+        <div class="content-block" id="vineyard-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Vineyard?</h3>
+          <p>Because Vineyard's building stock is almost entirely new construction, most ADU work here is a ground-up detached build rather than a garage or basement conversion of an older home. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Vineyard quote reflects your subdivision, HOA requirements and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Vineyard typically lands at $190K&ndash;$290K for a full detached, ground-up build within the city's 1,200-sq-ft cap, with HOA-driven design upgrades (matching exterior materials, roofline, etc.) priced separately once we know your community's standards.</p>
+        </div>
+
+        <div class="content-block" id="vineyard-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://www.vineyardutah.gov/government/accessory_dwelling_unit_licensing.php" target="_blank" rel="noopener">City of Vineyard</a>: ADU licensing requirements and fee</li>
+            <li><a href="https://www.vineyardutah.gov/contact/index.php" target="_blank" rel="noopener">Vineyard City Hall</a>: 125 S Main St, Vineyard, UT 84059</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/vineyardtownutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: Vineyard population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -1113,6 +1210,7 @@ CITY_HERO_H1 = {
     "highland": "Can You Build an ADU in Highland, Utah?",
     "lindon": "How Big Can Your ADU Be in Lindon, Utah?",
     "provo": "Can You Build an ADU in Provo, Utah?",
+    "vineyard": "Can You Build an ADU in Vineyard, or Does Your HOA Say No?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -1308,7 +1406,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
