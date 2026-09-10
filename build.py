@@ -459,6 +459,110 @@ def deep_content_alpine():
 """
 
 
+def deep_content_lehi():
+    """Bespoke, research-backed deep-content section for Lehi. Real
+    neighborhoods, real ordinance history (Lehi already allowed detached
+    ADUs before SB284), real city hall/permit details. Built by hand
+    rather than through the generic per-city template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: LEHI (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE LEHI DETAILS</p>
+      <h2>Lehi Already Allowed Detached ADUs. Here's What SB284 Actually Changes</h2>
+      <p class="lede">Unlike cities writing an ADU ordinance from scratch for October 1, 2026, Lehi has allowed detached ADUs for years. The city just updated its existing rule, and city staff estimate roughly 20% more Lehi properties are now newly eligible.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="New-construction homes in a Lehi, Utah subdivision near Traverse Mountain">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">~99,366</div><div class="spec-label">Population (2026 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">4,561 ft</div><div class="spec-label">Elevation</div></div>
+      <div class="spec-card"><div class="spec-value">"Silicon Slopes"</div><div class="spec-label">Adobe, Ancestry &amp; tech HQs</div></div>
+      <div class="spec-card"><div class="spec-value">Alpine School District</div><div class="spec-label">Serves the city</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#lehi-neighborhoods">Neighborhoods</a>
+        <a href="#lehi-zoning">Zoning &amp; Permits</a>
+        <a href="#lehi-cost">Cost</a>
+        <a href="#lehi-hoa">HOA Approval</a>
+        <a href="#lehi-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="lehi-neighborhoods">
+          <h3>{PIN_SVG} Lehi's Neighborhoods Range From Historic Lots to Brand-New Subdivisions</h3>
+          <p>Lehi has grown roughly 9x since 1990, and that shows up in how differently ADU-eligible lots look from one part of the city to another:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Traverse Mountain</h4><p>Master-planned hillside community at the Point of the Mountain with sloped lots and mountain views. Comes with its own HOA design-review layer on top of city permits.</p></div>
+            <div class="neighborhood-card"><h4>Thanksgiving Point Area</h4><p>Established neighborhoods near the Thanksgiving Point attractions and gardens, mostly flat lots on standard city utilities.</p></div>
+            <div class="neighborhood-card"><h4>Holbrook Farms</h4><p>Newer Ivory Homes subdivision in central/north Lehi, still building out in phases. Lots tend to run at or near the city's minimum ADU-eligible size.</p></div>
+            <div class="neighborhood-card"><h4>Ivory Ridge</h4><p>North Lehi subdivision with a mix of home ages and lot sizes, close to I-15 access.</p></div>
+            <div class="neighborhood-card"><h4>Cold Spring Ranch</h4><p>D.R. Horton-built north Lehi community with more uniform, newer-construction lot layouts.</p></div>
+            <div class="neighborhood-card"><h4>Historic Downtown Lehi</h4><p>The original Main Street townsite. Smaller, older lots where a garage or basement conversion is often the more realistic ADU path than a detached build.</p></div>
+          </div>
+          <p style="margin-top:8px;">Lehi anchors what's become known as "Silicon Slopes," with Adobe's campus, Ancestry's headquarters and a Texas Instruments chip fab all in the city. That tech-worker population is part of why rental demand for a well-built ADU here tends to run strong.</p>
+        </div>
+
+        <div class="content-block" id="lehi-zoning">
+          <h3>{CLIPBOARD_SVG} What Changed in Lehi's ADU Ordinance</h3>
+          <p>Lehi's council approved a Development Code Amendment on <strong>July 14, 2026</strong> to bring its long-standing detached-ADU rule in line with SB284. Here's the before and after:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Old Lehi Rule</th><th>Updated Rule (SB284-aligned)</th></tr>
+              <tr><td>Minimum lot size</td><td>14,520 sq ft</td><td>11,000 sq ft</td></tr>
+              <tr><td>ADU size cap</td><td>1,300 sq ft flat cap</td><td>Must be smaller than the primary home</td></tr>
+              <tr><td>Setback from primary home</td><td>&mdash;</td><td>6 feet</td></tr>
+              <tr><td>Owner-occupancy</td><td>&mdash;</td><td>Owner must live in either the main house or the ADU</td></tr>
+            </table>
+          </div>
+          <p>The practical effect: city staff estimate roughly 20% more Lehi properties are now newly eligible for a detached ADU. If your lot was turned down under the old 14,520-sq-ft threshold, it may qualify now. Height for new detached construction tops out around 35 feet, and a detached ADU over 650 sq ft typically needs 2 off-street parking spaces. We confirm your lot's exact status with Lehi's Planning Division before you commit to anything.</p>
+          <div class="office-callout">
+            {PIN_SVG}
+            <p><strong>Lehi City Hall</strong><br>131 N 100 E, Lehi, UT 84043. Building permits route through the Building and Inspections Department at 153 N 100 E; zoning eligibility questions go to the Planning Division.</p>
+          </div>
+        </div>
+
+        <div class="content-block" id="lehi-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Lehi?</h3>
+          <p>For context on how similar home-investment categories perform, <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> tracks return-on-investment for comparable projects nationally:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Lehi quote reflects your lot, zone and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Lehi typically lands at $100K&ndash;$200K for a garage or basement conversion, and $200K&ndash;$300K for a full detached, ground-up build. Lehi's detached ADU impact fee currently runs $4,528, which we itemize separately in every quote rather than folding it into a vague lump sum.</p>
+        </div>
+
+        <div class="content-block" id="lehi-hoa">
+          <h3>{CLOCK_SVG} Do I Need HOA Approval Too?</h3>
+          <p>If you're in Traverse Mountain, your ADU needs sign-off from the Traverse Mountain Master Association's Architectural Review Committee in addition to your city permit. Newer Thanksgiving Point-area communities like Holbrook Farms and Cold Spring Ranch typically carry their own HOAs as well. City approval and HOA approval are separate processes, and we submit both in parallel from the start so one doesn't stall the other.</p>
+        </div>
+
+        <div class="content-block" id="lehi-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://www.lehi-ut.gov/media/a4jh0mwb/accessory-dwelling-units-faqs.pdf" target="_blank" rel="noopener">Lehi City ADU FAQ</a>: setback, occupancy and height rules</li>
+            <li><a href="https://www.engagelehi.org/detached-adu-development-code-amendment-state-requirements" target="_blank" rel="noopener">Engage Lehi: Detached ADU Development Code Amendment</a>: what changed and why</li>
+            <li><a href="https://www.lehi-ut.gov/departments/building-and-inspections/" target="_blank" rel="noopener">Lehi Building and Inspections Department</a>: permit process and fees</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -673,7 +777,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <section class="bg-secondary">
   <div class="container">
     <div class="section-head reveal">
