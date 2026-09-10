@@ -3,7 +3,7 @@
 import os
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'data'))
-from cities import CITIES, TESTIMONIALS, FAQS, LOCAL_FOCUS, NEIGHBORHOODS, HILLSIDE_TERRAIN, HOA_HEAVY
+from cities import CITIES, TESTIMONIALS, FAQS, LOCAL_FOCUS, NEIGHBORHOODS, HILLSIDE_TERRAIN, HOA_HEAVY, WELL_SEPTIC, DEEP_HEADLINES
 
 ROOT = os.path.dirname(__file__)
 
@@ -233,7 +233,7 @@ def deep_content_section(name, slug, county):
           <tr><td>Licensed engineer labor</td><td>$100&ndash;$250 per hour</td></tr>
         </table>
       </div>
-      <p class="source-note">Source: HomeAdvisor geotechnical report cost data, national averages &mdash; not confirmed against {name}-specific pricing. We'll tell you during your free estimate whether your lot needs this step at all.</p>
+      <p class="source-note">Source: <a href="https://www.homeadvisor.com/cost/architects-and-engineers/geotechnical-report" target="_blank" rel="noopener">HomeAdvisor geotechnical report cost data</a>, national averages &mdash; not confirmed against {name}-specific pricing. We'll tell you during your free estimate whether your lot needs this step at all.</p>
     </div>
 """
 
@@ -247,18 +247,32 @@ def deep_content_section(name, slug, county):
     </div>
 """
 
+    well_septic = ""
+    if slug in WELL_SEPTIC:
+        well_septic = f"""    <div class="content-block">
+      <h3>Well &amp; Septic Capacity Matters More Than Lot Size in {name}</h3>
+      <p>Some {name} properties, especially on the outlying and foothill lots, are still on well water or a septic system rather than full city utilities. A detached ADU adds real load to both &mdash; before we talk floor plans, we confirm your well's capacity and your septic system's rating can support a second living unit, since that's a harder constraint than anything in the zoning code.</p>
+    </div>
+"""
+
+    headline, headline_lede = DEEP_HEADLINES.get(
+        slug,
+        (f"What Actually Goes Into an ADU Project in {name}",
+         f"The permitting, engineering and cost questions that come up specifically for {name} homeowners — not a generic statewide answer.")
+    )
+
     body = f"""<!-- HYPER-LOCAL DEEP CONTENT -->
 <section>
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">THE {name.upper()} DETAILS</p>
-      <h2>What Actually Goes Into an ADU Project in {name}</h2>
-      <p class="lede">The permitting, engineering and cost questions that come up specifically for {name} homeowners &mdash; not a generic statewide answer.</p>
+      <h2>{headline}</h2>
+      <p class="lede">{headline_lede}</p>
     </div>
     <div class="blog-post-body reveal">
 {neighborhood_intro}    <div class="content-block">
       <h3>What Does an ADU Cost in {name}?</h3>
-      <p>Every ADU quote should scale with the scope of work, not just square footage. For context on how similar home-investment categories perform, Zonda's 2025 Cost vs. Value Report tracks return-on-investment for comparable projects nationally:</p>
+      <p>Every ADU quote should scale with the scope of work, not just square footage. For context on how similar home-investment categories perform, <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> tracks return-on-investment for comparable projects nationally:</p>
       <div class="table-wrap">
         <table class="data-table">
           <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
@@ -266,10 +280,10 @@ def deep_content_section(name, slug, county):
           <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
         </table>
       </div>
-      <p class="source-note">Source: Zonda 2025 Cost vs. Value Report, national data for comparable remodel categories &mdash; your {name} ADU quote will reflect your specific lot, structure and finish level, not this table.</p>
+      <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data for comparable remodel categories &mdash; your {name} ADU quote will reflect your specific lot, structure and finish level, not this table.</p>
       <p>Pro-Worx ADU pricing in {name} typically lands at $100K&ndash;$200K for a garage or basement conversion, and $200K&ndash;$300K for a full detached, ground-up build.</p>
     </div>
-{geotechnical}    <div class="content-block">
+{geotechnical}{well_septic}    <div class="content-block">
       <h3>What Actually Triggers a Building Permit for an ADU in {name}?</h3>
       <p>Not every part of an ADU conversion needs a separate permit review, but most of the ones that matter do:</p>
       <div class="check-list" style="margin-bottom:20px;">
@@ -287,7 +301,7 @@ def deep_content_section(name, slug, county):
           <tr><td>Electrical (new circuit/panel work)</td><td>$50&ndash;$500</td></tr>
         </table>
       </div>
-      <p class="source-note">Source: PermitMint national fee analysis across 1,500+ US municipalities &mdash; national ranges only, not confirmed against {name}'s specific fee schedule. We confirm your exact fees with the {name} building department as part of your free estimate.</p>
+      <p class="source-note">Source: <a href="https://permitmint.com/reports.php" target="_blank" rel="noopener">PermitMint national building permit data</a>, based on municipal fee schedules across 1,500+ US cities &mdash; national ranges only, not confirmed against {name}'s specific fee schedule. We confirm your exact fees with the {name} building department as part of your free estimate.</p>
     </div>
     <div class="content-block">
       <h3>What Gets Inspected During an ADU Build in {name}, and When?</h3>
