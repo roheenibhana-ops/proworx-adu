@@ -196,7 +196,8 @@ def page_shell(title, description, body, canonical_path):
 """
 
 def build_city_page(name, slug, county, index):
-    testimonial = TESTIMONIALS[index % len(TESTIMONIALS)]
+    n_t = len(TESTIMONIALS)
+    rotated_testimonials = [TESTIMONIALS[(index + i) % n_t] for i in range(n_t)]
     hero_img = CITY_IMAGES[index % len(CITY_IMAGES)]
     others = [c for c in CITIES if c[2] == county and c[1] != slug]
     if len(others) < 3:
@@ -216,6 +217,16 @@ def build_city_page(name, slug, county, index):
           {CHEVRON_SVG}
         </button>
         <div class="accordion-panel"><p>{a_f}</p></div>
+      </div>
+"""
+
+    testimonial_cards = ""
+    for t in rotated_testimonials:
+        testimonial_cards += f"""      <div class="testimonial-card">
+        <div class="stars">{STAR_SVG}{STAR_SVG}{STAR_SVG}{STAR_SVG}{STAR_SVG}</div>
+        <p class="quote">&ldquo;{t['quote']}&rdquo;</p>
+        <p class="testimonial-author">{t['author']}</p>
+        <p class="testimonial-role">{t['role']}</p>
       </div>
 """
 
@@ -365,14 +376,8 @@ def build_city_page(name, slug, county, index):
       <p class="eyebrow">TESTIMONIALS</p>
       <h2>What Homeowners Are Saying</h2>
     </div>
-    <div class="grid grid-3 reveal" style="max-width:480px; margin:0 auto;">
-      <div class="testimonial-card">
-        <div class="stars">{STAR_SVG}{STAR_SVG}{STAR_SVG}{STAR_SVG}{STAR_SVG}</div>
-        <p class="quote">&ldquo;{testimonial['quote']}&rdquo;</p>
-        <p class="testimonial-author">{testimonial['author']}</p>
-        <p class="testimonial-role">{testimonial['role']}</p>
-      </div>
-    </div>
+    <div class="grid grid-3 reveal">
+{testimonial_cards}    </div>
   </div>
 </section>
 
