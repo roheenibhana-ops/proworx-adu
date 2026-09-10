@@ -77,7 +77,7 @@ FOOTER = """<footer>
     <div class="footer-grid">
       <div class="footer-col">
         <a href="/index.html" class="wordmark">PRO-WORX ADU</a>
-        <p class="footer-desc">A Pro-Worx Construction company. Utah's fixed-price ADU builder — permits, design and construction, handled.</p>
+        <p class="footer-desc">A <a href="https://proworxconstruction.com" target="_blank" rel="noopener">Pro-Worx Construction</a> company &mdash; 20 years building in Utah. Utah's fixed-price ADU builder &mdash; permits, design and construction, handled. <a href="https://proworxconstruction.com/adu-builders-utah/" target="_blank" rel="noopener" style="text-decoration:underline;">See our full ADU services on the main site &rarr;</a></p>
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
@@ -103,7 +103,7 @@ FOOTER = """<footer>
     </div>
     <div class="footer-bottom">
       <p>&copy; <span id="year"></span> Pro-Worx Construction. All rights reserved.</p>
-      <p>Licensed &amp; insured Utah general contractor.</p>
+      <p>Licensed &amp; insured Utah general contractor &middot; License #11334534-5501</p>
     </div>
   </div>
 </footer>
@@ -272,7 +272,7 @@ def build_city_page(name, slug, county, index):
 <div class="container">
   <div class="stats-bar" id="statsBar">
     <div class="stat"><div class="num" data-count="1100" data-suffix="+">0</div><div class="label">Projects Completed</div></div>
-    <div class="stat"><div class="num" data-count="15" data-suffix="+">0</div><div class="label">Years of Excellence</div></div>
+    <div class="stat"><div class="num" data-count="20" data-suffix="+">0</div><div class="label">Years of Excellence</div></div>
     <div class="stat"><div class="num">5&#9733;</div><div class="label">Google Rating</div></div>
     <div class="stat"><div class="num" data-count="{len(CITIES)}" data-suffix="">0</div><div class="label">Utah Cities Served</div></div>
   </div>
@@ -388,7 +388,7 @@ def build_city_page(name, slug, county, index):
       <div class="light-card static"><div class="icon-circle">{SHIELD_SVG}</div><h3 style="margin-top:16px; font-size:18px;">Licensed &amp; Insured</h3><p style="font-size:14px; color:var(--muted-foreground); margin-top:8px;">Full Utah general contractor license, on every job.</p></div>
       <div class="light-card static"><div class="icon-circle">{CLOCK_SVG}</div><h3 style="margin-top:16px; font-size:18px;">On Time, On Budget</h3><p style="font-size:14px; color:var(--muted-foreground); margin-top:8px;">Fixed pricing with no hidden fees, ever.</p></div>
       <div class="light-card static"><div class="icon-circle">{CLIPBOARD_SVG}</div><h3 style="margin-top:16px; font-size:18px;">Permits Handled</h3><p style="font-size:14px; color:var(--muted-foreground); margin-top:8px;">We manage the entire {name} approval process.</p></div>
-      <div class="light-card static"><div class="icon-circle">{HAMMER_SVG}</div><h3 style="margin-top:16px; font-size:18px;">1,100+ Projects</h3><p style="font-size:14px; color:var(--muted-foreground); margin-top:8px;">15+ years building across Utah.</p></div>
+      <div class="light-card static"><div class="icon-circle">{HAMMER_SVG}</div><h3 style="margin-top:16px; font-size:18px;">1,100+ Projects</h3><p style="font-size:14px; color:var(--muted-foreground); margin-top:8px;">20 years building across Utah.</p></div>
     </div>
   </div>
 </section>
@@ -533,12 +533,12 @@ def build_blog():
       <p class="post-meta">Pro-Worx ADU Team &middot; Utah ADU Guides</p>
       <p>Accessory Dwelling Units have become one of the most popular ways for Utah homeowners to add living space, house family or generate rental income &mdash; but the first question everyone asks is the same: what does it actually cost?</p>
       <h2>The short answer</h2>
-      <p>Across Salt Lake, Utah, Davis and Summit counties, Pro-Worx ADU pricing starts at $95K for a garage or basement conversion and runs to $210K+ for a detached, ground-up 2-bedroom residence. Where your project lands in that range depends mainly on three things: the structure you're starting from, the size of the finished unit, and your lot's utility access.</p>
+      <p>Across Salt Lake, Utah, Davis and Summit counties, Pro-Worx ADU pricing typically runs $100K&ndash;$200K for a garage or basement conversion and $200K&ndash;$300K for a full detached, ground-up build. Where your project lands in that range depends mainly on three things: the structure you're starting from, the size of the finished unit, and your lot's utility access.</p>
       <h2>What drives the price up or down</h2>
       <p>A garage or basement conversion is almost always the most affordable path, since the foundation, framing and roof already exist &mdash; the work is mostly interior build-out, plumbing and electrical. A detached, ground-up ADU costs more because it includes excavation, foundation, framing and a full exterior envelope, but it also offers the most privacy and flexibility for renters or family members.</p>
       <p>Utility hookups are the other major swing factor. If your existing service panel and sewer line have capacity for a second unit, costs stay predictable. If they don't, expect an additional line item for upgrades &mdash; something we flag clearly during your free estimate, never after signing.</p>
       <h2>Why fixed pricing matters</h2>
-      <p>Every Pro-Worx ADU plan tier is a fixed price once we've walked your property, not a rough estimate that grows during construction. That's the same transparent-pricing standard we've applied to over 1,100 projects across Utah in 15+ years.</p>
+      <p>Every Pro-Worx ADU plan tier is a fixed price once we've walked your property, not a rough estimate that grows during construction. That's the same transparent-pricing standard we've applied to over 1,100 projects across Utah in 20 years.</p>
       <p>Ready to see what your specific lot would cost? <a href="/index.html#contact" class="link-arrow">Get a free ADU estimate &rarr;</a></p>
     </div>
   </div>

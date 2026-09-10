@@ -226,7 +226,7 @@ FAQS = [
     ("Can I legally build an ADU on my property in {city}?",
      "Most single-family lots in {city} qualify for an ADU, but rules vary by zoning district and, as of October 1, 2026, by the city's updated SB284 detached-ADU ordinance. We handle a full zoning and permit review as part of every free estimate, so you'll know exactly what's possible before committing to anything."),
     ("How much does an ADU cost in {city}?",
-     "Our fixed plan tiers start at $95K for a garage or basement conversion and run to $210K+ for a detached 2-bedroom residence. Final pricing depends on your lot, utility access and finish level — we'll give you an exact number after a site walk."),
+     "Typical investment runs $100K–$200K for a garage or basement conversion and $200K–$300K for a full detached build. Final pricing depends on your lot, utility access and finish level — we'll give you an exact number after a site walk."),
     ("How long does an ADU build take in {city}?",
      "Garage and basement conversions typically take 3–5 weeks. Detached, ground-up ADUs run longer once permitting and foundation work are factored in — we'll give you a realistic timeline before you sign anything."),
     ("Will an ADU increase my property value in {county} County?",
