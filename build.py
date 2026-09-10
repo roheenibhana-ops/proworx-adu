@@ -36,7 +36,7 @@ CITY_IMAGES = [
 def header_nav(active_areas=False):
     return f"""<header>
   <div class="container">
-    <a href="/index.html" class="wordmark">PRO-WORX ADU<span>PRO-WORX CONSTRUCTION</span></a>
+    <a href="/index.html" class="wordmark">PRO-WORX ADU</a>
     <nav class="desktop-nav">
       <a href="/index.html#what-is-adu">What's an ADU?</a>
       <a href="/index.html#plans">Plans &amp; Pricing</a>
