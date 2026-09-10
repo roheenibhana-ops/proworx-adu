@@ -658,6 +658,96 @@ def deep_content_mapleton():
 """
 
 
+def deep_content_spanish_fork():
+    """Bespoke, research-backed deep-content section for Spanish Fork. Real
+    flat 1,000 sq ft cap, real zone exclusions, real parking rule, real
+    registration fee, real history. Built by hand rather than the generic
+    template. Deliberately avoids unverified neighborhood names."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: SPANISH FORK (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE SPANISH FORK DETAILS</p>
+      <h2>In Spanish Fork, the ADU Rule Is Flat &mdash; But the Zone Map Isn't</h2>
+      <p class="lede">Spanish Fork keeps its detached ADU size cap the same for every qualifying lot in the city. The real work is confirming your property sits in a zone that allows one at all, and that your parking plan pencils out.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Residential street in Spanish Fork, Utah near the historic downtown grid">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">48,837</div><div class="spec-label">Population (2025 est., +14.6% since 2020)</div></div>
+      <div class="spec-card"><div class="spec-value">1851</div><div class="spec-label">Founded &mdash; first permanent Icelandic settlement in the U.S.</div></div>
+      <div class="spec-card"><div class="spec-value">1,000 sq ft</div><div class="spec-label">Flat detached ADU cap, citywide</div></div>
+      <div class="spec-card"><div class="spec-value">Fiesta Days</div><div class="spec-label">Annual civic festival, since 1935</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#spanishfork-neighborhoods">Downtown &amp; Grid</a>
+        <a href="#spanishfork-zoning">Zoning &amp; Permits</a>
+        <a href="#spanishfork-parking">Parking Rule</a>
+        <a href="#spanishfork-cost">Cost</a>
+        <a href="#spanishfork-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="spanishfork-neighborhoods">
+          <h3>{PIN_SVG} A Historic Grid, Not a Patchwork of Named Subdivisions</h3>
+          <p>Spanish Fork is one of Utah County's oldest cities, settled in 1851 and known for the Palmyra and old Fort St. Luke history that anchors its historic downtown. Rather than a handful of branded master-planned communities, most of the older city sits on a traditional street grid centered on Main Street, with newer subdivisions filling in on the city's edges as the population has grown more than 14% since 2020.</p>
+          <p style="margin-top:8px;">Because lot sizes and platting vary block by block on that older grid &mdash; and vary again out toward the newer subdivisions &mdash; we don't quote an ADU from an address alone. We confirm your zone and lot size with the city before pricing anything, the same way we do in every city we build in.</p>
+        </div>
+
+        <div class="content-block" id="spanishfork-zoning">
+          <h3>{CLIPBOARD_SVG} One Flat Size Cap, But Several Zones Where It Doesn't Apply</h3>
+          <p>Spanish Fork's accessory dwelling ordinance sets a single, flat maximum for a detached ADU rather than scaling it to lot size the way a city like Mapleton does:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Spanish Fork Standard</th></tr>
+              <tr><td>Minimum lot size</td><td>6,000 sq ft</td></tr>
+              <tr><td>Max detached ADU size</td><td>1,000 sq ft (flat, regardless of lot size)</td></tr>
+              <tr><td>Annual ADU registration fee</td><td>$60</td></tr>
+            </table>
+          </div>
+          <p>The catch is that this rule doesn't apply everywhere in the city. Spanish Fork excludes several zones from ADUs entirely, including its A-E agricultural-estate zones and the R-4, R-5 and R-O residential zones. One more quirk worth knowing up front: the city doesn't treat an ADU's address as a separate, USPS-recognized mailing address, which can matter for mail and some utility accounts. We confirm your parcel's zone with Spanish Fork's Community Development Department before we talk size or budget.</p>
+        </div>
+
+        <div class="content-block" id="spanishfork-parking">
+          <h3>{HAMMER_SVG} The Parking Count Rules Out Tandem Spaces</h3>
+          <p>Spanish Fork requires dedicated off-street parking for an ADU, and it's stricter about how those spaces count than some neighboring cities: attached ADUs need 3 total off-street spaces on the property, detached ADUs need 4, and the city does not allow tandem spaces (one car parked behind another) to satisfy the requirement. On a smaller in-fill lot near the historic downtown grid, that parking math can be the deciding factor in whether a detached ADU fits at all &mdash; which is why we walk the site and lay out parking before we finalize a floor plan.</p>
+        </div>
+
+        <div class="content-block" id="spanishfork-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Spanish Fork?</h3>
+          <p>Spanish Fork's flat 1,000-sq-ft cap and strict parking rule tend to keep detached projects closer to a standard footprint than a tiered-cap city like Mapleton allows, which helps keep budgets more predictable. For comparable home-investment categories, <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> is a useful national benchmark:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an ADU conversion)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Spanish Fork quote reflects your zone, parking layout and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Spanish Fork typically lands at $100K&ndash;$180K for a garage or basement conversion, and $190K&ndash;$280K for a full detached, ground-up build within the city's 1,000-sq-ft cap, with the $60 annual registration fee handled as part of your permit paperwork.</p>
+        </div>
+
+        <div class="content-block" id="spanishfork-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://www.spanishfork.org/departments/community_development/index.php" target="_blank" rel="noopener">Spanish Fork Community Development Department</a>: ADU zoning, parking and permit standards</li>
+            <li><a href="https://www.spanishfork.org/" target="_blank" rel="noopener">City of Spanish Fork</a>: City Hall, 40 S Main St, Spanish Fork, UT 84660</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -872,7 +962,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <section class="bg-secondary">
   <div class="container">
     <div class="section-head reveal">
