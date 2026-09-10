@@ -90,11 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Before/After slider (only present on pages with a portfolio section)
-  const baSlider = document.getElementById('baSlider');
-  const baAfter = document.getElementById('baAfter');
-  const baHandle = document.getElementById('baHandle');
-  if (baSlider && baAfter && baHandle) {
+  // Before/After sliders (a page can have one or several)
+  document.querySelectorAll('.ba-slider').forEach(baSlider => {
+    const baAfter = baSlider.querySelector('.ba-after');
+    const baHandle = baSlider.querySelector('.ba-handle');
+    if (!baAfter || !baHandle) return;
     let dragging = false;
     function setSlider(clientX) {
       const rect = baSlider.getBoundingClientRect();
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
     baSlider.addEventListener('touchstart', e => { dragging = true; setSlider(e.touches[0].clientX); });
     baSlider.addEventListener('touchmove', e => { if (dragging) setSlider(e.touches[0].clientX); });
     window.addEventListener('touchend', () => dragging = false);
-  }
+  });
 
   // Contact form (static demo — GHL endpoint not wired up yet)
   const form = document.getElementById('estimateForm');
