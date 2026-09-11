@@ -2138,6 +2138,119 @@ def deep_content_bountiful():
 """
 
 
+def deep_content_heber_city():
+    """Bespoke, research-backed deep-content section for Heber City.
+    Real 2021 ordinance baseline (6,000 sq ft min lot, 1 parking space,
+    rental permit required), real Sept 2025 Central Heber Overlay Zone
+    (CHOZ) subordinate-dwelling-unit standards for the downtown infill
+    area, real growth-pressure context. Built by hand rather than the
+    generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: HEBER CITY (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE HEBER CITY DETAILS</p>
+      <h2>In Heber City, a New Downtown Overlay Zone Changes the ADU Math &mdash; If Your Lot Is In It</h2>
+      <p class="lede">Heber City's citywide ADU rule dates to 2021, but a new Central Heber Overlay Zone approved in September 2025 adds a second, more flexible path for lots in the city's core.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1800&auto=format&fit=crop" alt="Heber Valley ranchland with mountains near Heber City, Utah">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">~20,000</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">6,000 sq ft</div><div class="spec-label">Min lot size, citywide standard</div></div>
+      <div class="spec-card"><div class="spec-value">300&ndash;800 sq ft</div><div class="spec-label">CHOZ subordinate-unit size range</div></div>
+      <div class="spec-card"><div class="spec-value">Wasatch County</div><div class="spec-label">County seat</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#hc-neighborhoods">Neighborhoods</a>
+        <a href="#hc-zoning">Zoning &amp; Permits</a>
+        <a href="#hc-choz">Central Heber Overlay</a>
+        <a href="#hc-cost">Cost</a>
+        <a href="#hc-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="hc-neighborhoods">
+          <h3>{PIN_SVG} A Ranching Valley Absorbing Wasatch Back Growth</h3>
+          <p>Heber City sits in the Heber Valley, historically a ranching and farming community, now the county seat of one of Utah's fastest-growing counties:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Central Heber</h4><p>The city's downtown core along Main Street, targeted by the new overlay zone for infill housing including ADUs.</p></div>
+            <div class="neighborhood-card"><h4>Daniels Canyon</h4><p>A distinct geographic area near Heber City, on the route toward Strawberry Reservoir.</p></div>
+            <div class="neighborhood-card"><h4>Keetley</h4><p>A historic settlement near Jordanelle Reservoir, on the north side of the valley toward Park City.</p></div>
+          </div>
+          <p style="margin-top:8px;">Wasatch County has approved over 9,000 residential units since 2019 and is projected to more than double in population by 2065 &mdash; growth pressure that's part of why the city created a new overlay zone specifically to add housing capacity downtown.</p>
+        </div>
+
+        <div class="content-block" id="hc-zoning">
+          <h3>{CLIPBOARD_SVG} The Citywide ADU Rule, Set in 2021</h3>
+          <p>Heber City last updated its baseline accessory-apartment ordinance in July 2021, loosening several requirements from the prior code:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Citywide Standard</th></tr>
+              <tr><td>Minimum lot size</td><td>6,000 sq ft</td></tr>
+              <tr><td>Parking</td><td>1 space (reduced from 2 in the 2021 update)</td></tr>
+              <tr><td>Rental term</td><td>Both short-term and long-term rental permitted</td></tr>
+              <tr><td>Mobile homes</td><td>ADUs not permitted</td></tr>
+              <tr><td>Rental permit</td><td>Required to rent out the unit (business/rental license)</td></tr>
+            </table>
+          </div>
+          <p>We haven't been able to confirm the exact current code section, owner-occupancy status, or maximum size for the citywide standard outside the new overlay zone &mdash; the city's own code portal wasn't accessible during our research, so we verify these specifics directly with Heber City Community Development before pricing any project, along with how the city's rule interacts with Utah's SB284 detached-ADU mandate, effective October 1, 2026.</p>
+        </div>
+
+        <div class="content-block" id="hc-choz">
+          <h3>{HAMMER_SVG} The Central Heber Overlay Zone Adds a Second Path Downtown</h3>
+          <p>In September 2025, Heber City Council approved the Central Heber Overlay Zone (CHOZ) as part of its "Envision Heber" planning process, aimed at affordability and infill growth in the city's core. For qualifying downtown lots, CHOZ allows a subordinate dwelling unit under its own standards, separate from &mdash; and more specific than &mdash; the citywide rule:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>CHOZ Requirement</th><th>Standard</th></tr>
+              <tr><td>Minimum lot size</td><td>5,000 sq ft</td></tr>
+              <tr><td>Size</td><td>300&ndash;800 sq ft footprint</td></tr>
+              <tr><td>Units per property</td><td>1 subordinate unit, plus a separate internal ADU allowance</td></tr>
+              <tr><td>Occupancy</td><td>Owner-occupied required</td></tr>
+              <tr><td>Setbacks</td><td>5 ft side/rear, 10 ft front (15 ft if adjacent to a street or alley)</td></tr>
+              <tr><td>Max height</td><td>15 ft (pitched roof portion excluded)</td></tr>
+            </table>
+          </div>
+          <p>CHOZ applies only to the Central Neighborhoods and Transition Corridors districts, not citywide, and it was framed as a local affordability measure rather than a response to SB284 specifically &mdash; the two shouldn't be conflated. We confirm whether your address falls inside the overlay before assuming which rule set applies.</p>
+        </div>
+
+        <div class="content-block" id="hc-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Heber City?</h3>
+          <p>With median home prices in Heber City reported around $700K and rising demand tied to Wasatch Back growth, an ADU here is often as much about capturing rental income as adding space for family. We don't have a Heber-specific cost benchmark, so <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an internal ADU)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Heber City quote reflects your lot, whether it's inside the CHOZ boundary, and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Heber City typically lands at $90K&ndash;$170K for an internal conversion, and $200K&ndash;$290K for a detached build, with CHOZ's smaller 800-sq-ft cap generally landing toward the lower end of that detached range.</p>
+        </div>
+
+        <div class="content-block" id="hc-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://www.kpcw.org/local-news/2021-07-22/heber-city-loosens-requirements-for-accessory-apartment-rentals" target="_blank" rel="noopener">KPCW</a>: Heber City's 2021 ADU ordinance update</li>
+            <li><a href="https://envisionheber.com/choz/" target="_blank" rel="noopener">Envision Heber / Central Heber Overlay Zone</a>: CHOZ subordinate dwelling unit standards</li>
+            <li><a href="https://www.parkrecord.com/2025/11/14/central-heber-overlay-zone-provides-affordability-growth-management-for-younger-generations/" target="_blank" rel="noopener">Park Record</a>: CHOZ approval and growth context</li>
+            <li><a href="https://en.wikipedia.org/wiki/Heber_City,_Utah" target="_blank" rel="noopener">Wikipedia</a>: Heber City population, geography and history</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -2215,6 +2328,7 @@ CITY_HERO_H1 = {
     "salt-lake-city": "Can You Build an ADU in Salt Lake City?",
     "south-jordan": "Can You Build a Detached Guesthouse in South Jordan, Utah?",
     "bountiful": "Can You Build a Detached ADU in Bountiful, Utah?",
+    "heber-city": "Can You Build an ADU in Heber City's New Downtown Overlay Zone?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -2258,6 +2372,7 @@ CITY_CTA1 = {
     "salt-lake-city": ("Not sure if your SLC home is in a historic district?", "We'll confirm your neighborhood's review requirements before you spend a dollar on design."),
     "south-jordan": ("Not sure if your South Jordan lot qualifies for a guesthouse?", "We'll check your lot size and zone against the city's two ADU categories before you spend a dollar on design."),
     "bountiful": ("Not sure if your Bountiful lot clears the 8,000 sq ft buildable-land minimum?", "We'll check your parcel and tell you which approval path applies before you spend a dollar on design."),
+    "heber-city": ("Not sure if your Heber City lot is inside the new CHOZ boundary?", "We'll confirm which rule set applies to your address before you spend a dollar on design."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -2287,6 +2402,7 @@ CITY_CTA2 = {
     "salt-lake-city": ("See ADU plans built for SLC's historic and newer lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "south-jordan": ("See ADU plans built for Daybreak and older South Jordan lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "bountiful": ("See ADU plans built for Bountiful's downtown and east-bench lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "heber-city": ("See ADU plans built for both Heber City's citywide rule and the CHOZ", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -2481,7 +2597,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_herriman() if slug == 'herriman' else deep_content_salt_lake_city() if slug == 'salt-lake-city' else deep_content_south_jordan() if slug == 'south-jordan' else deep_content_bountiful() if slug == 'bountiful' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_herriman() if slug == 'herriman' else deep_content_salt_lake_city() if slug == 'salt-lake-city' else deep_content_south_jordan() if slug == 'south-jordan' else deep_content_bountiful() if slug == 'bountiful' else deep_content_heber_city() if slug == 'heber-city' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
