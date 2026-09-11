@@ -2882,7 +2882,7 @@ def build_blog():
         ("Does an ADU need its own kitchen and bathroom?", "Yes. To legally qualify as an ADU rather than an addition or a bonus room, Utah cities generally require a full kitchen and bathroom that make the unit capable of independent living, separate from the primary home."),
         ("How long does it take to build an ADU in Utah?", "Most Pro-Worx ADU projects run 4 to 8 months from signed contract to move-in, depending on whether it's a conversion or a ground-up detached build, how long your city takes to issue permits, and how the project is affected by winter weather in your area."),
         ("Will building an ADU increase my property taxes?", "Adding finished, permitted square footage typically increases your home's assessed value, which can raise your property tax bill. The exact amount depends on your county assessor and local mill levy, so we recommend checking with your county assessor's office for a specific estimate before you build."),
-        ("Do I need a permit to build an ADU in Utah?", "Yes, every Utah city we build in requires a building permit for an ADU, and most require a zoning or land-use approval before that. Requirements vary significantly by city, especially after Utah's SB284 changed the rules for detached ADUs statewide starting October 1, 2026 &mdash; see our <a href=\"/adu-rules-2026.html\">full breakdown of what changed</a>."),
+        ("Do I need a permit to build an ADU in Utah?", "Yes, every Utah city we build in requires a building permit for an ADU, and most require a zoning or land-use approval before that. Requirements vary significantly by city, especially after Utah's SB284 changed the rules for detached ADUs statewide starting October 1, 2026. See our <a href=\"/adu-rules-2026.html\">full breakdown of what changed</a>."),
     ]
     cost_faq_html = ""
     for q, a in cost_faq_pairs:
@@ -2910,7 +2910,7 @@ def build_blog():
       <p class="post-meta">Pro-Worx ADU Team &middot; Utah ADU Guides &middot; Updated September 2026</p>
 
       <h2 id="adu-cost-quick-answer" style="margin-top:8px;">How Much Does an ADU Cost in Utah Right Now?</h2>
-      <p>A garage or basement conversion typically runs <strong>$60,000&ndash;$175,000</strong>, and a detached, ground-up ADU typically runs <strong>$150,000&ndash;$300,000+</strong>, or roughly $150&ndash;$300 per square foot either way. Most Utah homeowners also budget an extra $20,000&ndash;$40,000 in soft costs for permits, design and utility hookups. Your exact number depends mainly on the type of ADU, its size, and your lot's utility access &mdash; covered in detail below.</p>
+      <p>A garage or basement conversion typically runs <strong>$60,000&ndash;$175,000</strong>, and a detached, ground-up ADU typically runs <strong>$150,000&ndash;$300,000+</strong>, or roughly $150&ndash;$300 per square foot either way. Most Utah homeowners also budget an extra $20,000&ndash;$40,000 in soft costs for permits, design and utility hookups. Your exact number depends mainly on the type of ADU, its size, and your lot's utility access, all covered in detail below.</p>
 
       <div class="spec-cards" style="margin:20px 0 28px;">
         <div class="spec-card"><div class="spec-value">$60K&ndash;$175K</div><div class="spec-label">Garage or basement conversion</div></div>
@@ -2921,13 +2921,13 @@ def build_blog():
 
       <div class="office-callout">
         {SHIELD_SVG}
-        <p><strong>Where these numbers come from:</strong> the ranges above are drawn from Angi's 2026 ADU cost data, RenoFi's ADU cost guide and Rocket Mortgage's ADU financing guide &mdash; national aggregator sources, since no government body or industry group (NAHB, Zonda's Cost vs. Value Report) publishes an ADU-specific cost study. We've cited each source below so you can check the methodology yourself, and every Pro-Worx ADU quote is still a fixed, walked-property number, not a number pulled from a national table.</p>
+        <p><strong>Where these numbers come from:</strong> the ranges above are drawn from Angi's 2026 ADU cost data, RenoFi's ADU cost guide and Rocket Mortgage's ADU financing guide, all national aggregator sources, since no government body or industry group (NAHB, Zonda's Cost vs. Value Report) publishes an ADU-specific cost study. We've cited each source below so you can check the methodology yourself, and every Pro-Worx ADU quote is still a fixed, walked-property number, not a number pulled from a national table.</p>
       </div>
 
       <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Detached backyard ADU under construction behind a single-family home in Utah" style="width:100%; border-radius:var(--radius); margin-bottom:28px; box-shadow:var(--shadow-card);">
 
       <p>If you've gotten far enough into researching ADUs to land on this page, you've probably already had some version of this conversation: a parent needs somewhere closer to family, a grown kid needs a cheaper place to land, or you've done the math on what a rented backyard cottage could cover on your mortgage. And then, almost immediately, the same question stops the whole idea in its tracks: what is this actually going to cost?</p>
-      <p>We hear that question on nearly every single call, and the honest answer is "it depends a lot on what you're starting with." That's not a dodge &mdash; it's genuinely the biggest variable. This guide walks through the full picture: cost by type and size, what drives your specific price up or down, how the money is actually spent, financing options, and whether an ADU is likely to pay for itself. If you'd rather compare two specific paths side by side first, our <a href="/blog/garage-conversion-vs-detached-adu.html">garage conversion vs. detached ADU guide</a> is a good companion to this one.</p>
+      <p>We hear that question on nearly every single call, and the honest answer is "it depends a lot on what you're starting with." That's not a dodge. It's genuinely the biggest variable. This guide walks through the full picture: cost by type and size, what drives your specific price up or down, how the money is actually spent, financing options, and whether an ADU is likely to pay for itself. If you'd rather compare two specific paths side by side first, our <a href="/blog/garage-conversion-vs-detached-adu.html">garage conversion vs. detached ADU guide</a> is a good companion to this one.</p>
 
       <div class="post-toc">
         <p class="toc-title">In this guide</p>
@@ -2957,7 +2957,7 @@ def build_blog():
       <div class="table-wrap">
         <table class="data-table">
           <tr><th>ADU Type</th><th>Typical Cost</th><th>Why</th></tr>
-          <tr><td>Basement or attic conversion</td><td>$60,000&ndash;$150,000</td><td>Foundation, framing and roof already exist &mdash; work is mostly interior build-out, plumbing and electrical</td></tr>
+          <tr><td>Basement or attic conversion</td><td>$60,000&ndash;$150,000</td><td>Foundation, framing and roof already exist, so work is mostly interior build-out, plumbing and electrical</td></tr>
           <tr><td>Garage conversion</td><td>$60,000&ndash;$175,000</td><td>Similar advantage to a basement conversion, plus usually easier utility access than a detached build</td></tr>
           <tr><td>Attached addition</td><td>$100,000&ndash;$216,000</td><td>New construction tied into the existing home's structure and systems</td></tr>
           <tr><td>Detached, ground-up ADU</td><td>$150,000&ndash;$300,000+</td><td>Full excavation, foundation, framing and exterior envelope, but the most privacy and flexibility</td></tr>
@@ -2966,14 +2966,14 @@ def build_blog():
       </div>
       <p class="source-note">Source: <a href="https://www.angi.com/articles/how-much-do-adu-costs.htm" target="_blank" rel="noopener">Angi, 2026 ADU cost data</a>; <a href="https://www.renofi.com/adus/adu-cost-per-square-foot/" target="_blank" rel="noopener">RenoFi ADU cost guide</a>; <a href="https://www.rocketmortgage.com/learn/what-is-an-adu" target="_blank" rel="noopener">Rocket Mortgage ADU guide</a>.</p>
 
-      <p>A conversion is almost always the more affordable path because you're reusing an existing structure. A detached build costs more up front, but it's also the only option on lots where the primary home has no usable basement or garage to convert, and it gives renters or family members complete separation from the main house &mdash; the difference between "my mother-in-law lives in the basement" and "my mother-in-law lives next door, thankfully." If you're torn between the two, we've laid out the full trade-offs in our <a href="/blog/garage-conversion-vs-detached-adu.html">garage conversion vs. detached ADU comparison</a>.</p>
+      <p>A conversion is almost always the more affordable path because you're reusing an existing structure. A detached build costs more up front, but it's also the only option on lots where the primary home has no usable basement or garage to convert, and it gives renters or family members complete separation from the main house, the difference between "my mother-in-law lives in the basement" and "my mother-in-law lives next door, thankfully." If you're torn between the two, we've laid out the full trade-offs in our <a href="/blog/garage-conversion-vs-detached-adu.html">garage conversion vs. detached ADU comparison</a>.</p>
 
       <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1600&auto=format&fit=crop" alt="Garage being converted into an ADU with new framing and utility rough-in" style="width:100%; border-radius:var(--radius); margin:8px 0 28px; box-shadow:var(--shadow-card);">
 
       <div class="example-scenario">
         <span class="example-badge">Project Example</span>
         <h4>A garage conversion in Riverton</h4>
-        <p>One of our Riverton customers had a flat, standard-size lot with the electrical panel and sewer line already sized for a second unit, and a garage that was dry and structurally sound. That meant the project was mostly interior build-out &mdash; framing a kitchenette and bathroom, running new plumbing and electrical, insulating and finishing &mdash; and it landed toward the lower end of our garage-conversion range, since there was no excavation or foundation work involved.</p>
+        <p>One of our Riverton customers had a flat, standard-size lot with the electrical panel and sewer line already sized for a second unit, and a garage that was dry and structurally sound. That meant the project was mostly interior build-out: framing a kitchenette and bathroom, running new plumbing and electrical, insulating and finishing. It landed toward the lower end of our garage-conversion range, since there was no excavation or foundation work involved.</p>
       </div>
 
       <h2 id="adu-cost-by-size">How Does Cost Change With Size?</h2>
@@ -2989,7 +2989,7 @@ def build_blog():
           <tr><td>1,200 sq ft</td><td>$180,000&ndash;$360,000</td><td>2 bedroom</td></tr>
         </table>
       </div>
-      <p class="source-note">Source: <a href="https://www.angi.com/articles/how-much-do-adu-costs.htm" target="_blank" rel="noopener">Angi, 2026 ADU cost data</a>. Many Utah cities also cap ADU size directly &mdash; see your city's specific rules on our <a href="/index.html#areas">service area pages</a>.</p>
+      <p class="source-note">Source: <a href="https://www.angi.com/articles/how-much-do-adu-costs.htm" target="_blank" rel="noopener">Angi, 2026 ADU cost data</a>. Many Utah cities also cap ADU size directly, so see your city's specific rules on our <a href="/index.html#areas">service area pages</a>.</p>
 
       <div class="inline-cta reveal" style="margin:28px 0;">
         <div>
@@ -3002,14 +3002,14 @@ def build_blog():
       <h2 id="adu-cost-drivers">What Drives Your Specific Price Up or Down?</h2>
       <p>Two lots of the same size, in the same city, can produce two very different quotes. In our experience, it almost always comes down to a handful of factors:</p>
       <ul>
-        <li><strong>Utility capacity.</strong> If your existing electrical panel and sewer line have room for a second unit, costs stay predictable. If they don't, expect an added line item for panel upgrades, a new sewer lateral, or a separate water meter &mdash; something we flag during your free estimate, never after signing.</li>
+        <li><strong>Utility capacity.</strong> If your existing electrical panel and sewer line have room for a second unit, costs stay predictable. If they don't, expect an added line item for panel upgrades, a new sewer lateral, or a separate water meter, something we flag during your free estimate, never after signing.</li>
         <li><strong>Site access and grading.</strong> A flat, easily accessible backyard is cheaper to build on than a sloped lot or one with tight equipment access, since limited access often means more manual labor and smaller equipment doing the work that a full-size excavator would otherwise handle in a fraction of the time.</li>
         <li><strong>Finish level.</strong> Builder-grade finishes versus higher-end fixtures, flooring and cabinetry can swing a project by tens of thousands of dollars, and it's usually the single biggest lever a homeowner has over their own final number.</li>
         <li><strong>Permitting complexity.</strong> Historic districts, HOA design review, and cities still finalizing their SB284-compliant ordinances can all add time and sometimes cost to the permitting phase, particularly in cities where the detached-ADU rules are actively changing this year.</li>
         <li><strong>Foundation type on a detached build.</strong> Foundation costs alone can range from about $5 to $40 per square foot depending on soil conditions and foundation type, and a lot with poor soil or a high water table can push a project toward the more expensive end of that range before framing has even started.</li>
         <li><strong>Distance from existing utility lines.</strong> The farther your planned ADU sits from your home's existing electrical, water and sewer connections, the more trenching and line-running gets added to the budget, which is one more reason a detached unit near the back property line often costs more than one closer to the house.</li>
       </ul>
-      <p>In practice, this is why two homeowners can call us in the same week with what sounds like the same project and walk away with quotes $60,000 apart. A flat, easy-access lot with a straightforward hookup, like the Riverton example above, is a very different job than a sloped lot where the excavator has to work harder just to get in place. Neither homeowner is being overcharged or undercharged &mdash; they're just building on different ground, and it's exactly why we walk every property in person before we'll put a number on paper. It's also worth double-checking your city's current permitting rules directly, since <a href="/adu-rules-2026.html">Utah's SB284 changes</a> (full bill text on <a href="https://le.utah.gov/Session/2026/bills/introduced/SB0284.pdf" target="_blank" rel="noopener">le.utah.gov</a>) mean some cities are actively rewriting their ADU ordinances this year, and a rule that applied in 2025 may not apply anymore.</p>
+      <p>In practice, this is why two homeowners can call us in the same week with what sounds like the same project and walk away with quotes $60,000 apart. A flat, easy-access lot with a straightforward hookup, like the Riverton example above, is a very different job than a sloped lot where the excavator has to work harder just to get in place. Neither homeowner is being overcharged or undercharged. They're just building on different ground, and it's exactly why we walk every property in person before we'll put a number on paper. It's also worth double-checking your city's current permitting rules directly, since <a href="/adu-rules-2026.html">Utah's SB284 changes</a> (full bill text on <a href="https://le.utah.gov/Session/2026/bills/introduced/SB0284.pdf" target="_blank" rel="noopener">le.utah.gov</a>) mean some cities are actively rewriting their ADU ordinances this year, and a rule that applied in 2025 may not apply anymore.</p>
 
       <h2 id="adu-cost-breakdown">Where Does the Money Actually Go?</h2>
       <p>On a typical ADU project, labor and materials make up the large majority of the budget, with design and permitting as a smaller but unavoidable slice:</p>
@@ -3027,7 +3027,7 @@ def build_blog():
           <div class="cost-bar-label"><span>Design &amp; architect fees</span><span>~10&ndash;15%</span></div>
           <div class="cost-bar-track"><div class="cost-bar-fill" style="width:13%;"></div></div>
         </div>
-        <p class="cost-bar-note">Approximate share of total project cost, per Angi's 2026 ADU cost data. Individual projects vary &mdash; a conversion shifts more of the budget toward interior finishes and systems, while a detached build carries more site-work and foundation cost up front.</p>
+        <p class="cost-bar-note">Approximate share of total project cost, per Angi's 2026 ADU cost data. Individual projects vary: a conversion shifts more of the budget toward interior finishes and systems, while a detached build carries more site-work and foundation cost up front.</p>
       </div>
 
       <div class="table-wrap">
@@ -3041,27 +3041,27 @@ def build_blog():
           <tr><td>Permits</td><td>~$1,350 average nationally</td></tr>
         </table>
       </div>
-      <p class="source-note">Source: <a href="https://www.angi.com/articles/how-much-do-adu-costs.htm" target="_blank" rel="noopener">Angi, 2026 ADU cost data</a>. These are national averages, not Utah-specific figures &mdash; local permit fees, in particular, vary significantly by city.</p>
+      <p class="source-note">Source: <a href="https://www.angi.com/articles/how-much-do-adu-costs.htm" target="_blank" rel="noopener">Angi, 2026 ADU cost data</a>. These are national averages, not Utah-specific figures, and local permit fees in particular vary significantly by city.</p>
 
       <div class="example-scenario">
         <span class="example-badge">Project Example</span>
         <h4>A detached build in Draper</h4>
-        <p>A Draper homeowner we worked with had a similarly sized backyard to the Riverton project above, but on a grade steep enough that equipment access was limited and the foundation needed extra engineering to sit level. Utility lines also had to run further from the house than on a flat lot. Even at a comparable finished size, the project landed toward the upper half of our detached-ADU range &mdash; mostly because of the added site work and foundation cost, not the finishes inside.</p>
+        <p>A Draper homeowner we worked with had a similarly sized backyard to the Riverton project above, but on a grade steep enough that equipment access was limited and the foundation needed extra engineering to sit level. Utility lines also had to run further from the house than on a flat lot. Even at a comparable finished size, the project landed toward the upper half of our detached-ADU range, mostly because of the added site work and foundation cost, not the finishes inside.</p>
       </div>
 
       <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop" alt="Utah homeowners reviewing their ADU project budget and financing plan" style="width:100%; border-radius:var(--radius); margin-bottom:28px; box-shadow:var(--shadow-card);">
 
       <h2 id="adu-financing">How Do Homeowners Pay for an ADU?</h2>
-      <p>Very few of the people we work with are paying for their ADU out of pocket, and that's completely normal &mdash; most ADU projects are financed rather than paid in cash, and there are more options today than there were even a few years ago:</p>
+      <p>Very few of the people we work with are paying for their ADU out of pocket, and that's completely normal. Most ADU projects are financed rather than paid in cash, and there are more options today than there were even a few years ago:</p>
       <ul>
-        <li><strong>Cash-out refinance, home equity loan or HELOC</strong> against the primary home &mdash; the most common route for homeowners with existing equity.</li>
+        <li><strong>Cash-out refinance, home equity loan or HELOC</strong> against the primary home, the most common route for homeowners with existing equity.</li>
         <li><strong>A dedicated construction loan</strong> that converts to a permanent mortgage once the ADU is finished.</li>
         <li><strong>Freddie Mac</strong> supports ADUs on purchase, cash-out refinance, no-cash-out refinance and its CHOICERenovation&reg; mortgage for ADU construction, and allows qualifying rental income from the ADU to count toward loan approval (rental income can't exceed 30% of total qualifying income, and documented lease income is capped at 75% of the lease amount).</li>
         <li><strong>FHA</strong> allows up to 75% of estimated ADU rental income to qualify on a property with an existing ADU, and up to 50% of estimated rental income under the FHA Standard 203(k) program when adding a new one.</li>
-        <li><strong>Fannie Mae</strong> has also been expanding its ADU rental-income underwriting rules through 2025&ndash;2026 &mdash; ask your lender for the current Selling Guide terms, since these thresholds have changed more than once recently.</li>
+        <li><strong>Fannie Mae</strong> has also been expanding its ADU rental-income underwriting rules through 2025&ndash;2026, so ask your lender for the current Selling Guide terms, since these thresholds have changed more than once recently.</li>
       </ul>
       <p class="source-note">Sources: <a href="https://sf.freddiemac.com/docs/pdf/fact-sheet/adu-fact-sheet.pdf" target="_blank" rel="noopener">Freddie Mac ADU Fact Sheet</a>; <a href="https://www.nahb.org/blog/2025/10/building-accessory-dwelling-units" target="_blank" rel="noopener">National Association of Home Builders</a>; <a href="https://singlefamily.fanniemae.com/media/43851/display" target="_blank" rel="noopener">Fannie Mae Selling Guide updates</a>.</p>
-      <p>We're not lenders, so we always recommend confirming current terms directly with your mortgage lender before assuming a specific financing structure &mdash; but knowing these programs exist is often the difference between "we can't afford this" and "we can afford this if the ADU rents for X."</p>
+      <p>We're not lenders, so we always recommend confirming current terms directly with your mortgage lender before assuming a specific financing structure, but knowing these programs exist is often the difference between "we can't afford this" and "we can afford this if the ADU rents for X."</p>
 
       <div class="inline-cta reveal" style="margin:28px 0; background:var(--card); border:1px solid var(--border);">
         <div>
@@ -3073,33 +3073,33 @@ def build_blog():
 
       <h2 id="adu-roi">Will an ADU Pay for Itself?</h2>
       <p>This is the question we get asked the most, usually somewhere around the second phone call, once the initial excitement has met the actual number. And it's also the one with the least solid public data behind it, so we're going to be straight with you rather than tell you what you want to hear. Here's what's actually verifiable: Rocket Mortgage estimates an ADU can increase a home's value by roughly 10% to 35% depending on type and location, and gives an illustrative example of a $150,000 detached ADU renting for $1,500&ndash;$2,000 a month taking roughly 7 to 10 years to pay back the construction cost from rent alone.</p>
-      <p>We haven't been able to verify a Utah-specific or Freddie Mac/Zillow-published property-value-increase percentage, so we're not going to hand you a Utah number that doesn't exist. What we can say with confidence is that Freddie Mac and FHA both treat ADU rental income as real, qualifying income on certain loan types (see above) &mdash; which tells you the mortgage industry already views a well-built ADU as a genuine income-producing asset, not just a nice-to-have.</p>
+      <p>We haven't been able to verify a Utah-specific or Freddie Mac/Zillow-published property-value-increase percentage, so we're not going to hand you a Utah number that doesn't exist. What we can say with confidence is that Freddie Mac and FHA both treat ADU rental income as real, qualifying income on certain loan types (see above), which tells you the mortgage industry already views a well-built ADU as a genuine income-producing asset, not just a nice-to-have.</p>
       <p class="source-note">Source: <a href="https://www.rocketmortgage.com/learn/what-is-an-adu" target="_blank" rel="noopener">Rocket Mortgage ADU guide</a>.</p>
 
       <h2 id="adu-2026-trends">What's Changing in 2026 That Could Affect Your Budget?</h2>
       <p>A few material and labor trends are worth knowing about if you're budgeting for a 2026 build:</p>
       <ul>
         <li>Tariffs introduced through 2025 have pushed up costs on several key materials: steel and aluminum (50%), copper products (50%), Canadian softwood lumber (35.2%, with proposals to raise this further), and Canadian/Mexican cement and concrete (25%).</li>
-        <li>Since 2019, cumulative price increases have been steep on some materials &mdash; aluminum wire up an estimated 1,390%, copper wire up roughly 322%.</li>
+        <li>Since 2019, cumulative price increases have been steep on some materials: aluminum wire up an estimated 1,390%, copper wire up roughly 322%.</li>
         <li>Nearly half of general contractors surveyed reported a project canceled, postponed or scaled back in the past six months due to tariff-driven cost increases.</li>
         <li>The construction industry is estimated to need roughly 499,000 additional workers in 2026, which keeps upward pressure on labor costs.</li>
       </ul>
-      <p class="source-note">Source: <a href="https://www.housingwire.com/articles/builder-material-costs-tariffs/" target="_blank" rel="noopener">HousingWire, builder material cost and tariff reporting</a>. Tariff rates have changed frequently through 2025&ndash;2026 &mdash; confirm current rates with a primary government source if this matters to a time-sensitive decision.</p>
-      <p>None of this means an ADU is suddenly a bad investment &mdash; it means locking in a fixed-price quote sooner rather than later protects you from some of this volatility, since your price won't move once your contract is signed.</p>
+      <p class="source-note">Source: <a href="https://www.housingwire.com/articles/builder-material-costs-tariffs/" target="_blank" rel="noopener">HousingWire, builder material cost and tariff reporting</a>. Tariff rates have changed frequently through 2025&ndash;2026, so confirm current rates with a primary government source if this matters to a time-sensitive decision.</p>
+      <p>None of this means an ADU is suddenly a bad investment. It means locking in a fixed-price quote sooner rather than later protects you from some of this volatility, since your price won't move once your contract is signed.</p>
 
       <h2>How Do You Get an Accurate Quote for Your Property?</h2>
-      <p>Every number in this guide is a national or industry-wide range, useful for setting expectations but not a substitute for a real quote on your specific lot. The only way to know what your project actually costs is to have someone walk the property, check your utility capacity, confirm your city's current zoning rules (especially with cities still updating their ordinances for SB284), and price the finish level you actually want. Once permits are involved, it also helps to know what to expect from that process &mdash; our <a href="/blog/adu-permits-utah-what-to-know.html">ADU permitting guide</a> walks through it step by step.</p>
-      <p>A reliable estimate should tell you, in writing, which of the cost drivers above apply to your lot &mdash; not just hand you a number. If a quote can't explain why it landed where it did, that's usually a sign it's a placeholder, not a real number.</p>
+      <p>Every number in this guide is a national or industry-wide range, useful for setting expectations but not a substitute for a real quote on your specific lot. The only way to know what your project actually costs is to have someone walk the property, check your utility capacity, confirm your city's current zoning rules (especially with cities still updating their ordinances for SB284), and price the finish level you actually want. Once permits are involved, it also helps to know what to expect from that process, and our <a href="/blog/adu-permits-utah-what-to-know.html">ADU permitting guide</a> walks through it step by step.</p>
+      <p>A reliable estimate should tell you, in writing, which of the cost drivers above apply to your lot, not just hand you a number. If a quote can't explain why it landed where it did, that's usually a sign it's a placeholder, not a real number.</p>
 
       <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=1600&auto=format&fit=crop" alt="Finished backyard ADU cottage in a Utah neighborhood" style="width:100%; border-radius:var(--radius); margin:8px 0 28px; box-shadow:var(--shadow-card);">
 
       <h2>Why Fixed Pricing Matters</h2>
-      <p>Every Pro-Worx ADU plan tier is a fixed price once we've walked your property, not a rough estimate that grows during construction, and not a number that quietly moves once the walls are open. Across Salt Lake, Utah, Davis and Summit counties, Pro-Worx ADU pricing typically runs $100K&ndash;$200K for a garage or basement conversion and $200K&ndash;$300K for a full detached, ground-up build &mdash; consistent with the national ranges above, applied to your specific lot rather than a national average. That's the same transparent-pricing standard we've applied to over 1,100 projects across Utah in 20 years; you can see examples of that work in our <a href="/index.html#portfolio">project portfolio</a> or browse fixed <a href="/index.html#plans">plan tiers and pricing</a> directly.</p>
+      <p>Every Pro-Worx ADU plan tier is a fixed price once we've walked your property, not a rough estimate that grows during construction, and not a number that quietly moves once the walls are open. Across Salt Lake, Utah, Davis and Summit counties, Pro-Worx ADU pricing typically runs $100K&ndash;$200K for a garage or basement conversion and $200K&ndash;$300K for a full detached, ground-up build, consistent with the national ranges above but applied to your specific lot rather than a national average. That's the same transparent-pricing standard we've applied to over 1,100 projects across Utah in 20 years; you can see examples of that work in our <a href="/index.html#portfolio">project portfolio</a> or browse fixed <a href="/index.html#plans">plan tiers and pricing</a> directly.</p>
 
       <div class="inline-cta reveal" style="margin:32px 0;">
         <div>
           <h3>Ready to see what your specific lot would cost?</h3>
-          <p>A free on-site estimate gets you a real, fixed number &mdash; not a number pulled from a national table.</p>
+          <p>A free on-site estimate gets you a real, fixed number, not a number pulled from a national table.</p>
         </div>
         <a href="/index.html#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
       </div>
