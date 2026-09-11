@@ -2990,6 +2990,20 @@ def build_blog():
       </ul>
       <p>In practice, this is why two homeowners can call us in the same week with what sounds like the same project and walk away with quotes $60,000 apart. A flat, easy-access lot in a city like <a href="/locations/riverton.html">Riverton</a> with a straightforward hookup is a very different job than a sloped lot in <a href="/locations/draper.html">Draper</a> where the excavator has to work harder just to get in place. Neither homeowner is being overcharged or undercharged &mdash; they're just building on different ground, and it's exactly why we walk every property in person before we'll put a number on paper. It's also worth double-checking your city's current permitting rules directly, since <a href="/adu-rules-2026.html">Utah's SB284 changes</a> (full bill text on <a href="https://le.utah.gov/Session/2026/bills/introduced/SB0284.pdf" target="_blank" rel="noopener">le.utah.gov</a>) mean some cities are actively rewriting their ADU ordinances this year, and a rule that applied in 2025 may not apply anymore.</p>
 
+      <p>To make this concrete, here's what those two situations might realistically look like, based on the ranges in this guide:</p>
+
+      <div class="example-scenario">
+        <span class="example-badge">Illustrative example, not an actual customer</span>
+        <h4>The easy-access lot: a garage conversion in Riverton</h4>
+        <p>A flat, standard-size lot with the electrical panel and sewer line already sized for a second unit. The garage is dry and structurally sound, so the project is mostly interior build-out: framing a kitchenette and bathroom, running new plumbing and electrical, insulating and finishing. A project like this tends to land in the $80,000&ndash;$140,000 range from our earlier type-based table, on the more predictable end because there's no excavation or foundation work involved.</p>
+      </div>
+
+      <div class="example-scenario">
+        <span class="example-badge">Illustrative example, not an actual customer</span>
+        <h4>The sloped lot: a detached build in Draper</h4>
+        <p>A similarly sized backyard, but on a grade steep enough that equipment access is limited and the foundation needs extra engineering to sit level. Utility lines also have to run further from the house than on a flat lot. Even at a comparable finished size, a project like this tends to land toward the upper half of the $150,000&ndash;$300,000 detached-ADU range, mostly because of the added site work and foundation cost, not the finishes inside.</p>
+      </div>
+
       <h2 id="adu-cost-breakdown">Where Does the Money Actually Go?</h2>
       <p>On a typical ADU project, labor and materials make up the large majority of the budget, with design and permitting as a smaller but unavoidable slice:</p>
 
