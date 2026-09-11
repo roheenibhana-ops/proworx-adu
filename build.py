@@ -3434,8 +3434,241 @@ def build_blog():
     with open(os.path.join(ROOT, 'blog', 'adu-permits-utah-what-to-know.html'), 'w') as f:
         f.write(permits_post_html)
 
-    # Placeholder page for the one remaining linked post so no link 404s.
-    for p in posts[2:]:
+    # Bespoke, fully-researched third post: garage conversion vs. detached.
+    compare_faq_pairs = [
+        ("Is a garage conversion always cheaper than a detached ADU?", "Almost always, yes, but not guaranteed. A garage conversion reuses the existing foundation, framing and roof, which typically saves $40,000&ndash;$60,000 in foundation costs alone if the structure is sound. If your garage has hidden structural problems, though, that gap can shrink fast, sometimes by 40% over the original estimate, which is exactly why we inspect the structure before pricing either option."),
+        ("How much faster is a garage conversion than building detached?", "In general terms, a garage or basement conversion typically runs 3 to 6 months from design through move-in, versus roughly 10 to 12 months for a ground-up detached ADU, largely because a conversion skips site prep, excavation and foundation work entirely. Your specific timeline still depends on your city's permitting pace and the project's complexity."),
+        ("Which one is worth more when I sell my house?", "There's no single verified percentage for Utah specifically, but the general pattern in the industry is that a purpose-built detached unit tends to appraise and rent better than a converted garage, since it has no inherited structural or layout compromises. A well-executed conversion still adds real value. It just doesn't always command the same premium as a unit designed as a home from the start."),
+        ("Will I lose my garage parking if I convert it?", "Yes. Converting a garage into an ADU eliminates that covered parking and storage space permanently, and most Utah cities require at least one replacement parking space on site for the new unit, which can mean adding a driveway pad or carport elsewhere on the lot."),
+        ("Can I do a detached ADU if I don't want to give up my garage?", "Often, yes, if your lot has room. A detached ADU sits separately in the backyard rather than replacing an existing structure, so it's the better fit if keeping your garage intact matters to you, provided your lot meets your city's setback and size rules. We check that during your free on-site estimate."),
+        ("What if I'm not sure which one is right for my property?", "That's the majority of the calls we get. Lot size, garage condition, utility access and your goals for the space (family housing versus rental income) all point in different directions depending on the property, which is exactly why we walk the site in person rather than quoting either option sight unseen."),
+    ]
+    compare_faq_html = ""
+    for q, a in compare_faq_pairs:
+        compare_faq_html += f"""      <div class="accordion-item">
+        <button class="accordion-trigger">{q}
+          {CHEVRON_SVG}
+        </button>
+        <div class="accordion-panel"><p>{a}</p></div>
+      </div>
+"""
+
+    compare_post_body = f"""<div class="container">
+  <div class="breadcrumb">
+    <a href="/index.html">Home</a><span>/</span>
+    <a href="/blog/index.html">Blog</a><span>/</span>
+    <span class="current">Planning</span>
+  </div>
+</div>
+
+<section style="padding-top:24px;">
+  <div class="container">
+    <div class="blog-post-body">
+      <p class="eyebrow">PLANNING</p>
+      <h1 style="font-size:36px; margin-bottom:12px;">Garage Conversion vs. Detached ADU: Which Is Right for Your Lot?</h1>
+      <p class="post-meta">Pro-Worx ADU Team &middot; Utah ADU Guides &middot; Updated September 2026</p>
+
+      <h2 id="compare-quick-answer" style="margin-top:8px;">Garage Conversion or Detached ADU: Which Should You Choose?</h2>
+      <p>A garage conversion is usually the faster, cheaper path, typically <strong>3&ndash;6 months</strong> and <strong>$60,000&ndash;$175,000</strong>, because it reuses your existing foundation, framing and roof. A detached, ground-up ADU costs more and takes longer, typically <strong>10&ndash;12 months</strong> and <strong>$150,000&ndash;$300,000+</strong>, but it gives you full design control, keeps your garage intact, and generally offers better privacy and resale appeal. The right choice comes down to your garage's condition, your lot size, your budget and how you plan to use the unit, all covered in detail below.</p>
+
+      <div class="spec-cards" style="margin:20px 0 28px;">
+        <div class="spec-card"><div class="spec-value">3&ndash;6 mo</div><div class="spec-label">Garage conversion timeline</div></div>
+        <div class="spec-card"><div class="spec-value">10&ndash;12 mo</div><div class="spec-label">Detached ADU timeline</div></div>
+        <div class="spec-card"><div class="spec-value">$40K&ndash;$60K</div><div class="spec-label">Typical foundation savings, conversion</div></div>
+        <div class="spec-card"><div class="spec-value">1</div><div class="spec-label">Replacement parking space usually required</div></div>
+      </div>
+
+      <div class="office-callout">
+        {SHIELD_SVG}
+        <p><strong>Where these numbers come from:</strong> the cost figures below match our <a href="/blog/how-much-does-an-adu-cost-in-utah.html">full cost breakdown</a>, sourced from Angi's 2026 ADU cost data and RenoFi's ADU cost guide. The timeline and trade-off figures are general industry ranges compiled from ADU builder guides nationally, since Utah-specific published timeline data doesn't exist. Every Pro-Worx ADU estimate reflects your actual lot and structure, not a national average.</p>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop" alt="Side-by-side comparison of a garage conversion ADU and a detached backyard ADU in Utah" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" style="width:100%; height:auto; border-radius:var(--radius); margin-bottom:28px; box-shadow:var(--shadow-card);">
+
+      <p>This is usually the first real fork in the road once someone decides they want an ADU: keep the garage and just build within your existing lot's footprint, or start fresh in the backyard. Both are good options, and we build plenty of both across Salt Lake, Utah, Davis and Summit counties. The right one for you depends less on which is "better" and more on what your garage, your lot and your goals for the unit actually look like. If you haven't seen it yet, our <a href="/blog/how-much-does-an-adu-cost-in-utah.html">ADU cost breakdown</a> is a useful companion to the numbers here.</p>
+
+      <div class="post-toc">
+        <p class="toc-title">In this guide</p>
+        <ol>
+          <li><a href="#compare-cost">How do the two compare on cost?</a></li>
+          <li><a href="#compare-timeline">How much longer does a detached build take?</a></li>
+          <li><a href="#compare-tradeoffs">What are the real trade-offs beyond price?</a></li>
+          <li><a href="#compare-lot">Which one does your lot actually support?</a></li>
+          <li><a href="#compare-resale">Which one is worth more at resale or as a rental?</a></li>
+          <li><a href="#compare-decide">How do you actually decide?</a></li>
+          <li><a href="#compare-faq">Frequently asked questions</a></li>
+        </ol>
+      </div>
+
+      <div class="inline-cta reveal" style="margin:28px 0;">
+        <div>
+          <h3>Not sure which path fits your property?</h3>
+          <p>We'll walk your lot and garage and tell you honestly which option makes more sense.</p>
+        </div>
+        <a href="/index.html#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
+      </div>
+
+      <h2 id="compare-cost">How Do the Two Compare on Cost?</h2>
+      <p>The gap comes almost entirely from what already exists on your property. A garage conversion starts with a foundation, framing and roof already in place, while a detached build starts with an empty patch of yard:</p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <tr><th></th><th>Garage Conversion</th><th>Detached ADU</th></tr>
+          <tr><td>Typical total cost</td><td>$60,000&ndash;$175,000</td><td>$150,000&ndash;$300,000+</td></tr>
+          <tr><td>Foundation</td><td>Usually reused (if sound)</td><td>New, $5&ndash;$40/sq ft</td></tr>
+          <tr><td>Framing &amp; roof</td><td>Usually reused</td><td>Built new</td></tr>
+          <tr><td>Utility hookups</td><td>Often shorter runs</td><td>Often longer trenching runs</td></tr>
+          <tr><td>Typical timeline</td><td>3&ndash;6 months</td><td>10&ndash;12 months</td></tr>
+        </table>
+      </div>
+      <p class="source-note">Source: <a href="https://www.angi.com/articles/how-much-do-adu-costs.htm" target="_blank" rel="noopener">Angi, 2026 ADU cost data</a>; foundation savings and cost detail from <a href="https://www.tinyhomecottages.com/blog/garage-conversion-vs-building-a-new-adu-pros-and-cons" target="_blank" rel="noopener">industry ADU comparison guides</a>; timeline ranges from <a href="https://www.seattleadubuilders.com/adu-construction-timeline/" target="_blank" rel="noopener">ADU builder timeline data</a>, a general industry benchmark rather than a Utah-specific figure.</p>
+
+      <p>A sound, structurally healthy garage is where a conversion really pays off, since reusing the existing shell can save $40,000 to $60,000 in foundation cost alone. The catch is the word "sound." If there's hidden rot, an undersized slab, or drainage problems under that garage, those surprises can eat into the savings fast, sometimes pushing a project 40% over its original estimate. It's exactly why we inspect the structure in person before pricing a conversion, rather than assuming the shell is free money.</p>
+
+      <div class="example-scenario">
+        <span class="example-badge">Project Example</span>
+        <h4>A garage conversion in Sandy</h4>
+        <p>One of our Sandy customers had a detached two-car garage in good structural condition, dry, level, with a sound roof, so their project skipped foundation and framing work almost entirely. The build came in toward the lower end of our conversion range, and they were living-in-ready in a little over four months from signed contract, close to the fast end of the typical range.</p>
+      </div>
+
+      <h2 id="compare-timeline">How Much Longer Does a Detached Build Take?</h2>
+      <p>Roughly double, in most cases. A garage or basement conversion generally runs about 3 to 6 months from design through move-in, since it skips excavation, foundation and structural framing. A detached, ground-up ADU generally runs closer to 10 to 12 months, covering design, permitting, and a full construction sequence from the foundation up.</p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <tr><th>Phase</th><th>Garage/Basement Conversion</th><th>Detached ADU</th></tr>
+          <tr><td>Design</td><td>~2&ndash;3 weeks</td><td>~4&ndash;6 weeks</td></tr>
+          <tr><td>Permitting</td><td>~3&ndash;6 weeks</td><td>~6&ndash;10 weeks</td></tr>
+          <tr><td>Construction</td><td>~8&ndash;14 weeks</td><td>~24&ndash;28 weeks</td></tr>
+          <tr><td>Total</td><td>~3&ndash;6 months</td><td>~10&ndash;12 months</td></tr>
+        </table>
+      </div>
+      <p class="source-note">Source: general industry timeline benchmarks compiled by <a href="https://www.seattleadubuilders.com/adu-construction-timeline/" target="_blank" rel="noopener">ADU builder guides</a>. These are typical ranges for straightforward projects; permitting pace, weather and site complications can move either timeline in either direction, and our <a href="/blog/adu-permits-utah-what-to-know.html">permitting guide</a> covers what typically causes delays.</p>
+
+      <div class="inline-cta reveal" style="margin:28px 0;">
+        <div>
+          <h3>Want a realistic timeline for your specific project?</h3>
+          <p>We'll give you an honest schedule estimate during your free on-site visit, not a marketing number.</p>
+        </div>
+        <a href="/index.html#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
+      </div>
+
+      <h2 id="compare-tradeoffs">What Are the Real Trade-Offs Beyond Price?</h2>
+      <p>Cost and timeline usually decide the conversation early, but the trade-offs that actually affect how much you enjoy (or profit from) the finished unit go deeper:</p>
+      <ul>
+        <li><strong>Design flexibility.</strong> A garage conversion is boxed in by the existing structure. You generally can't raise the ceiling, add a loft, or reorient the layout. A detached build gives you full control over layout, window placement, ceiling height and finishes.</li>
+        <li><strong>Energy performance.</strong> Older garage walls are often thinner and harder to bring up to modern insulation standards without significant extra work, while a purpose-built detached ADU can be framed with high-performance insulation from the start.</li>
+        <li><strong>Privacy and separation.</strong> A detached unit typically gets its own path, its own entrance, and real distance from the main house, better privacy for a renter, an adult child, or aging parents. A garage conversion inherits whatever proximity to the main house the garage already had.</li>
+        <li><strong>Parking and storage.</strong> Converting a garage removes that covered parking and storage permanently. Most Utah cities also require at least one replacement parking space for the new unit, so that space typically needs to be recreated elsewhere on the lot.</li>
+        <li><strong>Yard space.</strong> A detached ADU occupies 200 to 400 square feet of yard that a conversion doesn't touch at all, worth weighing if outdoor space matters to your household.</li>
+      </ul>
+      <p class="source-note">Source: trade-off comparisons compiled from <a href="https://www.tinyhomecottages.com/blog/garage-conversion-vs-building-a-new-adu-pros-and-cons" target="_blank" rel="noopener">industry ADU comparison guides</a>.</p>
+
+      <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1600&auto=format&fit=crop" alt="Interior of a garage being converted into a finished ADU living space" width="1600" height="900" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:var(--radius); margin:8px 0 28px; box-shadow:var(--shadow-card);">
+
+      <h2 id="compare-lot">Which One Does Your Lot Actually Support?</h2>
+      <p>Sometimes the decision isn't really a preference, it's dictated by what's physically and legally possible on your property. A few questions we walk through on every estimate:</p>
+      <ul>
+        <li><strong>Do you have a garage at all, and is it structurally sound?</strong> No usable garage or basement means a detached build is often your only real option.</li>
+        <li><strong>Does your lot meet your city's detached-ADU size and setback rules?</strong> Detached units are typically capped relative to the primary home's size (Draper, for example, limits a detached ADU to 50% of the primary dwelling's square footage) and must meet standard setbacks, which some smaller or oddly-shaped lots can't accommodate.</li>
+        <li><strong>Is your lot one of the ones newly eligible under SB284?</strong> If your city previously restricted detached ADUs more tightly, Utah's SB284 changes, effective October 1, 2026, may open up options that weren't available before. See our <a href="/adu-rules-2026.html">full SB284 breakdown</a> for details.</li>
+        <li><strong>Can your lot fit a replacement parking space if you convert the garage?</strong> If not, a garage conversion may not be approvable even if you'd prefer it.</li>
+      </ul>
+      <p>These are exactly the questions we answer for you during a free on-site visit, so you're deciding based on what your property can actually support, not just which option sounds better on paper.</p>
+
+      <div class="example-scenario">
+        <span class="example-badge">Project Example</span>
+        <h4>A detached ADU in Cottonwood Heights</h4>
+        <p>A Cottonwood Heights homeowner we worked with had an attached single-car garage too small to make a usable conversion once code-required egress and a bathroom were factored in. Their backyard, however, was large and flat enough to comfortably fit a detached unit within setbacks. Once we walked the lot, the decision made itself: a detached build was the only option that actually produced a livable unit.</p>
+      </div>
+
+      <h2 id="compare-resale">Which One Is Worth More at Resale or as a Rental?</h2>
+      <p>We don't have a verified Utah-specific number comparing resale value between the two paths, and we're not going to invent one. What we can say, based on general patterns across the ADU industry, is that a purpose-built detached unit tends to appraise and rent at a premium over a converted garage, since it carries no inherited layout or structural compromises and reads to an appraiser or a renter as genuinely new construction. A well-built conversion still adds real, legitimate value and rents perfectly well. It just doesn't always command quite the same ceiling as a unit designed as a home from day one.</p>
+      <p class="source-note">Source: general industry patterns per <a href="https://www.tinyhomecottages.com/blog/garage-conversion-vs-building-a-new-adu-pros-and-cons" target="_blank" rel="noopener">industry ADU comparison guides</a>; see our <a href="/blog/how-much-does-an-adu-cost-in-utah.html">ROI section</a> in the cost guide for what's actually verifiable on ADU value nationally.</p>
+
+      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop" alt="Finished detached ADU in a Utah backyard with a separate entrance" width="1600" height="900" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:var(--radius); margin-bottom:28px; box-shadow:var(--shadow-card);">
+
+      <div class="inline-cta reveal" style="margin:28px 0; background:var(--card); border:1px solid var(--border);">
+        <div>
+          <h3>Want to know what your garage or lot is actually worth building?</h3>
+          <p>A free on-site visit tells you which path fits, with a real number attached.</p>
+        </div>
+        <a href="/index.html#contact" class="btn btn-light">GET FREE ESTIMATE</a>
+      </div>
+
+      <h2 id="compare-decide">How Do You Actually Decide?</h2>
+      <p>In our experience, the decision usually comes down to answering three questions honestly:</p>
+      <ul>
+        <li><strong>What's your budget and timeline?</strong> If speed and cost matter most and your garage is sound, a conversion is very likely your answer.</li>
+        <li><strong>What's the unit for?</strong> Housing an adult child or aging parent who wants real independence tends to favor a detached unit's privacy. Maximizing rental income on a tight budget tends to favor a conversion's lower entry cost.</li>
+        <li><strong>What does your lot actually allow?</strong> Sometimes this question overrides the other two entirely, since zoning, setbacks and garage condition can narrow your real options down to one.</li>
+      </ul>
+      <p>Neither path is the "correct" one in the abstract. The correct one is whichever matches your garage, your lot, and what you actually need the space to do, which is precisely why every Pro-Worx ADU estimate starts with us walking your property in person rather than quoting a plan off a floor plan catalog. That's the same standard we've applied across over 1,100 projects in Utah over 20 years; see it in our <a href="/index.html#portfolio">project portfolio</a> or browse <a href="/index.html#plans">plan tiers and pricing</a> for both paths.</p>
+
+      <div class="inline-cta reveal" style="margin:32px 0;">
+        <div>
+          <h3>Ready to find out which option fits your property?</h3>
+          <p>A free on-site estimate gives you a straight answer, garage conversion or detached, with real numbers attached.</p>
+        </div>
+        <a href="/index.html#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
+      </div>
+
+      <h2 id="compare-faq">Frequently Asked Questions</h2>
+      <div class="accordion" style="margin:8px 0 0;">
+{compare_faq_html}      </div>
+
+      <h3 style="margin-top:40px;">Sources</h3>
+      <ul class="sources-list">
+        <li><a href="https://www.angi.com/articles/how-much-do-adu-costs.htm" target="_blank" rel="noopener">Angi</a>: 2026 ADU cost data</li>
+        <li><a href="https://www.tinyhomecottages.com/blog/garage-conversion-vs-building-a-new-adu-pros-and-cons" target="_blank" rel="noopener">Tiny Home Cottages</a>: garage conversion vs. new ADU trade-off comparison</li>
+        <li><a href="https://www.seattleadubuilders.com/adu-construction-timeline/" target="_blank" rel="noopener">Seattle ADU Builders</a>: ADU construction timeline benchmarks</li>
+        <li><a href="/blog/how-much-does-an-adu-cost-in-utah.html" class="link-arrow">Our full ADU cost breakdown &rarr;</a></li>
+        <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+      </ul>
+
+      <p style="font-size:13px; color:var(--muted-foreground); margin-top:24px;">This guide summarizes general industry cost and timeline data as of September 2026 for planning purposes. It isn't financial or legal advice, and actual costs, timelines and value depend on your specific property and market. Your fixed Pro-Worx ADU quote is based on a walked-property estimate, not this comparison.</p>
+    </div>
+  </div>
+</section>
+
+{contact_section()}"""
+
+    compare_post_url = "/blog/garage-conversion-vs-detached-adu.html"
+    compare_post_title = "Garage Conversion vs. Detached ADU | Pro-Worx ADU"
+    compare_post_desc = "A full cost, timeline and trade-off comparison between garage conversion and detached ADUs in Utah, so you can choose the right fit for your lot."
+    compare_post_image = "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop"
+    compare_post_published = "2026-09-12"
+    compare_post_modified = BUILD_DATE
+
+    _register(compare_post_url, changefreq="monthly", priority="0.6")
+    compare_post_html = page_shell(
+        compare_post_title,
+        compare_post_desc,
+        compare_post_body,
+        compare_post_url,
+        json_ld=[
+            breadcrumb_jsonld([("Home", "/index.html"), ("Blog", "/blog/index.html"), ("Planning", "")]),
+            faq_jsonld(compare_faq_pairs),
+            article_jsonld(
+                "Garage Conversion vs. Detached ADU: Which Is Right for Your Lot?",
+                compare_post_desc,
+                compare_post_image,
+                compare_post_url,
+                compare_post_published,
+                compare_post_modified,
+            ),
+            local_business_jsonld(),
+        ],
+        og_type="article",
+        og_image=compare_post_image,
+        article_published=compare_post_published,
+        article_modified=compare_post_modified,
+    )
+    with open(os.path.join(ROOT, 'blog', 'garage-conversion-vs-detached-adu.html'), 'w') as f:
+        f.write(compare_post_html)
+
+    # All three posts are now bespoke; no placeholders remain.
+    for p in []:
         placeholder_body = f"""<div class="container">
   <div class="breadcrumb">
     <a href="/index.html">Home</a><span>/</span>
