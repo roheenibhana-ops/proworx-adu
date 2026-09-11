@@ -374,7 +374,7 @@ def deep_content_alpine():
       <p class="lede">Alpine's large, sloped lots and conditional-use zoning make an ADU here a different conversation than it is a few miles away in flatter Utah County cities like Lehi or Lindon.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?q=80&w=1800&auto=format&fit=crop" alt="Foothill homes on a sloped lot in Alpine, Utah, with mountain views">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?q=80&w=1800&auto=format&fit=crop" alt="Foothill homes on a sloped lot in Alpine, Utah, with mountain views" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">10,251</div><div class="spec-label">Population (2020 Census)</div></div>
@@ -489,7 +489,7 @@ def deep_content_lehi():
       <p class="lede">Unlike cities writing an ADU ordinance from scratch for October 1, 2026, Lehi has allowed detached ADUs for years. The city just updated its existing rule, and city staff estimate roughly 20% more Lehi properties are now newly eligible.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="New-construction homes in a Lehi, Utah subdivision near Traverse Mountain">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="New-construction homes in a Lehi, Utah subdivision near Traverse Mountain" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">~99,366</div><div class="spec-label">Population (2026 est.)</div></div>
@@ -592,7 +592,7 @@ def deep_content_mapleton():
       <p class="lede">Mapleton's lots run large by Utah County standards, so almost every property clears the minimum size for an ADU. The real qualifying questions here are about well capacity, septic systems and foothill drainage.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1800&auto=format&fit=crop" alt="Large-lot foothill property near Maple Mountain in Mapleton, Utah">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1800&auto=format&fit=crop" alt="Large-lot foothill property near Maple Mountain in Mapleton, Utah" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">16,275</div><div class="spec-label">Population (2025 est., +43% since 2020)</div></div>
@@ -688,7 +688,7 @@ def deep_content_spanish_fork():
       <p class="lede">Spanish Fork keeps its detached ADU size cap the same for every qualifying lot in the city. The real work is confirming your property sits in a zone that allows one at all, and that your parking plan pencils out.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Residential street in Spanish Fork, Utah near the historic downtown grid">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Residential street in Spanish Fork, Utah near the historic downtown grid" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">48,837</div><div class="spec-label">Population (2025 est., +14.6% since 2020)</div></div>
@@ -784,7 +784,7 @@ def deep_content_highland():
       <p class="lede">Highland's large lots make room for an ADU on paper, but the city's own ordinance is built around an internal, attached unit that doesn't read as a second home from the street &mdash; not a standalone building in the backyard.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1800&auto=format&fit=crop" alt="Large-lot home in Highland, Utah with a view toward Mount Timpanogos">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1800&auto=format&fit=crop" alt="Large-lot home in Highland, Utah with a view toward Mount Timpanogos" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">21,571</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -880,7 +880,7 @@ def deep_content_lindon():
       <p class="lede">Lindon doesn't just give you a square-footage ceiling for a detached ADU. The city caps it against a percentage of your existing home, which means the same detached ADU can be a different allowed size on two lots right next to each other.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1800&auto=format&fit=crop" alt="Single-family neighborhood street in Lindon, Utah">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1800&auto=format&fit=crop" alt="Single-family neighborhood street in Lindon, Utah" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">12,015</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -974,7 +974,7 @@ def deep_content_provo():
       <p class="lede">Provo's accessory apartment ordinance predates SB284 by years, and it reads that way: owner-occupancy is required, occupancy is capped, and a rental license is mandatory. If your goal is extended family or rental income from an owner-occupied home, this works in your favor &mdash; but the rules are built to prevent a pure student-rental play.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in Provo, Utah with mountains in the background">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in Provo, Utah with mountains in the background" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">114,527</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -1077,7 +1077,7 @@ def deep_content_vineyard():
       <p class="lede">Vineyard is one of the fastest-growing cities in Utah, built almost entirely on new master-planned subdivisions since the old Geneva Steel mill closed. That means the city's ADU rule is clear and licensed &mdash; but nearly every lot also sits inside an HOA whose covenants haven't necessarily caught up.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="New master-planned subdivision homes in Vineyard, Utah near Utah Lake">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="New master-planned subdivision homes in Vineyard, Utah near Utah Lake" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">16,092</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -1173,7 +1173,7 @@ def deep_content_bluffdale():
       <p class="lede">Bluffdale's ADU ordinance is refreshingly permissive on lot size, but it's specific about what an ADU is for: a real second household, not a short-term rental. The size cap ties directly to your existing home, not a flat number.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1800&auto=format&fit=crop" alt="Semi-rural residential property in Bluffdale, Utah near the Salt Lake County equestrian trails">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1800&auto=format&fit=crop" alt="Semi-rural residential property in Bluffdale, Utah near the Salt Lake County equestrian trails" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">19,506</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -1271,7 +1271,7 @@ def deep_content_draper():
       <p class="lede">Draper's accessory dwelling ordinance doesn't carve out separate rules for its hillside neighborhoods, but a lot on Suncrest's slopes and a lot near a flat new-build in South Draper are two very different construction jobs even under the same code.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?q=80&w=1800&auto=format&fit=crop" alt="Hillside homes in Draper, Utah near Corner Canyon">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?q=80&w=1800&auto=format&fit=crop" alt="Hillside homes in Draper, Utah near Corner Canyon" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">50,652</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -1370,7 +1370,7 @@ def deep_content_riverton():
       <p class="lede">Riverton already had a working detached-ADU ordinance well before SB284, and it ties the size cap to your specific lot and home rather than handing every property the same ceiling.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in Riverton, Utah near the Jordan River">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in Riverton, Utah near the Jordan River" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">47,395</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -1471,7 +1471,7 @@ def deep_content_sandy():
       <p class="lede">Sandy's accessory apartment code was written around a unit inside your existing home, not a standalone structure in the backyard. If you want a detached ADU, you're looking at a separate provision and, likely, the new SB284 mandate rather than the accessory apartment rule itself.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1800&auto=format&fit=crop" alt="Established residential neighborhood in Sandy, Utah near the Wasatch foothills">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1800&auto=format&fit=crop" alt="Established residential neighborhood in Sandy, Utah near the Wasatch foothills" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">92,386</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -1568,7 +1568,7 @@ def deep_content_west_jordan():
       <p class="lede">West Jordan already allowed detached ADUs years before SB284, but only on larger lots in specific zones. An internal ADU has a much lower bar &mdash; and West Jordan cares less about who lives where than most cities, and more about whether you've got a rental license.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in West Jordan, Utah near the Jordan River">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in West Jordan, Utah near the Jordan River" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">116,812</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -1667,7 +1667,7 @@ def deep_content_cottonwood_heights():
       <p class="lede">Cottonwood Heights legalized ADUs back in 2021, well ahead of SB284. An internal conversion is a relatively simple licensing process, but a detached ADU adds a conditional-use permit on top &mdash; and a separate fee for it.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in Cottonwood Heights, Utah near the mouth of Big Cottonwood Canyon">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1800&auto=format&fit=crop" alt="Residential neighborhood in Cottonwood Heights, Utah near the mouth of Big Cottonwood Canyon" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">32,265</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -1764,7 +1764,7 @@ def deep_content_herriman():
       <p class="lede">Herriman already allows detached ADUs, but the city's Planning Commission has a new, more permissive ordinance under review as of early 2026 &mdash; and almost every lot in this fast-growing city also sits inside an HOA with its own say.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="New master-planned subdivision in Herriman, Utah near the Oquirrh Mountains">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="New master-planned subdivision in Herriman, Utah near the Oquirrh Mountains" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">63,282</div><div class="spec-label">Population (2025 est., +14.7% since 2020)</div></div>
@@ -1872,7 +1872,7 @@ def deep_content_salt_lake_city():
       <p class="lede">SLC's ADU ordinance is mature and citywide, with no minimum lot size at all. But whether that means an easy internal conversion or a Historic Landmark Commission review depends entirely on which neighborhood your home sits in.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566752229-250ed79470f8?q=80&w=1800&auto=format&fit=crop" alt="Historic bungalow homes in a Salt Lake City neighborhood">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600566752229-250ed79470f8?q=80&w=1800&auto=format&fit=crop" alt="Historic bungalow homes in a Salt Lake City neighborhood" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">218,428</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -1975,7 +1975,7 @@ def deep_content_south_jordan():
       <p class="lede">South Jordan's ADU ordinance draws a sharp line between an internal unit and a detached guesthouse &mdash; and if you're in Daybreak, your HOA may have its own opinion on top of the city's.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1800&auto=format&fit=crop" alt="Suburban home in South Jordan, Utah near the Oquirrh Mountains">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1800&auto=format&fit=crop" alt="Suburban home in South Jordan, Utah near the Oquirrh Mountains" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">~88,910</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -2075,7 +2075,7 @@ def deep_content_bountiful():
       <p class="lede">Bountiful's code treats an internal conversion as a simple staff-approved permitted use &mdash; but a detached backyard unit needs conditional-use approval from the city's Administrative Committee, on a lot with real buildable-land requirements.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Home on the east bench of Bountiful, Utah with mountain slopes behind it">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Home on the east bench of Bountiful, Utah with mountain slopes behind it" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">~45,762</div><div class="spec-label">Population (2020 Census)</div></div>
@@ -2173,7 +2173,7 @@ def deep_content_heber_city():
       <p class="lede">Heber City's citywide ADU rule dates to 2021, but a new Central Heber Overlay Zone approved in September 2025 adds a second, more flexible path for lots in the city's core.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1800&auto=format&fit=crop" alt="Heber Valley ranchland with mountains near Heber City, Utah">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1800&auto=format&fit=crop" alt="Heber Valley ranchland with mountains near Heber City, Utah" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">~20,000</div><div class="spec-label">Population (2025 est.)</div></div>
@@ -2288,7 +2288,7 @@ def deep_content_park_city():
       <p class="lede">Park City allows accessory apartments by administrative permit, but the code draws a hard line against short-term rental, and a second unit inside a historic Old Town home triggers a different, stricter category entirely.</p>
     </div>
 
-    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1551524559-8af4e6624178?q=80&w=1800&auto=format&fit=crop" alt="Historic Victorian homes in Old Town Park City, Utah with ski slopes behind">
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1551524559-8af4e6624178?q=80&w=1800&auto=format&fit=crop" alt="Historic Victorian homes in Old Town Park City, Utah with ski slopes behind" loading="lazy" decoding="async">
 
     <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
       <div class="spec-card"><div class="spec-value">~8,396</div><div class="spec-label">Population (2020 Census)</div></div>
@@ -2664,7 +2664,7 @@ def build_city_page(name, slug, county, index):
           <div class="check-item">{CHECK_SVG}<span>Built by the same licensed &amp; insured team behind Pro-Worx Construction</span></div>
         </div>
       </div>
-      <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=1200&auto=format&fit=crop" alt="Backyard ADU cottage in {name}, Utah">
+      <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=1200&auto=format&fit=crop" alt="Backyard ADU cottage in {name}, Utah" width="1200" height="900" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -2679,7 +2679,7 @@ def build_city_page(name, slug, county, index):
     </div>
     <div class="grid grid-3 reveal">
       <div class="image-tile">
-        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop" alt="Detached backyard ADU">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop" alt="Detached backyard ADU" width="800" height="600" loading="lazy" decoding="async">
         <div class="scrim"></div>
         <div class="tile-content">
           <h3>Detached Backyard ADU</h3>
@@ -2687,7 +2687,7 @@ def build_city_page(name, slug, county, index):
         </div>
       </div>
       <div class="image-tile">
-        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop" alt="Garage conversion ADU">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop" alt="Garage conversion ADU" width="800" height="600" loading="lazy" decoding="async">
         <div class="scrim"></div>
         <div class="tile-content">
           <h3>Garage Conversion</h3>
@@ -2695,7 +2695,7 @@ def build_city_page(name, slug, county, index):
         </div>
       </div>
       <div class="image-tile">
-        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop" alt="Basement conversion ADU">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop" alt="Basement conversion ADU" width="800" height="600" loading="lazy" decoding="async">
         <div class="scrim"></div>
         <div class="tile-content">
           <h3>Basement Conversion</h3>
@@ -2838,7 +2838,7 @@ def build_city_page(name, slug, county, index):
     crumbs = [("Home", "/index.html"), ("Service Areas", "/index.html#areas"), (name, "")]
     json_ld = [local_business_jsonld(), breadcrumb_jsonld(crumbs), faq_jsonld(faq_pairs)]
     _register(path, changefreq="monthly", priority="0.8")
-    return page_shell(title, desc, body, path, json_ld=json_ld)
+    return page_shell(title, desc, body, path, json_ld=json_ld, og_image=hero_img)
 
 
 def build_locations():
@@ -2879,7 +2879,7 @@ def build_blog():
     cards = ""
     for p in posts:
         cards += f"""      <a href="/blog/{p['slug']}.html" class="blog-card" style="display:block;">
-        <div class="blog-thumb"><img src="{p['img']}" alt="{p['title']}"></div>
+        <div class="blog-thumb"><img src="{p['img']}" alt="{p['title']}" width="1200" height="750" loading="lazy" decoding="async"></div>
         <div class="blog-body">
           <span class="blog-cat">{p['cat']}</span>
           <h3>{p['title']}</h3>
@@ -2917,6 +2917,7 @@ def build_blog():
         body,
         "/blog/index.html",
         json_ld=[breadcrumb_jsonld([("Home", "/index.html"), ("Blog", "")])],
+        og_image=posts[0]["img"],
     )
     with open(os.path.join(ROOT, 'blog', 'index.html'), 'w') as f:
         f.write(html)
@@ -3237,6 +3238,7 @@ def build_blog():
             placeholder_body,
             f"/blog/{p['slug']}.html",
             json_ld=[breadcrumb_jsonld([("Home", "/index.html"), ("Blog", "/blog/index.html"), (p['cat'], "")])],
+            og_image=p['img'],
         )
         with open(os.path.join(ROOT, 'blog', f"{p['slug']}.html"), 'w') as f:
             f.write(placeholder_html)
@@ -3296,13 +3298,30 @@ def build_law_page():
 
 """ + contact_section()
 
+    law_page_image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop"
+    law_page_desc = "What Utah's SB284 detached-ADU law changes on October 1, 2026. Lot size rules, parking, permitting, and how it affects Utah homeowners."
     _register("/adu-rules-2026.html", changefreq="monthly", priority="0.8")
     html = page_shell(
-        "Utah's New ADU Law: SB284 Explained (Effective October 1, 2026) | Pro-Worx ADU",
-        "What Utah's SB284 detached-ADU law changes on October 1, 2026. Lot size rules, parking, permitting, and how it affects Utah homeowners.",
+        "Utah's SB284 ADU Law Explained | Pro-Worx ADU",
+        law_page_desc,
         body,
         "/adu-rules-2026.html",
-        json_ld=[breadcrumb_jsonld([("Home", "/index.html"), ("2026 ADU Law Changes", "")])],
+        json_ld=[
+            breadcrumb_jsonld([("Home", "/index.html"), ("2026 ADU Law Changes", "")]),
+            article_jsonld(
+                "Utah's New Detached ADU Law: What Changes on October 1, 2026",
+                law_page_desc,
+                law_page_image,
+                "/adu-rules-2026.html",
+                "2026-09-10",
+                BUILD_DATE,
+            ),
+            local_business_jsonld(),
+        ],
+        og_type="article",
+        og_image=law_page_image,
+        article_published="2026-09-10",
+        article_modified=BUILD_DATE,
     )
     with open(os.path.join(ROOT, 'adu-rules-2026.html'), 'w') as f:
         f.write(html)
