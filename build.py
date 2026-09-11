@@ -2040,6 +2040,104 @@ def deep_content_south_jordan():
 """
 
 
+def deep_content_bountiful():
+    """Bespoke, research-backed deep-content section for Bountiful.
+    Real Land Use Code Sec. 14-14-124, real 8,000 sq ft buildable-land
+    minimum for a detached ADU with a flat 350-1,250 sq ft size band,
+    real internal-vs-detached approval split (staff review vs. Administrative
+    Committee conditional use). Built by hand rather than the generic
+    template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: BOUNTIFUL (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE BOUNTIFUL DETAILS</p>
+      <h2>In Bountiful, an Internal ADU and a Backyard ADU Go Through Completely Different Doors</h2>
+      <p class="lede">Bountiful's code treats an internal conversion as a simple staff-approved permitted use &mdash; but a detached backyard unit needs conditional-use approval from the city's Administrative Committee, on a lot with real buildable-land requirements.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Home on the east bench of Bountiful, Utah with mountain slopes behind it">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">~45,762</div><div class="spec-label">Population (2020 Census)</div></div>
+      <div class="spec-card"><div class="spec-value">8,000 sq ft</div><div class="spec-label">Min buildable land for a detached ADU</div></div>
+      <div class="spec-card"><div class="spec-value">350&ndash;1,250 sq ft</div><div class="spec-label">Detached ADU size band</div></div>
+      <div class="spec-card"><div class="spec-value">1847</div><div class="spec-label">Founded &mdash; Utah's 2nd-oldest settlement</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#bt-neighborhoods">Neighborhoods</a>
+        <a href="#bt-zoning">Zoning &amp; Permits</a>
+        <a href="#bt-sb284">SB284 Status</a>
+        <a href="#bt-cost">Cost</a>
+        <a href="#bt-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="bt-neighborhoods">
+          <h3>{PIN_SVG} From the Historic Downtown Core to the Slopes of the East Bench</h3>
+          <p>Bountiful was Utah's second permanent settlement after Salt Lake City, and its layout still shows it &mdash; an older downtown core at the base of the Wasatch Range, with residential zones climbing the mountain slopes to the east and flatter, newer development toward the west:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Downtown Bountiful</h4><p>The city's original 1847 townsite and Downtown (DN) zone, sitting at the base of the Wasatch Range with the oldest housing stock in the city.</p></div>
+            <div class="neighborhood-card"><h4>East Bench</h4><p>Homes climbing the mountain slopes on Bountiful's east side &mdash; a real, commonly used real-estate term for the area, though not an official city-defined boundary.</p></div>
+            <div class="neighborhood-card"><h4>Val Verda</h4><p>A recognized neighborhood in southern Bountiful, tracked separately in census and real-estate data.</p></div>
+          </div>
+          <p style="margin-top:8px;">Older lots near downtown tend to favor an internal conversion, while larger east-bench and Val Verda lots are more likely to clear the buildable-land threshold for a detached unit &mdash; but we check your specific parcel either way.</p>
+        </div>
+
+        <div class="content-block" id="bt-zoning">
+          <h3>{CLIPBOARD_SVG} Two ADU Types, Two Very Different Approval Paths</h3>
+          <p>Bountiful City Land Use Code &sect;14-14-124 splits ADUs into an internal unit and a detached unit, and they don't go through the same process:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Internal ADU</th><th>Detached ADU</th></tr>
+              <tr><td>Approval path</td><td>Staff review &mdash; permitted use</td><td>Administrative Committee &mdash; conditional use</td></tr>
+              <tr><td>Minimum buildable land</td><td>Standard zone requirements</td><td>8,000 sq ft</td></tr>
+              <tr><td>Size</td><td>Standard zone requirements</td><td>350&ndash;1,250 sq ft</td></tr>
+            </table>
+          </div>
+          <p>The city's own definition ties an ADU to an owner-occupied primary residence, and we haven't been able to find a published permit fee for either ADU type on the city's site &mdash; we confirm current fees directly with Bountiful Planning (801-298-6190) before finalizing a quote, along with how the city's existing conditional-use process interacts with Utah's SB284 detached-ADU mandate, effective October 1, 2026.</p>
+        </div>
+
+        <div class="content-block" id="bt-sb284">
+          <h3>{HAMMER_SVG} Has Bountiful Updated Its Code for SB284?</h3>
+          <p>We haven't found a public staff report, planning commission agenda, or city council record showing Bountiful has amended its ADU ordinance in response to SB284 as of this writing. That's not the same as saying the city won't &mdash; it's simply what's publicly available right now. Since Bountiful's detached-ADU rule is already a defined conditional-use path rather than an outright ban, we confirm with the city directly how SB284's October 1, 2026 mandate applies to your specific lot before we scope any design work.</p>
+        </div>
+
+        <div class="content-block" id="bt-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Bountiful?</h3>
+          <p>Because Bountiful's older downtown lots often favor an internal conversion while larger east-bench and Val Verda lots can support a detached build, project scope here depends heavily on which path your property qualifies for. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an internal ADU)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached ADU)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your Bountiful quote reflects your lot, approval path and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in Bountiful typically lands at $80K&ndash;$150K for an internal conversion, and $190K&ndash;$270K for a detached build within the city's 1,250-sq-ft cap.</p>
+        </div>
+
+        <div class="content-block" id="bt-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://www.bountiful.gov/DocumentCenter/View/623/Chapter-14-Supplementary-Development-Standards-PDF" target="_blank" rel="noopener">Bountiful City Land Use Code</a> &sect;14-14-124: Accessory Dwelling Units</li>
+            <li><a href="https://www.bountiful.gov/188/Accessory-Dwelling-Units" target="_blank" rel="noopener">Bountiful City Planning</a>: ADU program overview</li>
+            <li><a href="https://en.wikipedia.org/wiki/Bountiful,_Utah" target="_blank" rel="noopener">Wikipedia</a>: Bountiful population, geography and settlement history</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -2116,6 +2214,7 @@ CITY_HERO_H1 = {
     "herriman": "Can You Build an ADU in Herriman, or Does Your HOA Say No?",
     "salt-lake-city": "Can You Build an ADU in Salt Lake City?",
     "south-jordan": "Can You Build a Detached Guesthouse in South Jordan, Utah?",
+    "bountiful": "Can You Build a Detached ADU in Bountiful, Utah?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -2158,6 +2257,7 @@ CITY_CTA1 = {
     "herriman": ("Not sure how Herriman's changing ADU rule affects your lot?", "We'll confirm the current standard and your HOA's requirements before you spend a dollar on design."),
     "salt-lake-city": ("Not sure if your SLC home is in a historic district?", "We'll confirm your neighborhood's review requirements before you spend a dollar on design."),
     "south-jordan": ("Not sure if your South Jordan lot qualifies for a guesthouse?", "We'll check your lot size and zone against the city's two ADU categories before you spend a dollar on design."),
+    "bountiful": ("Not sure if your Bountiful lot clears the 8,000 sq ft buildable-land minimum?", "We'll check your parcel and tell you which approval path applies before you spend a dollar on design."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -2186,6 +2286,7 @@ CITY_CTA2 = {
     "herriman": ("See ADU plans that work with Herriman's HOA standards", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "salt-lake-city": ("See ADU plans built for SLC's historic and newer lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "south-jordan": ("See ADU plans built for Daybreak and older South Jordan lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "bountiful": ("See ADU plans built for Bountiful's downtown and east-bench lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -2380,7 +2481,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_herriman() if slug == 'herriman' else deep_content_salt_lake_city() if slug == 'salt-lake-city' else deep_content_south_jordan() if slug == 'south-jordan' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_herriman() if slug == 'herriman' else deep_content_salt_lake_city() if slug == 'salt-lake-city' else deep_content_south_jordan() if slug == 'south-jordan' else deep_content_bountiful() if slug == 'bountiful' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
