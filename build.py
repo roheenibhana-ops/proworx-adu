@@ -2251,6 +2251,104 @@ def deep_content_heber_city():
 """
 
 
+def deep_content_park_city():
+    """Bespoke, research-backed deep-content section for Park City.
+    Real LMC 15-4-7 accessory apartment rule (administrative permit,
+    no owner-occupancy, 1,000 sq ft cap, 90-day rental minimum barring
+    nightly rental), real separate internal-ADU category with owner-
+    occupancy and historic-district conditional use, real workforce
+    housing context. No national Zonda cost table -- flagged as not
+    representative of this resort market instead. Built by hand rather
+    than the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: PARK CITY (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE PARK CITY DETAILS</p>
+      <h2>In Park City, an ADU Can't Be a Nightly Rental &mdash; and Old Town Adds Its Own Review</h2>
+      <p class="lede">Park City allows accessory apartments by administrative permit, but the code draws a hard line against short-term rental, and a second unit inside a historic Old Town home triggers a different, stricter category entirely.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1551524559-8af4e6624178?q=80&w=1800&auto=format&fit=crop" alt="Historic Victorian homes in Old Town Park City, Utah with ski slopes behind">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">~8,396</div><div class="spec-label">Population (2020 Census)</div></div>
+      <div class="spec-card"><div class="spec-value">1,000 sq ft</div><div class="spec-label">Max accessory apartment size</div></div>
+      <div class="spec-card"><div class="spec-value">90 days</div><div class="spec-label">Minimum rental term &mdash; no nightly rental</div></div>
+      <div class="spec-card"><div class="spec-value">Summit County</div><div class="spec-label">Home to Park City Mountain</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#pc-neighborhoods">Neighborhoods</a>
+        <a href="#pc-zoning">Zoning &amp; Permits</a>
+        <a href="#pc-oldtown">Old Town &amp; Housing</a>
+        <a href="#pc-cost">Cost</a>
+        <a href="#pc-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="pc-neighborhoods">
+          <h3>{PIN_SVG} From Old Town's Victorian Grid to Prospector's Newer Streets</h3>
+          <p>Park City's neighborhoods range from a 19th-century mining-town core to newer residential areas built around the resort economy:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Old Town</h4><p>The historic core, listed on the National Register of Historic Places, with its own architectural and historic-district design review requirements.</p></div>
+            <div class="neighborhood-card"><h4>Prospector</h4><p>A residential and light-commercial area east of Old Town, with newer housing stock than the historic core.</p></div>
+            <div class="neighborhood-card"><h4>Park Meadows</h4><p>An established residential neighborhood south of Old Town.</p></div>
+            <div class="neighborhood-card"><h4>Thaynes Canyon &amp; Silver Springs</h4><p>Residential areas on the east side of the city, closer to Park City Mountain.</p></div>
+          </div>
+          <p style="margin-top:8px;">Which neighborhood you're in changes more than the commute to the lifts &mdash; it determines whether your ADU project is a straightforward administrative permit or a historic-district conditional use.</p>
+        </div>
+
+        <div class="content-block" id="pc-zoning">
+          <h3>{CLIPBOARD_SVG} Two Categories, and Neither One Allows a Nightly Rental</h3>
+          <p>Park City's Land Management Code splits ADUs into two distinct categories under LMC Chapter 15-4, and they're treated quite differently:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Accessory Apartment (LMC 15-4-7)</th><th>Internal ADU (LMC 15-4-7.1)</th></tr>
+              <tr><td>Review path</td><td>Administrative permit</td><td>Administrative permit &mdash; conditional use if historic</td></tr>
+              <tr><td>Attached / detached</td><td>Both allowed</td><td>Internal only</td></tr>
+              <tr><td>Owner-occupancy</td><td>Not required</td><td>Required</td></tr>
+              <tr><td>Minimum lot size (detached)</td><td>3,750 sq ft</td><td>6,000 sq ft</td></tr>
+              <tr><td>Max size</td><td>1,000 sq ft, or 1/3 of primary home, whichever is less</td><td>Standard zone requirements</td></tr>
+              <tr><td>Parking</td><td>1 space per bedroom</td><td>1 additional space</td></tr>
+              <tr><td>Minimum rental term</td><td>90 days &mdash; no nightly rental</td><td>30 days</td></tr>
+            </table>
+          </div>
+          <p>Both categories were updated by a 2021 ordinance that dropped the owner-occupancy requirement for standalone accessory apartments specifically. We haven't confirmed the exact current application fee or Park City's formal position on Utah's SB284 detached-ADU mandate, effective October 1, 2026 &mdash; the city already allows detached accessory apartments under its own code, but whether that satisfies SB284 as written is something we confirm with Park City Planning before scoping a project.</p>
+        </div>
+
+        <div class="content-block" id="pc-oldtown">
+          <h3>{HAMMER_SVG} Old Town's Historic Status Changes the Process</h3>
+          <p>If your home sits in Old Town, an internal ADU shifts from an administrative permit to a conditional use requiring historic-district design review under the city's Architectural Review standards. That's on top of Park City's broader workforce-housing pressure &mdash; the city runs an active Affordable Housing Department and a Moderate Income Housing Plan, reflecting how tight the local rental market is for anyone who isn't renting nightly to visitors. We confirm your property's historic status and walk you through Old Town's design review before we scope any work there.</p>
+        </div>
+
+        <div class="content-block" id="pc-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in Park City?</h3>
+          <p>Park City is a high-cost resort labor and materials market, and a national cost-benchmark table (like the kind we use for most cities we build in) wouldn't represent it accurately &mdash; so we're not publishing one here. Because Park City's code caps accessory apartments at 1,000 sq ft and bars nightly rental, most projects here are sized around long-term workforce or family housing rather than short-term-rental income, which also shapes the finish level clients typically choose.</p>
+          <p>Pro-Worx ADU pricing in Park City runs meaningfully above our other Wasatch Front and Wasatch Back markets given local labor and material costs; we provide a firm, project-specific number after a site visit rather than a ballpark range, since generic per-square-foot figures from outside this market tend to understate what building here actually costs.</p>
+        </div>
+
+        <div class="content-block" id="pc-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://s3-us-west-2.amazonaws.com/municipalcodeonline.com-new/parkcity/ordinances/documents/1644360857_2021-51_Accessory_Apartments.pdf" target="_blank" rel="noopener">Park City Ordinance 2021-51</a>: Accessory Apartments (LMC 15-4-7)</li>
+            <li><a href="https://parkcity.municipalcodeonline.com/book/print?type=ordinances&amp;name=15-4_Supplemental_Regulations" target="_blank" rel="noopener">Park City Land Management Code</a>, Chapter 15-4: Supplemental Regulations</li>
+            <li><a href="https://www.kpcw.org/local-news/2021-10-14/park-city-planning-commission-supports-changing-city-accessory-apartment-regulations" target="_blank" rel="noopener">KPCW</a>: Park City accessory apartment ordinance changes</li>
+            <li><a href="https://parkcity.gov/departments/affordable-housing-department/frequently-asked-questions-faqs" target="_blank" rel="noopener">Park City Affordable Housing Department</a>: FAQs</li>
+            <li><a href="https://en.wikipedia.org/wiki/Park_City,_Utah" target="_blank" rel="noopener">Wikipedia</a>: Park City population, geography and history</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -2329,6 +2427,7 @@ CITY_HERO_H1 = {
     "south-jordan": "Can You Build a Detached Guesthouse in South Jordan, Utah?",
     "bountiful": "Can You Build a Detached ADU in Bountiful, Utah?",
     "heber-city": "Can You Build an ADU in Heber City's New Downtown Overlay Zone?",
+    "park-city": "Can You Rent Out an ADU Nightly in Park City?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -2373,6 +2472,7 @@ CITY_CTA1 = {
     "south-jordan": ("Not sure if your South Jordan lot qualifies for a guesthouse?", "We'll check your lot size and zone against the city's two ADU categories before you spend a dollar on design."),
     "bountiful": ("Not sure if your Bountiful lot clears the 8,000 sq ft buildable-land minimum?", "We'll check your parcel and tell you which approval path applies before you spend a dollar on design."),
     "heber-city": ("Not sure if your Heber City lot is inside the new CHOZ boundary?", "We'll confirm which rule set applies to your address before you spend a dollar on design."),
+    "park-city": ("Not sure if your Park City home is in a historic-review zone?", "We'll confirm which ADU category and review path applies before you spend a dollar on design."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -2403,6 +2503,7 @@ CITY_CTA2 = {
     "south-jordan": ("See ADU plans built for Daybreak and older South Jordan lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "bountiful": ("See ADU plans built for Bountiful's downtown and east-bench lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "heber-city": ("See ADU plans built for both Heber City's citywide rule and the CHOZ", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "park-city": ("Talk to us about your Park City accessory apartment project", "Every project here gets a site visit and a firm number &mdash; book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -2597,7 +2698,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_herriman() if slug == 'herriman' else deep_content_salt_lake_city() if slug == 'salt-lake-city' else deep_content_south_jordan() if slug == 'south-jordan' else deep_content_bountiful() if slug == 'bountiful' else deep_content_heber_city() if slug == 'heber-city' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_herriman() if slug == 'herriman' else deep_content_salt_lake_city() if slug == 'salt-lake-city' else deep_content_south_jordan() if slug == 'south-jordan' else deep_content_bountiful() if slug == 'bountiful' else deep_content_heber_city() if slug == 'heber-city' else deep_content_park_city() if slug == 'park-city' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
