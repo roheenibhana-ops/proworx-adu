@@ -1941,6 +1941,105 @@ def deep_content_salt_lake_city():
 """
 
 
+def deep_content_south_jordan():
+    """Bespoke, research-backed deep-content section for South Jordan.
+    Real Municipal Code 17.130.030, real internal-vs-guesthouse split,
+    real owner-occupancy verification method, real Daybreak master-planned
+    community context (flagged as HOA-dependent, not asserted as fact).
+    Built by hand rather than the generic template."""
+    return f"""<!-- HYPER-LOCAL DEEP CONTENT: SOUTH JORDAN (bespoke) -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">THE SOUTH JORDAN DETAILS</p>
+      <h2>In South Jordan, the City Code Is Only Half the Story</h2>
+      <p class="lede">South Jordan's ADU ordinance draws a sharp line between an internal unit and a detached guesthouse &mdash; and if you're in Daybreak, your HOA may have its own opinion on top of the city's.</p>
+    </div>
+
+    <img class="deep-image reveal" src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1800&auto=format&fit=crop" alt="Suburban home in South Jordan, Utah near the Oquirrh Mountains">
+
+    <div class="spec-cards reveal" style="max-width:900px; margin-left:auto; margin-right:auto; margin-bottom:56px;">
+      <div class="spec-card"><div class="spec-value">~88,910</div><div class="spec-label">Population (2025 est.)</div></div>
+      <div class="spec-card"><div class="spec-value">2</div><div class="spec-label">ADU types: internal &amp; detached guesthouse</div></div>
+      <div class="spec-card"><div class="spec-value">1,500 sq ft</div><div class="spec-label">Max guesthouse size (or 35% of home)</div></div>
+      <div class="spec-card"><div class="spec-value">14,520 sq ft</div><div class="spec-label">Min lot size for a detached guesthouse</div></div>
+    </div>
+
+    <div class="deep-layout reveal">
+      <nav class="deep-jumpnav">
+        <a href="#sj-neighborhoods">Neighborhoods</a>
+        <a href="#sj-zoning">Zoning &amp; Permits</a>
+        <a href="#sj-daybreak">Daybreak &amp; HOAs</a>
+        <a href="#sj-cost">Cost</a>
+        <a href="#sj-sources">Sources</a>
+      </nav>
+      <div class="blog-post-body" style="margin:0; max-width:none;">
+
+        <div class="content-block" id="sj-neighborhoods">
+          <h3>{PIN_SVG} From Daybreak's Master Plan to South Jordan's Older Established Streets</h3>
+          <p>South Jordan splits roughly into two eras of development, and it shapes what an ADU project looks like:</p>
+          <div class="neighborhood-cards">
+            <div class="neighborhood-card"><h4>Daybreak</h4><p>A ~4,200-acre master-planned community built around Oquirrh Lake, with its own villages (Cascade Village, SpringHouse, Watermark, more) and a homeowners association layered on top of city zoning.</p></div>
+            <div class="neighborhood-card"><h4>Glenmoor</h4><p>An established subdivision outside Daybreak's master plan, with older, more traditional single-family lots.</p></div>
+            <div class="neighborhood-card"><h4>Sunstone Village</h4><p>Another pre-Daybreak South Jordan neighborhood with its own lot character, separate from the master-planned side of the city.</p></div>
+          </div>
+          <p style="margin-top:8px;">Whether you're in Daybreak or one of South Jordan's older neighborhoods changes more than the view &mdash; it can change who reviews your ADU plans before the city ever sees them.</p>
+        </div>
+
+        <div class="content-block" id="sj-zoning">
+          <h3>{CLIPBOARD_SVG} South Jordan Splits ADUs Into Two Very Different Categories</h3>
+          <p>South Jordan Municipal Code &sect;17.130.030 doesn't treat all ADUs the same way &mdash; an internal unit and a detached guesthouse have different lot, size and review requirements:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Requirement</th><th>Internal ADU</th><th>Detached Guesthouse</th></tr>
+              <tr><td>Minimum lot size</td><td>6,000 sq ft</td><td>14,520 sq ft</td></tr>
+              <tr><td>Max size</td><td>Standard zone limits</td><td>1,500 sq ft or 35% of primary home, whichever is less; max 3 bedrooms</td></tr>
+              <tr><td>Review path</td><td>Planning Department review</td><td>Planning Commission review</td></tr>
+              <tr><td>Allowed zones</td><td>A-5, A-1, R-1.8, R-2.5, R-3, R-4, R-5</td><td>A-5, A-1, R-1.8 only</td></tr>
+            </table>
+          </div>
+          <p>Owner-occupancy is required for both types, verified through documentation like voter or vehicle registration, and each adds at least one off-street parking space beyond what the primary home already needs. We haven't been able to confirm current permit/review fee amounts directly from the city, so we always confirm those with South Jordan Planning before finalizing a quote &mdash; along with checking how the city's code interacts with Utah's SB284 detached-ADU mandate, effective October 1, 2026, on your specific lot.</p>
+        </div>
+
+        <div class="content-block" id="sj-daybreak">
+          <h3>{HAMMER_SVG} In Daybreak, Check the HOA Before You Check the City Code</h3>
+          <p>Daybreak covers a large share of South Jordan, and it operates under its own homeowners association architectural review in addition to city zoning &mdash; a common pattern for large master-planned communities, though we haven't independently verified Daybreak's current ADU-specific HOA rules against the city's ordinance. If your lot is in Daybreak, the practical first step isn't the building department, it's your village's HOA guidelines: an ADU design the city would approve outright can still need HOA sign-off, and the two reviews don't always move on the same timeline. We check both before we scope a Daybreak project.</p>
+        </div>
+
+        <div class="content-block" id="sj-cost">
+          <h3>{SHIELD_SVG} What Does an ADU Cost in South Jordan?</h3>
+          <p>South Jordan's split between internal conversions and ground-up detached guesthouses means project cost varies more by which path your lot qualifies for than almost anywhere else we build. <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener" class="link-arrow">Zonda's 2025 Cost vs. Value Report</a> gives useful national context for comparable home-investment categories:</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tr><th>Project Type</th><th>Typical Cost</th><th>Typical ROI</th></tr>
+              <tr><td>Basement remodel (comparable scope to an internal ADU)</td><td>$65K&ndash;$120K+</td><td>~70&ndash;75%</td></tr>
+              <tr><td>Home addition (comparable scope to a detached guesthouse)</td><td>$225&ndash;$375 / sq ft</td><td>~50&ndash;60%</td></tr>
+            </table>
+          </div>
+          <p class="source-note">Source: <a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>, national data; your South Jordan quote reflects your lot type, HOA requirements (if applicable) and finish level, not this table.</p>
+          <p>Pro-Worx ADU pricing in South Jordan typically lands at $85K&ndash;$160K for an internal conversion, and $200K&ndash;$300K for a detached guesthouse within the city's size cap, with any Daybreak HOA design review handled as part of our planning process.</p>
+        </div>
+
+        <div class="content-block" id="sj-sources">
+          <h3>Sources</h3>
+          <ul class="sources-list">
+            <li><a href="https://www.sjc.utah.gov/DocumentCenter/View/826/Accessory-Dwelling-Unit-ADU-PDF" target="_blank" rel="noopener">City of South Jordan</a>: Accessory Dwelling Unit (ADU) guide, Municipal Code &sect;17.130.030</li>
+            <li><a href="https://en.wikipedia.org/wiki/South_Jordan,_Utah" target="_blank" rel="noopener">Wikipedia</a>: South Jordan population and geography</li>
+            <li><a href="https://www.daybreakutah.com/villages-districts/" target="_blank" rel="noopener">Daybreak Utah</a>: villages and districts</li>
+            <li><a href="https://www.census.gov/quickfacts/fact/table/southjordancityutah" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts</a>: South Jordan population estimate</li>
+            <li><a href="https://zondahome.com/2025-cost-vs-value-report/" target="_blank" rel="noopener">Zonda 2025 Cost vs. Value Report</a>: national remodel ROI benchmarks</li>
+            <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+"""
+
+
 def local_business_jsonld():
     import json
     data = {
@@ -2016,6 +2115,7 @@ CITY_HERO_H1 = {
     "cottonwood-heights": "Do You Need a Permit for an ADU in Cottonwood Heights?",
     "herriman": "Can You Build an ADU in Herriman, or Does Your HOA Say No?",
     "salt-lake-city": "Can You Build an ADU in Salt Lake City?",
+    "south-jordan": "Can You Build a Detached Guesthouse in South Jordan, Utah?",
 }
 
 HERO_H1_TEMPLATES = [
@@ -2057,6 +2157,7 @@ CITY_CTA1 = {
     "cottonwood-heights": ("Not sure if you need a conditional-use permit in Cottonwood Heights?", "We'll confirm which permit path applies to your project before you spend a dollar on design."),
     "herriman": ("Not sure how Herriman's changing ADU rule affects your lot?", "We'll confirm the current standard and your HOA's requirements before you spend a dollar on design."),
     "salt-lake-city": ("Not sure if your SLC home is in a historic district?", "We'll confirm your neighborhood's review requirements before you spend a dollar on design."),
+    "south-jordan": ("Not sure if your South Jordan lot qualifies for a guesthouse?", "We'll check your lot size and zone against the city's two ADU categories before you spend a dollar on design."),
 }
 CTA1_TEMPLATES = [
     ("Not sure what your {name} lot actually allows?", "We'll walk your property, check it against {name}'s zoning, and tell you exactly what's possible &mdash; free, no obligation."),
@@ -2084,6 +2185,7 @@ CITY_CTA2 = {
     "cottonwood-heights": ("See ADU plans for Cottonwood Heights' licensed and permitted paths", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "herriman": ("See ADU plans that work with Herriman's HOA standards", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
     "salt-lake-city": ("See ADU plans built for SLC's historic and newer lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
+    "south-jordan": ("See ADU plans built for Daybreak and older South Jordan lots alike", "Browse fixed-price plan tiers, or book a free on-site estimate now."),
 }
 CTA2_TEMPLATES = [
     ("See ADU plans and pricing for {name}", "Browse fixed-price plan tiers before you talk to anyone, or book a free on-site estimate now."),
@@ -2278,7 +2380,7 @@ def build_city_page(name, slug, county, index):
   </div>
 </section>
 
-{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_herriman() if slug == 'herriman' else deep_content_salt_lake_city() if slug == 'salt-lake-city' else deep_content_section(name, slug, county)}<!-- PROCESS -->
+{deep_content_alpine() if slug == 'alpine' else deep_content_lehi() if slug == 'lehi' else deep_content_mapleton() if slug == 'mapleton' else deep_content_spanish_fork() if slug == 'spanish-fork' else deep_content_highland() if slug == 'highland' else deep_content_lindon() if slug == 'lindon' else deep_content_provo() if slug == 'provo' else deep_content_vineyard() if slug == 'vineyard' else deep_content_bluffdale() if slug == 'bluffdale' else deep_content_draper() if slug == 'draper' else deep_content_riverton() if slug == 'riverton' else deep_content_sandy() if slug == 'sandy' else deep_content_west_jordan() if slug == 'west-jordan' else deep_content_cottonwood_heights() if slug == 'cottonwood-heights' else deep_content_herriman() if slug == 'herriman' else deep_content_salt_lake_city() if slug == 'salt-lake-city' else deep_content_south_jordan() if slug == 'south-jordan' else deep_content_section(name, slug, county)}<!-- PROCESS -->
 <!-- MID-PAGE CTA 2 -->
 <section style="padding-top:8px; padding-bottom:8px;">
   <div class="container">
