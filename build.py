@@ -12,6 +12,11 @@ ROOT = os.path.dirname(__file__)
 # this one line is the whole migration.
 BASE_URL = "https://proworxadu.roheeni-bhana.workers.dev"
 
+# Bump this on every build that changes page content, used as <lastmod> in
+# sitemap.xml. Not automated off the filesystem clock so that rebuilds with
+# no real content change don't churn every URL's lastmod for no reason.
+BUILD_DATE = "2026-09-11"
+
 # Tracks every page we generate (path, changefreq, priority) so sitemap.xml
 # stays in sync with whatever build_* functions actually write to disk.
 SITEMAP_ENTRIES = []
@@ -185,12 +190,24 @@ def contact_section(prefill_city=""):
   </div>
 </section>"""
 
-def page_shell(title, description, body, canonical_path, json_ld=None):
+def page_shell(title, description, body, canonical_path, json_ld=None, og_type="website", og_image=None,
+               article_published=None, article_modified=None):
     canonical_url = f"{BASE_URL}{canonical_path}"
     json_ld_tags = ""
     if json_ld:
         for block in json_ld:
             json_ld_tags += f'<script type="application/ld+json">{block}</script>\n'
+    image_tags = ""
+    twitter_card = "summary"
+    if og_image:
+        image_tags = f'<meta property="og:image" content="{og_image}">\n<meta name="twitter:image" content="{og_image}">\n'
+        twitter_card = "summary_large_image"
+    article_tags = ""
+    if og_type == "article":
+        if article_published:
+            article_tags += f'<meta property="article:published_time" content="{article_published}">\n'
+        if article_modified:
+            article_tags += f'<meta property="article:modified_time" content="{article_modified}">\n'
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -199,11 +216,12 @@ def page_shell(title, description, body, canonical_path, json_ld=None):
 <title>{title}</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical_url}">
+<meta property="og:site_name" content="Pro-Worx ADU">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{og_type}">
 <meta property="og:url" content="{canonical_url}">
-<meta name="twitter:card" content="summary">
+{image_tags}{article_tags}<meta name="twitter:card" content="{twitter_card}">
 {HEAD_COMMON}
 {json_ld_tags}</head>
 <body>
@@ -2403,6 +2421,28 @@ def faq_jsonld(qa_pairs):
     return json.dumps(data)
 
 
+def article_jsonld(headline, description, image, canonical_path, date_published, date_modified, author="Pro-Worx ADU Team"):
+    """BlogPosting schema for a blog post. Dates as 'YYYY-MM-DD' strings."""
+    import json
+    data = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": headline,
+        "description": description,
+        "image": [image],
+        "author": {"@type": "Organization", "name": author, "url": BASE_URL},
+        "publisher": {
+            "@type": "Organization",
+            "name": "Pro-Worx ADU",
+            "url": BASE_URL,
+        },
+        "mainEntityOfPage": {"@type": "WebPage", "@id": f"{BASE_URL}{canonical_path}"},
+        "datePublished": date_published,
+        "dateModified": date_modified,
+    }
+    return json.dumps(data)
+
+
 # Custom, hook-specific H1s for the bespoke cities, tied to what actually
 # makes each city's ADU rules distinct (rather than one template with the
 # name swapped in). Generic-template cities rotate through HERO_H1_TEMPLATES
@@ -2924,7 +2964,7 @@ def build_blog():
         <p><strong>Where these numbers come from:</strong> the ranges above are drawn from Angi's 2026 ADU cost data, RenoFi's ADU cost guide and Rocket Mortgage's ADU financing guide, all national aggregator sources, since no government body or industry group (NAHB, Zonda's Cost vs. Value Report) publishes an ADU-specific cost study. We've cited each source below so you can check the methodology yourself, and every Pro-Worx ADU quote is still a fixed, walked-property number, not a number pulled from a national table.</p>
       </div>
 
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Detached backyard ADU under construction behind a single-family home in Utah" style="width:100%; border-radius:var(--radius); margin-bottom:28px; box-shadow:var(--shadow-card);">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Detached backyard ADU under construction behind a single-family home in Utah" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" style="width:100%; height:auto; border-radius:var(--radius); margin-bottom:28px; box-shadow:var(--shadow-card);">
 
       <p>If you've gotten far enough into researching ADUs to land on this page, you've probably already had some version of this conversation: a parent needs somewhere closer to family, a grown kid needs a cheaper place to land, or you've done the math on what a rented backyard cottage could cover on your mortgage. And then, almost immediately, the same question stops the whole idea in its tracks: what is this actually going to cost?</p>
       <p>We hear that question on nearly every single call, and the honest answer is "it depends a lot on what you're starting with." That's not a dodge. It's genuinely the biggest variable. This guide walks through the full picture: cost by type and size, what drives your specific price up or down, how the money is actually spent, financing options, and whether an ADU is likely to pay for itself. If you'd rather compare two specific paths side by side first, our <a href="/blog/garage-conversion-vs-detached-adu.html">garage conversion vs. detached ADU guide</a> is a good companion to this one.</p>
@@ -2968,7 +3008,7 @@ def build_blog():
 
       <p>A conversion is almost always the more affordable path because you're reusing an existing structure. A detached build costs more up front, but it's also the only option on lots where the primary home has no usable basement or garage to convert, and it gives renters or family members complete separation from the main house, the difference between "my mother-in-law lives in the basement" and "my mother-in-law lives next door, thankfully." If you're torn between the two, we've laid out the full trade-offs in our <a href="/blog/garage-conversion-vs-detached-adu.html">garage conversion vs. detached ADU comparison</a>.</p>
 
-      <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1600&auto=format&fit=crop" alt="Garage being converted into an ADU with new framing and utility rough-in" style="width:100%; border-radius:var(--radius); margin:8px 0 28px; box-shadow:var(--shadow-card);">
+      <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1600&auto=format&fit=crop" alt="Garage being converted into an ADU with new framing and utility rough-in" width="1600" height="900" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:var(--radius); margin:8px 0 28px; box-shadow:var(--shadow-card);">
 
       <div class="example-scenario">
         <span class="example-badge">Project Example</span>
@@ -3049,7 +3089,7 @@ def build_blog():
         <p>A Draper homeowner we worked with had a similarly sized backyard to the Riverton project above, but on a grade steep enough that equipment access was limited and the foundation needed extra engineering to sit level. Utility lines also had to run further from the house than on a flat lot. Even at a comparable finished size, the project landed toward the upper half of our detached-ADU range, mostly because of the added site work and foundation cost, not the finishes inside.</p>
       </div>
 
-      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop" alt="Utah homeowners reviewing their ADU project budget and financing plan" style="width:100%; border-radius:var(--radius); margin-bottom:28px; box-shadow:var(--shadow-card);">
+      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop" alt="Utah homeowners reviewing their ADU project budget and financing plan" width="1600" height="900" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:var(--radius); margin-bottom:28px; box-shadow:var(--shadow-card);">
 
       <h2 id="adu-financing">How Do Homeowners Pay for an ADU?</h2>
       <p>Very few of the people we work with are paying for their ADU out of pocket, and that's completely normal. Most ADU projects are financed rather than paid in cash, and there are more options today than there were even a few years ago:</p>
@@ -3091,7 +3131,7 @@ def build_blog():
       <p>Every number in this guide is a national or industry-wide range, useful for setting expectations but not a substitute for a real quote on your specific lot. The only way to know what your project actually costs is to have someone walk the property, check your utility capacity, confirm your city's current zoning rules (especially with cities still updating their ordinances for SB284), and price the finish level you actually want. Once permits are involved, it also helps to know what to expect from that process, and our <a href="/blog/adu-permits-utah-what-to-know.html">ADU permitting guide</a> walks through it step by step.</p>
       <p>A reliable estimate should tell you, in writing, which of the cost drivers above apply to your lot, not just hand you a number. If a quote can't explain why it landed where it did, that's usually a sign it's a placeholder, not a real number.</p>
 
-      <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=1600&auto=format&fit=crop" alt="Finished backyard ADU cottage in a Utah neighborhood" style="width:100%; border-radius:var(--radius); margin:8px 0 28px; box-shadow:var(--shadow-card);">
+      <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=1600&auto=format&fit=crop" alt="Finished backyard ADU cottage in a Utah neighborhood" width="1600" height="900" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:var(--radius); margin:8px 0 28px; box-shadow:var(--shadow-card);">
 
       <h2>Why Fixed Pricing Matters</h2>
       <p>Every Pro-Worx ADU plan tier is a fixed price once we've walked your property, not a rough estimate that grows during construction, and not a number that quietly moves once the walls are open. Across Salt Lake, Utah, Davis and Summit counties, Pro-Worx ADU pricing typically runs $100K&ndash;$200K for a garage or basement conversion and $200K&ndash;$300K for a full detached, ground-up build, consistent with the national ranges above but applied to your specific lot rather than a national average. That's the same transparent-pricing standard we've applied to over 1,100 projects across Utah in 20 years; you can see examples of that work in our <a href="/index.html#portfolio">project portfolio</a> or browse fixed <a href="/index.html#plans">plan tiers and pricing</a> directly.</p>
@@ -3127,16 +3167,36 @@ def build_blog():
 
 {contact_section()}"""
 
-    _register("/blog/how-much-does-an-adu-cost-in-utah.html", changefreq="monthly", priority="0.6")
+    cost_post_url = "/blog/how-much-does-an-adu-cost-in-utah.html"
+    cost_post_title = "How Much Does an ADU Cost in Utah? | Pro-Worx ADU"
+    cost_post_desc = "Real 2026 ADU cost data by type and size, a full cost breakdown, financing options and ROI info for Utah homeowners, with sources cited throughout."
+    cost_post_image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop"
+    cost_post_published = "2026-09-10"
+    cost_post_modified = BUILD_DATE
+
+    _register(cost_post_url, changefreq="monthly", priority="0.6")
     post_html = page_shell(
-        "How Much Does an ADU Cost in Utah? A 2026 Pricing Breakdown | Pro-Worx ADU",
-        "Real 2026 ADU cost data by type and size, a full cost breakdown, financing options and ROI info for Utah homeowners, with sources cited throughout.",
+        cost_post_title,
+        cost_post_desc,
         post_body,
-        "/blog/how-much-does-an-adu-cost-in-utah.html",
+        cost_post_url,
         json_ld=[
             breadcrumb_jsonld([("Home", "/index.html"), ("Blog", "/blog/index.html"), ("Pricing", "")]),
             faq_jsonld(cost_faq_pairs),
+            article_jsonld(
+                "How Much Does an ADU Cost in Utah? A 2026 Pricing Breakdown",
+                cost_post_desc,
+                cost_post_image,
+                cost_post_url,
+                cost_post_published,
+                cost_post_modified,
+            ),
+            local_business_jsonld(),
         ],
+        og_type="article",
+        og_image=cost_post_image,
+        article_published=cost_post_published,
+        article_modified=cost_post_modified,
     )
     with open(os.path.join(ROOT, 'blog', 'how-much-does-an-adu-cost-in-utah.html'), 'w') as f:
         f.write(post_html)
@@ -3249,6 +3309,7 @@ def build_sitemap_and_robots():
     for path, changefreq, priority in SITEMAP_ENTRIES:
         urls += f"""  <url>
     <loc>{BASE_URL}{path}</loc>
+    <lastmod>{BUILD_DATE}</lastmod>
     <changefreq>{changefreq}</changefreq>
     <priority>{priority}</priority>
   </url>
