@@ -2878,8 +2878,8 @@ def build_blog():
             "slug": "sugar-house-adu-guide",
             "title": "Building an ADU in Sugar House: Salt Lake City's Most ADU-Ready Neighborhood",
             "cat": "Neighborhoods",
-            "excerpt": "Older bungalows, detached garages already sitting on the lot, and alley access on most blocks. Here's why Sugar House keeps coming up on our ADU calls.",
-            "img": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+            "excerpt": "No minimum lot size, alley-facing garages built for a second unit, and one persistent myth about historic review we set straight with the actual city code.",
+            "img": "https://images.unsplash.com/photo-1600566752229-250ed79470f8?q=80&w=1200&auto=format&fit=crop",
         },
     ]
 
@@ -3675,9 +3675,11 @@ def build_blog():
         f.write(compare_post_html)
 
     sugar_house_faq_pairs = [
-        ("Does Sugar House have its own ADU rules separate from Salt Lake City?", "No. Sugar House isn't a separate zoning jurisdiction, it's a neighborhood within Salt Lake City, so it follows the same citywide ADU ordinance as the rest of the city, including the fact that Salt Lake City doesn't set a minimum lot size for an ADU. What can differ block to block is whether a property sits inside a historic district, which adds a design review step."),
-        ("Are Sugar House lots big enough for a detached ADU?", "Many are on the smaller side, since the neighborhood was built out in the 1920s-1940s on a tighter grid than newer suburbs. That's exactly why so many Sugar House ADU projects end up being garage conversions rather than new detached builds: the lot doesn't need to fit a second structure, because a usable one, and often a rear-alley-facing one, is frequently already there."),
-        ("Does the historic overlay near Westminster affect ADU approval timelines?", "It can. Pockets of Sugar House closer to Westminster University fall inside a local historic district, where exterior changes, including a garage conversion's new windows or doors, typically go through an added design review before your building permit. It's not a rejection risk so much as an extra step to plan for in your timeline, which we account for during your on-site estimate."),
+        ("Does Sugar House have its own ADU rules separate from Salt Lake City?", "No. Sugar House isn't a separate zoning jurisdiction, it's a neighborhood within Salt Lake City, so it follows the same citywide ordinance, Salt Lake City Code &sect;21A.40.200, as the rest of the city. That ordinance already has no minimum lot size and predates Utah's SB284, which is why the city isn't required to change it for the October 1, 2026 statewide floor to take effect."),
+        ("Is Sugar House a historic district? Will my ADU need Historic Landmark Commission review?", "No, and this is a common point of confusion. Sugar House's commercial core has individual buildings listed on the National Register of Historic Places (the 2003 Sugar House Business District Multiple Property Submission), but that status applies to specific commercial and civic buildings, not the surrounding residential blocks. Sugar House itself carries no local Historic Preservation Overlay District, unlike the Avenues or Capitol Hill, so most Sugar House ADU projects go through standard zoning and building review only, not a Certificate of Appropriateness."),
+        ("Are Sugar House lots big enough for a detached ADU?", "Many are on the smaller side. A large share of Sugar House sits in the city's R-1/7,000 single-family zone, meaning lots platted around a 7,000-square-foot minimum, tighter than newer suburban subdivisions. Salt Lake City's own ADU code caps a detached unit at 1,000 square feet regardless of lot size, and a lot that size is exactly why so many Sugar House ADU projects end up converting an existing garage rather than building a new detached structure from scratch."),
+        ("How much parking does a Sugar House ADU need, and can it be waived?", "Salt Lake City's default rule is one additional on-site parking space, but the ADU ordinance allows that requirement to be waived if the property is near transit or bike infrastructure, or if there's already surplus parking on site. Sugar House's TRAX stop and bus routes along 2100 South mean a meaningful share of Sugar House properties can realistically qualify for that waiver, though it's confirmed address by address, not assumed."),
+        ("Does the city's owner-occupancy requirement affect renting out a Sugar House ADU?", "Yes, indirectly. Salt Lake City requires the property owner (or a qualifying family member or trust) to occupy either the main house or the ADU, with limited exceptions for medical care placement or a temporary absence of up to three years. A restrictive covenant confirming this gets recorded with the Salt Lake County Recorder, and renting the unit out separately requires enrolling in the city's landlord-tenant program on top of that. It's a real step, but not one that blocks a genuine owner-occupied rental setup, which is the most common reason Sugar House homeowners build an ADU in the first place."),
     ]
     sugar_house_faq_html = ""
     for q, a in sugar_house_faq_pairs:
@@ -3704,30 +3706,124 @@ def build_blog():
       <h1 style="font-size:36px; margin-bottom:12px;">Building an ADU in Sugar House: Salt Lake City's Most ADU-Ready Neighborhood</h1>
       <p class="post-meta">Pro-Worx ADU Team &middot; Neighborhood Guides &middot; Updated September 2026</p>
 
-      <p>Ask us which Salt Lake City neighborhood generates the most ADU calls, and Sugar House is the answer more often than anywhere else. It's not a coincidence. The housing stock, the lot layout and the neighborhood's own walkability all point the same direction, and it's worth understanding why before you assume your own Sugar House property fits the pattern.</p>
+      <h2 id="sugar-house-quick-answer" style="margin-top:8px;">Can You Build an ADU in Sugar House?</h2>
+      <p>Yes. Sugar House follows Salt Lake City's citywide ADU ordinance (&sect;21A.40.200), which sets <strong>no minimum lot size</strong>, caps a detached unit at <strong>1,000 square feet</strong> and <strong>17 feet</strong> in height, and requires <strong>one on-site parking space</strong> (often waivable near transit). Despite some confusion locally, Sugar House itself carries no historic-overlay design review, so most projects here are a standard zoning and building permit process. What actually shapes a Sugar House project is the neighborhood's older, smaller-lot housing stock, covered in detail below.</p>
 
-      <h2 id="why-sugar-house">Why Sugar House Fits ADUs So Well</h2>
-      <p>Most of Sugar House was built out between the 1920s and 1940s, which shows up in two ways that matter for an ADU. First, the bungalows and cottages here were built with a detached garage set toward the back of the lot, often facing a rear alley rather than the street. That garage is frequently sound enough, or close enough, to convert into a real living space without the cost of a ground-up foundation. Second, the neighborhood's walkability, the 2100 South commercial corridor, Sugar House Park, and easy access to downtown and Westminster, keeps rental demand for a small, well-located unit strong, which is exactly the audience a converted garage or backyard unit is built for.</p>
+      <div class="spec-cards" style="margin:20px 0 28px;">
+        <div class="spec-card"><div class="spec-value">No minimum</div><div class="spec-label">Lot size required citywide</div></div>
+        <div class="spec-card"><div class="spec-value">1,000 sq ft</div><div class="spec-label">Max detached ADU size</div></div>
+        <div class="spec-card"><div class="spec-value">17 ft</div><div class="spec-label">Max detached ADU height</div></div>
+        <div class="spec-card"><div class="spec-value">1 space</div><div class="spec-label">Parking required, waivable near transit</div></div>
+      </div>
 
-      <h2 id="slc-rules">What Salt Lake City's Rules Mean for Your Lot</h2>
-      <p>Sugar House follows Salt Lake City's citywide ADU ordinance, the same one covered in our <a href="/locations/salt-lake-city.html">Salt Lake City ADU guide</a>: no citywide minimum lot size, which is unusually permissive compared to most cities on our list. The exception to watch for is the pocket of Sugar House nearer Westminster University that falls inside a local historic district. Inside that overlay, exterior changes go through an added design review before the building permit stage, which is a real step to plan around, not a reason to assume your project won't get approved.</p>
+      <div class="office-callout">
+        {SHIELD_SVG}
+        <p><strong>Where this comes from:</strong> the ordinance figures below are pulled directly from Salt Lake City Code &sect;21A.40.200 and the city's ADU Handbook, cross-checked against the Sugar House Community Council's own ADU tracking page, since Sugar House residents have raised real questions about these rules at community council meetings. The historic-district and recent-development notes are sourced separately below. Every Pro-Worx ADU estimate still includes a current zoning check for your specific address, since city code gets amended (most recently in 2023) and we don't rely on a blog post being permanently up to date.</p>
+      </div>
 
-      <h2 id="alley-access">The Alley Access Advantage</h2>
-      <p>A detail that's easy to miss from the street: a large share of Sugar House blocks have rear alleys, and that's a genuine practical advantage for an ADU. A garage or backyard unit facing the alley gets its own separate entrance without cutting through the main house's yard or driveway, which matters both for a renter's privacy and for keeping the parking your household already relies on intact. It's also part of why so many of these garages exist facing the alley in the first place.</p>
+      <img src="https://images.unsplash.com/photo-1600566752229-250ed79470f8?q=80&w=1600&auto=format&fit=crop" alt="Historic bungalow home with a detached garage in the Sugar House neighborhood of Salt Lake City" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" style="width:100%; height:auto; border-radius:var(--radius); margin-bottom:28px; box-shadow:var(--shadow-card);">
 
-      <div class="inline-cta reveal" style="margin:32px 0;">
+      <p>Ask us which Salt Lake City neighborhood generates the most ADU calls, and Sugar House comes up more than anywhere else. Part of that is the housing stock: older bungalows with a detached garage already sitting at the back of the lot. Part of it is a persistent misunderstanding, that Sugar House is a historic district the way the Avenues is, which isn't accurate and has talked more than one homeowner out of calling us. This guide walks through what Salt Lake City's ADU rules actually require here, what's true and what isn't about historic review, and how the neighborhood's current growth pressure factors in. Our <a href="/locations/salt-lake-city.html">Salt Lake City ADU guide</a> covers the citywide picture; this one is specific to Sugar House.</p>
+
+      <div class="post-toc">
+        <p class="toc-title">In this guide</p>
+        <ol>
+          <li><a href="#why-sugar-house">Why does Sugar House fit ADUs so well?</a></li>
+          <li><a href="#slc-rules">What does Salt Lake City's ADU ordinance require here?</a></li>
+          <li><a href="#historic-myth">Is Sugar House actually a historic district?</a></li>
+          <li><a href="#alley-access">Why alley access matters for a Sugar House ADU</a></li>
+          <li><a href="#growth-context">What Sugar House's recent development fights mean for homeowners</a></li>
+          <li><a href="#sugar-house-faq">Frequently asked questions</a></li>
+        </ol>
+      </div>
+
+      <div class="inline-cta reveal" style="margin:28px 0;">
         <div>
-          <h3>Have a Sugar House garage or backyard you want to look at?</h3>
-          <p>We'll walk the property and tell you honestly whether a conversion or a new build is the better fit, and what your Salt Lake City permit path actually looks like.</p>
+          <h3>Want a straight answer on your specific Sugar House lot?</h3>
+          <p>We'll walk the property and confirm your zoning, historic status and parking, no guessing.</p>
         </div>
         <a href="/index.html#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
       </div>
+
+      <h2 id="why-sugar-house">Why Does Sugar House Fit ADUs So Well?</h2>
+      <p>Much of Sugar House was platted and built out in the early-to-mid 20th century, largely within the city's R-1/7,000 single-family zone, meaning lots sized around a 7,000-square-foot minimum. That shows up in two ways that matter for an ADU. First, many of these bungalows and cottages were built with a detached garage set toward the back of the lot, often facing a rear alley rather than the street, and that garage is frequently sound enough to convert into a real living space without the cost of a ground-up foundation. Second, the neighborhood's walkability, the 2100 South business corridor, Sugar House Park, a TRAX stop, and easy access to downtown and Westminster University, keeps rental demand for a small, well-located unit genuinely strong, which is exactly the market a converted garage or backyard unit serves best.</p>
+
+      <div class="example-scenario">
+        <span class="example-badge">Project Example</span>
+        <h4>A garage conversion near the 2100 South corridor</h4>
+        <p>One Sugar House customer had a detached, alley-facing garage on a standard R-1/7,000 lot, structurally sound but never wired for anything beyond a light bulb. Because the footprint was already well under the city's 1,000-square-foot detached-ADU cap, the project stayed a straightforward interior build-out: new electrical, plumbing, insulation and a compact kitchenette, without triggering the size or setback questions a from-scratch build would raise.</p>
+      </div>
+
+      <h2 id="slc-rules">What Does Salt Lake City's ADU Ordinance Require Here?</h2>
+      <p>Sugar House doesn't get its own rules. It follows the same citywide ordinance, Salt Lake City Code &sect;21A.40.200, as every other neighborhood in the city, and that ordinance is unusually permissive on the one variable that trips up homeowners in other cities: lot size.</p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <tr><th>Requirement</th><th>Salt Lake City Standard</th></tr>
+          <tr><td>Minimum lot size</td><td>None required</td></tr>
+          <tr><td>Max detached ADU size</td><td>1,000 sq ft gross floor area</td></tr>
+          <tr><td>Max detached ADU height</td><td>17 ft</td></tr>
+          <tr><td>Setbacks (detached)</td><td>3 ft rear, 3 ft side, corner-side 20% of lot width or 10 ft, whichever is less</td></tr>
+          <tr><td>Parking</td><td>1 space, waived near transit, bike infrastructure, or with existing surplus parking</td></tr>
+          <tr><td>Units per lot</td><td>One ADU per single-family lot</td></tr>
+        </table>
+      </div>
+      <p class="source-note">Source: <a href="https://codelibrary.amlegal.com/codes/saltlakecityut/latest/saltlakecity_ut/0-0-0-68737" target="_blank" rel="noopener">Salt Lake City Code &sect;21A.40.200</a>; <a href="https://www.slc.gov/buildingservices/accessory-dwelling-unit-information/" target="_blank" rel="noopener">SLC Building Services ADU information</a>.</p>
+
+      <p>Owner-occupancy is also required: the deed holder, a blood or marriage relative, or a trust's trustor must occupy either the main house or the ADU, with limited exceptions for medical care placement or a temporary absence of up to three years. A restrictive covenant confirming this gets recorded with the Salt Lake County Recorder, and renting the finished unit out requires enrolling in the city's landlord-tenant program, on top of the building and zoning permits themselves. None of this is unique to Sugar House, it's citywide, but it's worth knowing going in rather than discovering it mid-permit.</p>
+
+      <div class="inline-cta reveal" style="margin:28px 0;">
+        <div>
+          <h3>Not sure if your Sugar House lot qualifies for a detached unit or an internal one?</h3>
+          <p>We'll check your zone, garage condition and utility access during a free on-site visit.</p>
+        </div>
+        <a href="/index.html#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
+      </div>
+
+      <h2 id="historic-myth">Is Sugar House Actually a Historic District?</h2>
+      <p>This is the question that causes the most confusion, and it's worth answering directly: no, not in the way that matters for your ADU permit. Sugar House's commercial core does have real historic recognition, several buildings, including the Sugar House Monument and the Sugar House LDS Ward Building, were added to the National Register of Historic Places in 2003 as part of the Sugar House Business District Multiple Property Submission. But that recognition applies to specific commercial and civic buildings in the business core, not to the surrounding residential blocks where most ADU projects happen.</p>
+      <p>Salt Lake City does have neighborhoods with a local Historic Preservation Overlay District, the Avenues and Capitol Hill, where an ADU project requires a Certificate of Appropriateness through the city's Historic Landmark Commission before a building permit is even reviewed. Yalecrest, near Sugar House's eastern edge, carries National Register status, a lighter, informational designation rather than a design-review requirement. Sugar House itself has neither a local overlay nor National Register status over its residential blocks, which means most Sugar House ADU projects go through standard zoning and building review only.</p>
+      <p class="source-note">Source: <a href="https://npgallery.nps.gov/AssetDetail/NRIS/03000631" target="_blank" rel="noopener">National Park Service NRHP listing</a>, Sugar House Business District Multiple Property Submission; <a href="/locations/salt-lake-city.html#slc-historic">our Salt Lake City ADU guide</a> covers the Avenues, Capitol Hill and Yalecrest distinctions in full.</p>
+
+      <h2 id="alley-access">Why Alley Access Matters for a Sugar House ADU</h2>
+      <p>A detail that's easy to miss from the street: a large share of Sugar House blocks were platted with rear alleys, and that's a genuine practical advantage for an ADU. A garage or backyard unit facing the alley gets its own separate entrance without cutting through the main house's yard or driveway, which matters both for a renter's privacy and for keeping the parking your household already relies on intact. It's also part of why so many of these garages were built facing the alley in the first place, decades before "ADU" was a term anyone used. The Sugar House Community Council has tracked and approved multiple conditional-use ADU petitions in the neighborhood's R-1/7,000 zone in recent years, which is a useful sign that the review process here is a known, workable one, not an open question.</p>
+      <p class="source-note">Source: <a href="https://sugarhousecouncil.org/adu-accessory-dwelling-units-updates/" target="_blank" rel="noopener">Sugar House Community Council, ADU updates</a>.</p>
+
+      <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1600&auto=format&fit=crop" alt="Alley-facing garage in a Salt Lake City neighborhood being prepared for an ADU conversion" width="1600" height="900" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:var(--radius); margin:8px 0 28px; box-shadow:var(--shadow-card);">
+
+      <h2 id="growth-context">What Sugar House's Recent Development Fights Mean for Homeowners</h2>
+      <p>Sugar House has been in the local news for reasons that have nothing to do with ADUs but say a lot about how the neighborhood feels about growth. In April 2026, the Salt Lake City Council unanimously rejected a rezone that would have allowed a 90-foot, roughly 145-room hotel on a vacant lot next to Sugar House Park, with council members citing concerns about pushing the business district's boundary and the precedent it would set. A separate proposal for a 16-story, roughly 195-unit residential building elsewhere in Sugar House was scheduled for Planning Commission review in August 2026.</p>
+      <p>The throughline for homeowners: Sugar House is absorbing real growth pressure, and large rezone requests are hitting real community pushback over scale and precedent. A single-family ADU sits nowhere near that fight. It doesn't require a rezone, a master plan amendment, or a council vote, since it's already a permitted, by-right use under the existing citywide ordinance. If you've watched the hotel debate and wondered whether adding a unit to your own property would trigger anything similar, it doesn't. It's a private, small-scale project, exactly the kind Sugar House residents have signaled they're comfortable with, that the city has already zoned for as a matter of standard policy.</p>
+      <p class="source-note">Source: <a href="https://www.ksl.com/article/51478551/salt-lake-city-rejects-rezone-for-controversial-7-story-hotel-next-to-sugar-house-park" target="_blank" rel="noopener">KSL.com</a>, April 2026; <a href="https://www.slc.gov/planning/2026/06/12/openhouse2026-00161/" target="_blank" rel="noopener">SLC Planning Division</a>, GEM Sugar House open house notice, June 2026.</p>
+
+      <div class="inline-cta reveal" style="margin:32px 0; background:var(--card); border:1px solid var(--border);">
+        <div>
+          <h3>Ready to see what your Sugar House property actually qualifies for?</h3>
+          <p>A free on-site estimate covers zoning, historic status, garage condition and a real fixed price.</p>
+        </div>
+        <a href="/index.html#contact" class="btn btn-light">GET FREE ESTIMATE</a>
+      </div>
+
+      <h2>How Pro-Worx ADU Builds in Sugar House</h2>
+      <p>We confirm your zoning district, historic status and parking situation before we price anything, the same fixed-scope approach we've applied across over 1,100 projects in Utah over 20 years. For the broader cost and permitting picture beyond Sugar House specifically, see our <a href="/blog/how-much-does-an-adu-cost-in-utah.html">ADU cost breakdown</a> and <a href="/blog/adu-permits-utah-what-to-know.html">permitting guide</a>, or browse <a href="/index.html#plans">plan tiers and pricing</a> directly.</p>
 
       <h2 id="sugar-house-faq">Frequently Asked Questions</h2>
       <div class="accordion" style="margin:8px 0 0;">
 {sugar_house_faq_html}      </div>
 
-      <p style="font-size:13px; color:var(--muted-foreground); margin-top:24px;">This guide reflects Salt Lake City's citywide ADU ordinance and general Sugar House housing patterns as of September 2026. Historic district boundaries and design review requirements should be confirmed for your specific address; a Pro-Worx ADU estimate includes that check. See our <a href="/blog/how-much-does-an-adu-cost-in-utah.html">ADU cost breakdown</a> and <a href="/blog/adu-permits-utah-what-to-know.html">permitting guide</a> for the broader picture.</p>
+      <h3 style="margin-top:40px;">Sources</h3>
+      <ul class="sources-list">
+        <li><a href="https://codelibrary.amlegal.com/codes/saltlakecityut/latest/saltlakecity_ut/0-0-0-68737" target="_blank" rel="noopener">Salt Lake City Code &sect;21A.40.200</a>: accessory dwelling unit standards</li>
+        <li><a href="https://www.slc.gov/buildingservices/accessory-dwelling-unit-information/" target="_blank" rel="noopener">SLC Building Services</a>: ADU information and standard plans</li>
+        <li><a href="https://sugarhousecouncil.org/adu-accessory-dwelling-units-updates/" target="_blank" rel="noopener">Sugar House Community Council</a>: ADU updates and approved petitions</li>
+        <li><a href="https://npgallery.nps.gov/AssetDetail/NRIS/03000631" target="_blank" rel="noopener">National Park Service</a>: Sugar House Business District Multiple Property Submission (NRHP)</li>
+        <li><a href="https://www.ksl.com/article/51478551/salt-lake-city-rejects-rezone-for-controversial-7-story-hotel-next-to-sugar-house-park" target="_blank" rel="noopener">KSL.com</a>: Sugar House hotel rezone rejection, April 2026</li>
+        <li><a href="https://www.slc.gov/planning/2026/06/12/openhouse2026-00161/" target="_blank" rel="noopener">SLC Planning Division</a>: GEM Sugar House development notice, June 2026</li>
+        <li><a href="/locations/salt-lake-city.html" class="link-arrow">Our full Salt Lake City ADU guide &rarr;</a></li>
+        <li><a href="/adu-rules-2026.html" class="link-arrow">Utah SB284: what changes October 1, 2026 &rarr;</a></li>
+      </ul>
+
+      <p style="font-size:13px; color:var(--muted-foreground); margin-top:24px;">This guide summarizes Salt Lake City's citywide ADU ordinance and public reporting on Sugar House development as of September 2026. It isn't legal advice, and zoning determinations, historic status and permit requirements should be confirmed for your specific address with SLC Planning. Your fixed Pro-Worx ADU quote includes that confirmation.</p>
     </div>
   </div>
 </section>
@@ -3736,8 +3832,8 @@ def build_blog():
 
     sugar_house_post_url = "/blog/sugar-house-adu-guide.html"
     sugar_house_post_title = "Building an ADU in Sugar House | Pro-Worx ADU"
-    sugar_house_post_desc = "Why Sugar House generates more ADU calls than any other Salt Lake City neighborhood: existing detached garages, alley access, and Salt Lake City's no-minimum-lot-size rule."
-    sugar_house_post_image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop"
+    sugar_house_post_desc = "Salt Lake City's ADU ordinance in Sugar House: no minimum lot size, a 1,000 sq ft detached cap, why Sugar House isn't actually a historic district, and what recent development fights mean for homeowners."
+    sugar_house_post_image = "https://images.unsplash.com/photo-1600566752229-250ed79470f8?q=80&w=1600&auto=format&fit=crop"
     sugar_house_post_published = "2026-09-12"
     sugar_house_post_modified = BUILD_DATE
 
