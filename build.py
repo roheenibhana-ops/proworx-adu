@@ -15,7 +15,7 @@ BASE_URL = "https://proworxadu.roheeni-bhana.workers.dev"
 # Bump this on every build that changes page content, used as <lastmod> in
 # sitemap.xml. Not automated off the filesystem clock so that rebuilds with
 # no real content change don't churn every URL's lastmod for no reason.
-BUILD_DATE = "2026-09-11"
+BUILD_DATE = "2026-09-12"
 
 # Tracks every page we generate (path, changefreq, priority) so sitemap.xml
 # stays in sync with whatever build_* functions actually write to disk.
@@ -2874,6 +2874,13 @@ def build_blog():
             "excerpt": "The two most common ADU paths compared on cost, timeline and privacy, so you can pick the right fit for your property.",
             "img": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
         },
+        {
+            "slug": "sugar-house-adu-guide",
+            "title": "Building an ADU in Sugar House: Salt Lake City's Most ADU-Ready Neighborhood",
+            "cat": "Neighborhoods",
+            "excerpt": "Older bungalows, detached garages already sitting on the lot, and alley access on most blocks. Here's why Sugar House keeps coming up on our ADU calls.",
+            "img": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+        },
     ]
 
     cards = ""
@@ -3667,7 +3674,101 @@ def build_blog():
     with open(os.path.join(ROOT, 'blog', 'garage-conversion-vs-detached-adu.html'), 'w') as f:
         f.write(compare_post_html)
 
-    # All three posts are now bespoke; no placeholders remain.
+    sugar_house_faq_pairs = [
+        ("Does Sugar House have its own ADU rules separate from Salt Lake City?", "No. Sugar House isn't a separate zoning jurisdiction, it's a neighborhood within Salt Lake City, so it follows the same citywide ADU ordinance as the rest of the city, including the fact that Salt Lake City doesn't set a minimum lot size for an ADU. What can differ block to block is whether a property sits inside a historic district, which adds a design review step."),
+        ("Are Sugar House lots big enough for a detached ADU?", "Many are on the smaller side, since the neighborhood was built out in the 1920s-1940s on a tighter grid than newer suburbs. That's exactly why so many Sugar House ADU projects end up being garage conversions rather than new detached builds: the lot doesn't need to fit a second structure, because a usable one, and often a rear-alley-facing one, is frequently already there."),
+        ("Does the historic overlay near Westminster affect ADU approval timelines?", "It can. Pockets of Sugar House closer to Westminster University fall inside a local historic district, where exterior changes, including a garage conversion's new windows or doors, typically go through an added design review before your building permit. It's not a rejection risk so much as an extra step to plan for in your timeline, which we account for during your on-site estimate."),
+    ]
+    sugar_house_faq_html = ""
+    for q, a in sugar_house_faq_pairs:
+        sugar_house_faq_html += f"""      <div class="accordion-item">
+        <button class="accordion-trigger">{q}
+          {CHEVRON_SVG}
+        </button>
+        <div class="accordion-panel"><p>{a}</p></div>
+      </div>
+"""
+
+    sugar_house_post_body = f"""<div class="container">
+  <div class="breadcrumb">
+    <a href="/index.html">Home</a><span>/</span>
+    <a href="/blog/index.html">Blog</a><span>/</span>
+    <span class="current">Neighborhoods</span>
+  </div>
+</div>
+
+<section style="padding-top:24px;">
+  <div class="container">
+    <div class="blog-post-body">
+      <p class="eyebrow">NEIGHBORHOODS</p>
+      <h1 style="font-size:36px; margin-bottom:12px;">Building an ADU in Sugar House: Salt Lake City's Most ADU-Ready Neighborhood</h1>
+      <p class="post-meta">Pro-Worx ADU Team &middot; Neighborhood Guides &middot; Updated September 2026</p>
+
+      <p>Ask us which Salt Lake City neighborhood generates the most ADU calls, and Sugar House is the answer more often than anywhere else. It's not a coincidence. The housing stock, the lot layout and the neighborhood's own walkability all point the same direction, and it's worth understanding why before you assume your own Sugar House property fits the pattern.</p>
+
+      <h2 id="why-sugar-house">Why Sugar House Fits ADUs So Well</h2>
+      <p>Most of Sugar House was built out between the 1920s and 1940s, which shows up in two ways that matter for an ADU. First, the bungalows and cottages here were built with a detached garage set toward the back of the lot, often facing a rear alley rather than the street. That garage is frequently sound enough, or close enough, to convert into a real living space without the cost of a ground-up foundation. Second, the neighborhood's walkability, the 2100 South commercial corridor, Sugar House Park, and easy access to downtown and Westminster, keeps rental demand for a small, well-located unit strong, which is exactly the audience a converted garage or backyard unit is built for.</p>
+
+      <h2 id="slc-rules">What Salt Lake City's Rules Mean for Your Lot</h2>
+      <p>Sugar House follows Salt Lake City's citywide ADU ordinance, the same one covered in our <a href="/locations/salt-lake-city.html">Salt Lake City ADU guide</a>: no citywide minimum lot size, which is unusually permissive compared to most cities on our list. The exception to watch for is the pocket of Sugar House nearer Westminster University that falls inside a local historic district. Inside that overlay, exterior changes go through an added design review before the building permit stage, which is a real step to plan around, not a reason to assume your project won't get approved.</p>
+
+      <h2 id="alley-access">The Alley Access Advantage</h2>
+      <p>A detail that's easy to miss from the street: a large share of Sugar House blocks have rear alleys, and that's a genuine practical advantage for an ADU. A garage or backyard unit facing the alley gets its own separate entrance without cutting through the main house's yard or driveway, which matters both for a renter's privacy and for keeping the parking your household already relies on intact. It's also part of why so many of these garages exist facing the alley in the first place.</p>
+
+      <div class="inline-cta reveal" style="margin:32px 0;">
+        <div>
+          <h3>Have a Sugar House garage or backyard you want to look at?</h3>
+          <p>We'll walk the property and tell you honestly whether a conversion or a new build is the better fit, and what your Salt Lake City permit path actually looks like.</p>
+        </div>
+        <a href="/index.html#contact" class="btn btn-primary">GET FREE ESTIMATE</a>
+      </div>
+
+      <h2 id="sugar-house-faq">Frequently Asked Questions</h2>
+      <div class="accordion" style="margin:8px 0 0;">
+{sugar_house_faq_html}      </div>
+
+      <p style="font-size:13px; color:var(--muted-foreground); margin-top:24px;">This guide reflects Salt Lake City's citywide ADU ordinance and general Sugar House housing patterns as of September 2026. Historic district boundaries and design review requirements should be confirmed for your specific address; a Pro-Worx ADU estimate includes that check. See our <a href="/blog/how-much-does-an-adu-cost-in-utah.html">ADU cost breakdown</a> and <a href="/blog/adu-permits-utah-what-to-know.html">permitting guide</a> for the broader picture.</p>
+    </div>
+  </div>
+</section>
+
+{contact_section()}"""
+
+    sugar_house_post_url = "/blog/sugar-house-adu-guide.html"
+    sugar_house_post_title = "Building an ADU in Sugar House | Pro-Worx ADU"
+    sugar_house_post_desc = "Why Sugar House generates more ADU calls than any other Salt Lake City neighborhood: existing detached garages, alley access, and Salt Lake City's no-minimum-lot-size rule."
+    sugar_house_post_image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop"
+    sugar_house_post_published = "2026-09-12"
+    sugar_house_post_modified = BUILD_DATE
+
+    _register(sugar_house_post_url, changefreq="monthly", priority="0.5")
+    sugar_house_post_html = page_shell(
+        sugar_house_post_title,
+        sugar_house_post_desc,
+        sugar_house_post_body,
+        sugar_house_post_url,
+        json_ld=[
+            breadcrumb_jsonld([("Home", "/index.html"), ("Blog", "/blog/index.html"), ("Neighborhoods", "")]),
+            faq_jsonld(sugar_house_faq_pairs),
+            article_jsonld(
+                "Building an ADU in Sugar House: Salt Lake City's Most ADU-Ready Neighborhood",
+                sugar_house_post_desc,
+                sugar_house_post_image,
+                sugar_house_post_url,
+                sugar_house_post_published,
+                sugar_house_post_modified,
+            ),
+            local_business_jsonld(),
+        ],
+        og_type="article",
+        og_image=sugar_house_post_image,
+        article_published=sugar_house_post_published,
+        article_modified=sugar_house_post_modified,
+    )
+    with open(os.path.join(ROOT, 'blog', 'sugar-house-adu-guide.html'), 'w') as f:
+        f.write(sugar_house_post_html)
+
+    # All three original posts are bespoke; no placeholders remain.
     for p in []:
         placeholder_body = f"""<div class="container">
   <div class="breadcrumb">
@@ -3701,7 +3802,7 @@ def build_blog():
         with open(os.path.join(ROOT, 'blog', f"{p['slug']}.html"), 'w') as f:
             f.write(placeholder_html)
 
-    print("Built blog index + 3 posts")
+    print("Built blog index + 4 posts")
 
 
 def build_law_page():
