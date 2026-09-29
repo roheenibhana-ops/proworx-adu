@@ -111,14 +111,47 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('touchend', () => dragging = false);
   });
 
-  // Contact form (static demo — GHL endpoint not wired up yet)
+  // Contact form -> GHL inbound webhook
+  const GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/3A1PYEjZ8KtmxbCI0eyw/webhook-trigger/f14077b0-70cc-4b5a-a1bc-0404cf34b0fd';
   const form = document.getElementById('estimateForm');
   const formSuccess = document.getElementById('formSuccess');
   if (form && formSuccess) {
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async e => {
       e.preventDefault();
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const submitBtnLabel = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'SENDING...'; }
+
+      const data = new FormData(form);
+      const fname = (data.get('fname') || '').toString().trim();
+      const lname = (data.get('lname') || '').toString().trim();
+      const payload = {
+        first_name: fname,
+        last_name: lname,
+        full_name: [fname, lname].filter(Boolean).join(' '),
+        email: (data.get('email') || '').toString().trim(),
+        phone: (data.get('phone') || '').toString().trim(),
+        city: (data.get('city') || '').toString().trim(),
+        adu_type: (data.get('adutype') || '').toString().trim(),
+        message: (data.get('message') || '').toString().trim(),
+        source_url: window.location.href,
+        page_title: document.title,
+        submitted_at: new Date().toISOString(),
+      };
+
+      try {
+        await fetch(GHL_WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+      } catch (err) {
+        console.error('GHL webhook submission failed:', err);
+      }
+
       formSuccess.classList.add('show');
       form.reset();
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = submitBtnLabel; }
     });
   }
 });
